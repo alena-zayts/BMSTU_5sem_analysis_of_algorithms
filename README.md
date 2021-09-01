@@ -15,7 +15,7 @@
 
 (Wilsem)(7 лаб) https://github.com/bmstu-ics7/analysis-of-algorithms/tree/65e04908c9ce1326ffed9d51285f9fa9d664fd9b
 
-(Sunshine-ki )(7 лаб+дз+шаблон отчета) https://github.com/Sunshine-ki/BMSTU5_AA
+(PYTHON Sunshine-ki )(7 лаб+дз+шаблон отчета) https://github.com/Sunshine-ki/BMSTU5_AA
 
 (Winterpuma (оберган))(7 лаб и еще CalcWork) https://github.com/Winterpuma/bmstu_AA/tree/master
 

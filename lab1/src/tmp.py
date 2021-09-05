@@ -138,8 +138,8 @@ def damerau_lowenstein_dist_recursion(str1, str2):
 
 if __name__ == '__main__':
     n = 11
-    str1 = 'k'*n
-    str2 = 'c'*n
+    str1 = 'k' * n
+    str2 = 'c' * n
     x = lowenstein_dist_recursion_classic(str1, str2)
     print(x)
     mem_usage = memory_usage((lowenstein_dist_recursion_classic, (str1, str2)))

@@ -35,6 +35,7 @@ class TestDistance:
         assert self.function("bc", "ac") == 1
         assert self.function("ab", "cd") == 2
         assert self.function("abc", "cd") == 3
+        assert self.function("кот", "скат") == 2
         print('OK\n')
 
     def test_xchange(self):

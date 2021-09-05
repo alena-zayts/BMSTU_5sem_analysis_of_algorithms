@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  5 SEP 2021 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  5 SEP 2021 16:48
 entering extended mode
 **./report.tex
 (report.tex
@@ -1029,6 +1029,9 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 \c@csvrow=\count332
 \c@csvcol=\count333
 \csv@out=\write4
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )) (report.aux
 (00-title.aux) (01-contents.aux) (02-intro.aux) (10-analysis.aux)
 (20-design.aux) (30-impl.aux) (40-research.aux) (50-conclusion.aux)
@@ -1181,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=78, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=82, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1332,7 +1335,7 @@ Overfull \hbox (74.20757pt too wide) in paragraph at lines 42--42
 
  (20-design.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<inc/img/l_matrix.png, id=154, 519.9425pt x 1005.7575pt>
+<inc/img/l_matrix.png, id=159, 519.9425pt x 1005.7575pt>
 File: inc/img/l_matrix.png Graphic file (type png)
 <use inc/img/l_matrix.png>
 Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
@@ -1340,7 +1343,7 @@ Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_classic.png, id=157, 645.41125pt x 832.10875pt>
+<inc/img/l_recursion_classic.png, id=162, 645.41125pt x 832.10875pt>
 File: inc/img/l_recursion_classic.png Graphic file (type png)
 <use inc/img/l_recursion_classic.png>
 Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 13
@@ -1354,7 +1357,7 @@ Overfull \hbox (16.064pt too wide) in paragraph at lines 13--13
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_matrix.png, id=159, 918.43124pt x 1066.98625pt>
+<inc/img/l_recursion_matrix.png, id=164, 918.43124pt x 1066.98625pt>
 File: inc/img/l_recursion_matrix.png Graphic file (type png)
 <use inc/img/l_recursion_matrix.png>
 Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 17.
@@ -1373,7 +1376,7 @@ Overfull \hbox (56.33272pt too wide) in paragraph at lines 19--19
  |[]\T2A/cmr/bx/n/20.74 Алгоритмы на-хож-де-ния рас-сто-я-ния Дамерау-
  []
 
-<inc/img/Dl_recursion.png, id=161, 765.86125pt x 1062.97125pt>
+<inc/img/Dl_recursion.png, id=166, 765.86125pt x 1062.97125pt>
 File: inc/img/Dl_recursion.png Graphic file (type png)
 <use inc/img/Dl_recursion.png>
 Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 23.
@@ -1394,22 +1397,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
-LaTeX Warning: Reference `lst:algorithms' on page 11 undefined on input line 19
-.
+Overfull \hbox (4.9353pt too wide) in paragraph at lines 13--14
+[]\T2A/cmr/m/n/14.4 Кроме то-го, в Python есть биб-лио-те-ка time, ко-то-рая пр
+едо-став-ля-ет функ-
+ []
+
+[11
+
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
+22.
+ (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
+File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+38.
+
+(C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [12] [13]
+
+LaTeX Warning: Reference `tabular:test' on page 14 undefined on input line 123.
+
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [11
-
-
-
-
-] [12]
+) [14] [15]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+
+LaTeX Warning: Citation `rusttest' on page 16 undefined on input line 23.
+
 Package keyval Info: directivestyle undefined on input line 31.
 Package keyval Info: directivestyle undefined on input line 31.
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
@@ -1417,7 +1441,7 @@ LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line
 (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-(inc/lst/ex.rs) [13
+(inc/lst/ex.rs) [16
 
 
 
@@ -1431,7 +1455,7 @@ PGFPlots: reading {inc/csv/time_dl.csv}
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
+[17]
 
 LaTeX Warning: Command \cyrb invalid in math mode on input line 106.
 
@@ -1448,10 +1472,10 @@ Missing character: There is no б in font cmr12!
 Missing character: There is no а in font cmr12!
 Missing character: There is no й in font cmr12!
 Missing character: There is no т in font cmr12!
-[15] [16]) [17]
+[18] [19]) [20]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [18
+ (50-conclusion.tex) [21
 
 
 
@@ -1460,30 +1484,36 @@ Missing character: There is no т in font cmr12!
 \openout2 = `51-biblio.aux'.
 
  (51-biblio.tex (report.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 1742) in paragraph at lines 52--56
+\T2A/cmtt/m/n/14.4 / / py-[]charm . blogspot . com / 2017 / 09 / pycharm . html
+$[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 []\T2A/cmr/m/n/14.4 Процессор Intel\TS1/cmr/m/n/14.4 ® \T2A/cmr/m/n/14.4 Core\T
 S1/cmr/m/n/14.4 — \T2A/cmr/m/n/14.4 i7-8550U [Элек-трон-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 \T2A/cmr/m/n/14.4 ный ре-сурс].  Ре-жим до-сту-па: []$\T2A/cmtt/m/n/14.4 https 
 : / / ark .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 \T2A/cmtt/m/n/14.4 intel . com / content / www / ru / ru / ark / products / 122
 589 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--54
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 \T2A/cmtt/m/n/14.4 intel-[]core-[]i7-[]8550u-[]processor-[]8m-[]cache-[]up-[]to
 -[]4-[]00-[]ghz . html$[]
  []
 
-)) [19
+)) [22
 
 
 
@@ -1495,36 +1525,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--54
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 06EE9EE966FA693DE98CC7D6E940B915;4311.
+(rerunfilecheck)             Checksum: A674E4988D55C03ECEF34FFC16DAF8FA;4462.
  ) 
 Here is how much of TeX's memory you used:
- 38077 strings out of 478864
- 877375 string characters out of 2858518
- 1307981 words of memory out of 10000000
- 55194 multiletter control sequences out of 15000+600000
- 418942 words of font info for 59 fonts, out of 8000000 for 9000
+ 38416 strings out of 478864
+ 882567 string characters out of 2858518
+ 1665215 words of memory out of 10000000
+ 55424 multiletter control sequences out of 15000+600000
+ 421816 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  106i,19n,102p,1556b,2376s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 ti1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\latt1000.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
-pi600\larm0600.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
-n/ec/dpi600\tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\larm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/
-ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts
-/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\MiKTeX\f
-onts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Local\MiKT
-eX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (20 pages, 465088 bytes).
+0\latt1000.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
+-t2a/dpi600\lasi1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\lass1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\lasx1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\larm0600.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX
+\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\alena\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\alena\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\
+Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\
+AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (23 pages, 515994 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1039 PDF objects out of 1200 (max. 8388607)
+ 172 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

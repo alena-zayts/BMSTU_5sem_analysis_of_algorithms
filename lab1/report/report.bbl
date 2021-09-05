@@ -26,11 +26,33 @@
 \newblock Т.~163.
 \newblock {С.}~845--848.
 
-\bibitem{rustlang}
+\bibitem{PythonBook}
 \selectlanguageifdefined{russian}
-Rust Programming Language [Электронный ресурс].
-\newblock Режим доступа: \url{https://www.rust-lang.org/} (дата
-  обращения: 11.09.2020).
+Лутц~Марк. Изучаем Python, том 1, 5-е изд.
+\newblock Пер. с англ. — СПб.: ООО “Диалектика”,
+  2019.
+\newblock Т.~832.
+
+\bibitem{process_time_text}
+\selectlanguageifdefined{russian}
+time — Time access and conversions [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://docs.python.org/3/library/time.html} (дата
+  обращения: 05.09.2021).
+
+\bibitem{memory_usage_text}
+\selectlanguageifdefined{russian}
+memory-profiler [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://pypi.org/project/memory-profiler/} (дата обращения:
+  05.09.2021).
+
+\bibitem{pycharm}
+\selectlanguageifdefined{russian}
+Python и Pycharm [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://py-charm.blogspot.com/2017/09/pycharm.html} (дата
+  обращения: 05.09.2021).
 
 \bibitem{manjaro}
 \selectlanguageifdefined{russian}
@@ -51,13 +73,5 @@ Linux -- Википедия [Электронный ресурс].
 \newblock Режим доступа:
   \url{https://ark.intel.com/content/www/ru/ru/ark/products/122589/intel-core-i7-8550u-processor-8m-cache-up-to-4-00-ghz.html}
   (дата обращения: 14.09.2020).
-
-\bibitem{rusttest}
-\selectlanguageifdefined{russian}
-Документация по ЯП Rust: бенчмарки
-  [Электронный ресурс].
-\newblock Режим доступа:
-  \url{https://doc.rust-lang.org/1.7.0/book/benchmark-tests.html} (дата
-  обращения: 12.09.2020).
 
 \end{thebibliography}

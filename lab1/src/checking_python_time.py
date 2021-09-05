@@ -1,8 +1,10 @@
 from algorythms import *
+import time
 
 n = 100000
 str1 = 'кот1234567'
 str2 = 'скат1234'
+
 
 def main_function1():
     beg = time.time()

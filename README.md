@@ -25,7 +25,7 @@
 
 (Романов (mRrvz))(7 лаб и ДЗ) https://github.com/mRrvz/bmstu-aa
 
-(NastyRu)(7 лаб) https://github.com/NastyRu/Database
+(NastyRu)(7 лаб) https://github.com/NastyRu/Algorithm_analysis
 
 (7 лаб) https://github.com/Gr1dlock/AnalysisOfAlgorithms
 

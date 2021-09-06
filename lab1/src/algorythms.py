@@ -1,5 +1,7 @@
 from copy import deepcopy
-from memory_profiler import memory_usage
+import string
+import random
+from time import process_time
 
 DEBUG = False
 
@@ -26,7 +28,6 @@ def lowenstein_dist_matrix_classic(str1, str2):
             matrix[i][j] = min(insertion, deletion, replacement)
 
     if DEBUG:
-        print('lowenstein_dist_matrix_classic')
         for line in matrix:
             print(line)
 
@@ -56,7 +57,6 @@ def lowenstein_dist_matrix_optimized(str1, str2):
         matrix[0] = deepcopy(matrix[1])
 
     if DEBUG:
-        print('lowenstein_dist_matrix_optimized')
         for line in matrix:
             print(line)
 
@@ -111,7 +111,6 @@ def lowenstein_dist_recursion_optimized(str1, str2):
     _lowenstein_dist_recursion_optimized(str1, str2, matrix)
 
     if DEBUG:
-        print('lowenstein_dist_recursion_optimized')
         for line in matrix:
             print(line)
 
@@ -136,12 +135,45 @@ def damerau_lowenstein_dist_recursion(str1, str2):
         return min(insertion, deletion, replacement)
 
 
+def random_string(lenght):
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for i in range(lenght))
+
+
+def answer_user():
+    str1 = input('Введите первую строку: ')
+    str2 = input('Введите вторую строку: ')
+
+    print(f'\nЛевенштейн, итерационный.')
+    print('Матрица:')
+    beg = process_time()
+    answer = lowenstein_dist_matrix_classic(str1, str2)
+    end = process_time()
+    print(f'Ответ: {answer}, время: {end-beg}')
+
+    print(f'\nЛевенштейн, рекурсивный без кеша.')
+    beg = process_time()
+    answer = lowenstein_dist_recursion_classic(str1, str2)
+    end = process_time()
+    print(f'Ответ: {answer}, время: {end-beg}')
+
+    print(f'\nЛевенштейн, рекурсивный с кешем.')
+    print('Матрица:')
+    beg = process_time()
+    answer = lowenstein_dist_recursion_optimized(str1, str2)
+    end = process_time()
+    print(f'Ответ: {answer}, время: {end-beg}')
+
+    print(f'\nДамерау-Левенштейн, рекурсивный без кеша.')
+    beg = process_time()
+    answer = damerau_lowenstein_dist_recursion(str1, str2)
+    end = process_time()
+    print(f'Ответ: {answer}, время: {end-beg}')
+
+    print()
+    print()
+
+
 if __name__ == '__main__':
-    n = 11
-    str1 = 'k'*n
-    str2 = 'c'*n
-    x = lowenstein_dist_recursion_classic(str1, str2)
-    print(x)
-    mem_usage = memory_usage((lowenstein_dist_recursion_classic, (str1, str2)))
-    print('Memory usage (in chunks of .1 seconds): %s' % mem_usage)
-    print('Maximum memory usage: %s' % max(mem_usage))
+    while True:
+        answer_user()

@@ -1,11 +1,4 @@
-import string
-import random
 from algorythms import *
-
-
-def random_string(lenght):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(lenght))
 
 
 class TestDistance:

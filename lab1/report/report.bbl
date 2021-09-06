@@ -40,38 +40,11 @@ time — Time access and conversions [Электронный ресурс].
   \url{https://docs.python.org/3/library/time.html} (дата
   обращения: 05.09.2021).
 
-\bibitem{memory_usage_text}
-\selectlanguageifdefined{russian}
-memory-profiler [Электронный ресурс].
-\newblock Режим доступа:
-  \url{https://pypi.org/project/memory-profiler/} (дата обращения:
-  05.09.2021).
-
 \bibitem{pycharm}
 \selectlanguageifdefined{russian}
 Python и Pycharm [Электронный ресурс].
 \newblock Режим доступа:
   \url{https://py-charm.blogspot.com/2017/09/pycharm.html} (дата
   обращения: 05.09.2021).
-
-\bibitem{manjaro}
-\selectlanguageifdefined{russian}
-Manjaro -- enjoy the simplicity [Электронный ресурс].
-\newblock Режим доступа: \url{https://manjaro.org/} (дата
-  обращения: 14.09.2020).
-
-\bibitem{linux}
-\selectlanguageifdefined{russian}
-Linux -- Википедия [Электронный ресурс].
-\newblock Режим доступа: \url{https://ru.wikipedia.org/wiki/Linux}
-  (дата обращения: 14.09.2020).
-
-\bibitem{intel}
-\selectlanguageifdefined{russian}
-Процессор Intel® Core™ i7-8550U [Электронный
-  ресурс].
-\newblock Режим доступа:
-  \url{https://ark.intel.com/content/www/ru/ru/ark/products/122589/intel-core-i7-8550u-processor-8m-cache-up-to-4-00-ghz.html}
-  (дата обращения: 14.09.2020).
 
 \end{thebibliography}

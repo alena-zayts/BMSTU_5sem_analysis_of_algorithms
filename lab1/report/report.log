@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  6 SEP 2021 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  6 SEP 2021 22:37
 entering extended mode
 **./report.tex
 (report.tex
@@ -1184,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=87, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=83, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1329,7 +1329,7 @@ Overfull \hbox (26.84068pt too wide) in paragraph at lines 5--5
  |[]\T2A/cmr/bx/n/20.74 Алгоритмы по-ис-ка рас-сто-я-ния Ле-вен-штей-
  []
 
-<inc/img/l_matrix.png, id=168, 518.93875pt x 1005.7575pt>
+<inc/img/l_matrix.png, id=163, 518.93875pt x 1005.7575pt>
 File: inc/img/l_matrix.png Graphic file (type png)
 <use inc/img/l_matrix.png>
 Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
@@ -1337,7 +1337,7 @@ Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_classic.png, id=171, 645.41125pt x 832.10875pt>
+<inc/img/l_recursion_classic.png, id=166, 645.41125pt x 832.10875pt>
 File: inc/img/l_recursion_classic.png Graphic file (type png)
 <use inc/img/l_recursion_classic.png>
 Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 13
@@ -1346,7 +1346,7 @@ Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 13
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_matrix.png, id=173, 828.09375pt x 1066.98625pt>
+<inc/img/l_recursion_matrix.png, id=168, 828.09375pt x 1066.98625pt>
 File: inc/img/l_recursion_matrix.png Graphic file (type png)
 <use inc/img/l_recursion_matrix.png>
 Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 17.
@@ -1360,7 +1360,7 @@ Overfull \hbox (16.35866pt too wide) in paragraph at lines 17--17
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/Dl_recursion.png, id=175, 765.86125pt x 1062.97125pt>
+<inc/img/Dl_recursion.png, id=170, 765.86125pt x 1062.97125pt>
 File: inc/img/Dl_recursion.png Graphic file (type png)
 <use inc/img/Dl_recursion.png>
 Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 23.
@@ -1411,7 +1411,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/work_example.png, id=329, 253.37518pt x 510.19179pt>
+<inc/img/work_example.png, id=324, 253.37518pt x 510.19179pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
@@ -1422,7 +1422,7 @@ Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
 
 
  <./inc/img/work_example.png>]
-<inc/img/time_all.png, id=337, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=332, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
@@ -1431,7 +1431,7 @@ Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_with_matrix.png, id=339, 462.528pt x 346.896pt>
+<inc/img/time_with_matrix.png, id=334, 462.528pt x 346.896pt>
 File: inc/img/time_with_matrix.png Graphic file (type png)
 <use inc/img/time_with_matrix.png>
 Package pdftex.def Info: inc/img/time_with_matrix.png  used on input line 33.
@@ -1440,7 +1440,7 @@ Package pdftex.def Info: inc/img/time_with_matrix.png  used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_rec_without_cash.png, id=347, 462.528pt x 346.896pt>
+<inc/img/time_rec_without_cash.png, id=342, 462.528pt x 346.896pt>
 File: inc/img/time_rec_without_cash.png Graphic file (type png)
 <use inc/img/time_rec_without_cash.png>
 Package pdftex.def Info: inc/img/time_rec_without_cash.png  used on input line 
@@ -1449,13 +1449,10 @@ Package pdftex.def Info: inc/img/time_rec_without_cash.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_dl.png, id=349, 462.528pt x 346.896pt>
-File: inc/img/time_dl.png Graphic file (type png)
-<use inc/img/time_dl.png>
-Package pdftex.def Info: inc/img/time_dl.png  used on input line 43.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (4.26593pt too wide) in paragraph at lines 47--47
+ |[]\T2A/cmr/bx/n/20.74 Пиковая тре-бу-е-мая ал-го-рит-ма-ми па-мять| 
+ []
 
 
 Overfull \hbox (24.20015pt too wide) in paragraph at lines 49--50
@@ -1463,33 +1460,23 @@ Overfull \hbox (24.20015pt too wide) in paragraph at lines 49--50
 е-рауЛевенштейна
  []
 
-[18 <./inc/img/time_all.png>] [19 <./inc/img/time_with_matrix.png>]
+[18 <./inc/img/time_all.png>]
+Overfull \hbox (1.16113pt too wide) in paragraph at lines 55--56
+[]\T2A/cmr/m/n/14.4 Однако ите-ра-ци-он-ный ал-го-ритм мож-но оп-ти-ми-зи-ро-ва
+ть по па-мя-ти, хра-
+ []
 
-LaTeX Warning: Command \cyrb invalid in math mode on input line 62.
-
-
-LaTeX Warning: Command \cyra invalid in math mode on input line 62.
-
-
-LaTeX Warning: Command \cyrishrt invalid in math mode on input line 62.
-
-
-LaTeX Warning: Command \cyrt invalid in math mode on input line 62.
-
-Missing character: There is no б in font cmr12!
-Missing character: There is no а in font cmr12!
-Missing character: There is no й in font cmr12!
-Missing character: There is no т in font cmr12!
-[20 <./inc/img/time_rec_without_cash.png>]
-Overfull \hbox (15.62878pt too wide) in paragraph at lines 84--85
+[19 <./inc/img/time_with_matrix.png>] [20 <./inc/img/time_rec_without_cash.png>
+]
+Overfull \hbox (15.62878pt too wide) in paragraph at lines 65--66
 []\T2A/cmr/m/n/14.4 Рекурсивные ал-го-рит-мы на-хож-де-ния рас-сто-я-ний Ле-вен
 -штей-на и Дамерау-
  []
 
-[21 <./inc/img/time_dl.png>]) [22]
+) [21]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [23
+ (50-conclusion.tex) [22
 
 
 
@@ -1497,8 +1484,7 @@ Overfull \hbox (15.62878pt too wide) in paragraph at lines 84--85
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex
-(report.bbl
+ (51-biblio.tex (report.bbl
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 40.
 
@@ -1510,7 +1496,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 45--49
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
  []
 
-)) [24
+)) [23
 
 
 
@@ -1519,16 +1505,16 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: DFEEF6116C9CBAD560537B8B1A0590E0;4432.
+(rerunfilecheck)             Checksum: B9E0F844CA8AB567166FECE8F27BD104;4465.
  ) 
 Here is how much of TeX's memory you used:
- 37900 strings out of 478864
- 868760 string characters out of 2858518
+ 37882 strings out of 478864
+ 868424 string characters out of 2858518
  1695215 words of memory out of 10000000
- 54934 multiletter control sequences out of 15000+600000
+ 54921 multiletter control sequences out of 15000+600000
  419835 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,13n,102p,907b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,13n,102p,863b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
@@ -1548,9 +1534,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (25 pages, 639790 bytes).
+Output written on report.pdf (24 pages, 609858 bytes).
 PDF statistics:
- 948 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

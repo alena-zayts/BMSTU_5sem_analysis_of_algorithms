@@ -3,7 +3,6 @@
 \contentsline {chapter}{\numberline {1}Аналитическая часть}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Расстояние Левенштейна}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Расстояние Дамерау-Левенштейна}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Вывод}{5}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Конструкторская часть}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Алгоритмы поиска расстояния Левенштейна}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Алгоритм поиска расстояния Дамерау - Левенштейна}{6}{section.2.2}%
@@ -16,6 +15,6 @@
 \contentsline {section}{\numberline {4.1}Пример работы}{16}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Технические характеристики}{17}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Время выполнения алгоритмов}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Использование памяти}{19}{section.4.4}%
-\contentsline {chapter}{Заключение}{23}{chapter*.13}%
-\contentsline {chapter}{Список использованной литературы}{24}{Item.9}%
+\contentsline {section}{\numberline {4.4}Пиковая требуемая алгоритмами память}{18}{section.4.4}%
+\contentsline {chapter}{Заключение}{22}{chapter*.12}%
+\contentsline {chapter}{Список использованной литературы}{23}{Item.9}%

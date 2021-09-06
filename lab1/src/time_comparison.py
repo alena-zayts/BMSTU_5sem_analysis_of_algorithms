@@ -13,7 +13,7 @@ funcs = [[lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic'],
 strings = [[length, random_string(length), random_string(length)] for length in range(0, 11, 1)] + \
           [[length, random_string(length), random_string(length)] for length in range(20, 201, 10)]
 
-n_repeats = 10
+n_repeats = 15
 stop_recursive = 10
 
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab1/report/inc/img/'
@@ -157,5 +157,5 @@ if __name__ == '__main__':
     #     draw_plots()
     # except:
     #     print('er')
-    # compare()
+    compare()
     draw_plots()

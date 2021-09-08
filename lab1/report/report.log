@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 SEP 2021 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 SEP 2021 19:07
 entering extended mode
 **./report.tex
 (report.tex
@@ -1284,12 +1284,7 @@ o.jpg>])
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \include{01-contents}
-                          [1
+) [2
 
 
 
@@ -1298,7 +1293,7 @@ l.8 \include{01-contents}
 ]
 \openout2 = `02-intro.aux'.
 
- (02-intro.tex) [2
+ (02-intro.tex) [3
 
 
 
@@ -1306,7 +1301,8 @@ l.8 \include{01-contents}
 ]
 \openout2 = `10-analysis.aux'.
 
- (10-analysis.tex
+
+(10-analysis.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 
 Overfull \hbox (28.3816pt too wide) in paragraph at lines 11--12
@@ -1314,12 +1310,24 @@ Overfull \hbox (28.3816pt too wide) in paragraph at lines 11--12
  Да-ме-рауЛевенштейна
  []
 
-[3
+[4
 
 
 
 
-] [4]) [5]
+] [5]
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.73 		\end{array}\\
+                    ,\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [6]
 \openout2 = `20-design.aux'.
 
  (20-design.tex
@@ -1329,52 +1337,47 @@ Overfull \hbox (26.84068pt too wide) in paragraph at lines 5--5
  |[]\T2A/cmr/bx/n/20.74 Алгоритмы по-ис-ка рас-сто-я-ния Ле-вен-штей-
  []
 
-<inc/img/l_matrix.png, id=163, 518.93875pt x 1005.7575pt>
+<inc/img/l_matrix.png, id=164, 519.9425pt x 1005.7575pt>
 File: inc/img/l_matrix.png Graphic file (type png)
 <use inc/img/l_matrix.png>
-Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
-(pdftex.def)             Requested size: 322.97397pt x 625.96062pt.
+Package pdftex.def Info: inc/img/l_matrix.png  used on input line 11.
+(pdftex.def)             Requested size: 259.97061pt x 502.87752pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_classic.png, id=166, 644.4075pt x 832.10875pt>
+<inc/img/l_recursion_classic.png, id=167, 644.4075pt x 832.10875pt>
 File: inc/img/l_recursion_classic.png Graphic file (type png)
 <use inc/img/l_recursion_classic.png>
-Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 13
+Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 25
 .
-(pdftex.def)             Requested size: 396.63766pt x 512.1496pt.
+(pdftex.def)             Requested size: 322.20296pt x 416.05336pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_matrix.png, id=168, 828.09375pt x 1065.9825pt>
+<inc/img/l_recursion_matrix.png, id=169, 828.09375pt x 1065.9825pt>
 File: inc/img/l_recursion_matrix.png Graphic file (type png)
 <use inc/img/l_recursion_matrix.png>
-Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 17.
+Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 39.
 
-(pdftex.def)             Requested size: 486.28403pt x 625.96062pt.
-
-Overfull \hbox (16.81354pt too wide) in paragraph at lines 17--17
- [] 
- []
-
+(pdftex.def)             Requested size: 414.04587pt x 532.98994pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/Dl_recursion.png, id=170, 764.8575pt x 1062.97125pt>
+<inc/img/Dl_recursion.png, id=171, 654.445pt x 922.44624pt>
 File: inc/img/Dl_recursion.png Graphic file (type png)
 <use inc/img/Dl_recursion.png>
-Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 23.
-(pdftex.def)             Requested size: 450.41003pt x 625.96062pt.
+Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 55.
+(pdftex.def)             Requested size: 327.2217pt x 461.22198pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [6
+) [7
 
 
 
 
-] [7 <./inc/img/l_matrix.png>] [8 <./inc/img/l_recursion_classic.png>]
-[9 <./inc/img/l_recursion_matrix.png>] [10 <./inc/img/Dl_recursion.png>]
+] [8 <./inc/img/l_matrix.png>] [9 <./inc/img/l_recursion_classic.png>]
+[10 <./inc/img/l_recursion_matrix.png>] [11 <./inc/img/Dl_recursion.png>]
 \openout2 = `30-impl.aux'.
 
 
@@ -1386,7 +1389,7 @@ Overfull \hbox (4.9353pt too wide) in paragraph at lines 13--14
 едо-став-ля-ет функ-
  []
 
-[11
+[12
 
 
 
@@ -1402,27 +1405,27 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [12] [13]
+) [13] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [14] [15]
+) [15] [16]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/work_example.png, id=324, 253.37518pt x 510.19179pt>
+<inc/img/work_example.png, id=325, 253.37518pt x 510.19179pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
 (pdftex.def)             Requested size: 226.08699pt x 455.24408pt.
-[16
+[17
 
 
 
 
  <./inc/img/work_example.png>]
-<inc/img/time_all.png, id=332, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=333, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
@@ -1431,16 +1434,17 @@ Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_with_matrix.png, id=334, 462.528pt x 346.896pt>
+[18]
+<inc/img/time_with_matrix.png, id=341, 462.528pt x 346.896pt>
 File: inc/img/time_with_matrix.png Graphic file (type png)
 <use inc/img/time_with_matrix.png>
 Package pdftex.def Info: inc/img/time_with_matrix.png  used on input line 33.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-[17]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_rec_without_cash.png, id=342, 462.528pt x 346.896pt>
+<inc/img/time_rec_without_cash.png, id=343, 462.528pt x 346.896pt>
 File: inc/img/time_rec_without_cash.png Graphic file (type png)
 <use inc/img/time_rec_without_cash.png>
 Package pdftex.def Info: inc/img/time_rec_without_cash.png  used on input line 
@@ -1454,29 +1458,11 @@ Overfull \hbox (4.26593pt too wide) in paragraph at lines 47--47
  |[]\T2A/cmr/bx/n/20.74 Пиковая тре-бу-е-мая ал-го-рит-ма-ми па-мять| 
  []
 
-
-Overfull \hbox (24.20015pt too wide) in paragraph at lines 49--50
-[]\T2A/cmr/m/n/14.4 Алгоритмы на-хож-де-ния рас-сто-я-ний Ле-вен-штей-на и Да-м
-е-рауЛевенштейна
- []
-
-[18 <./inc/img/time_all.png>]
-Overfull \hbox (1.16113pt too wide) in paragraph at lines 55--56
-[]\T2A/cmr/m/n/14.4 Однако ите-ра-ци-он-ный ал-го-ритм мож-но оп-ти-ми-зи-ро-ва
-ть по па-мя-ти, хра-
- []
-
-[19 <./inc/img/time_with_matrix.png>] [20 <./inc/img/time_rec_without_cash.png>
-]
-Overfull \hbox (15.62878pt too wide) in paragraph at lines 65--66
-[]\T2A/cmr/m/n/14.4 Рекурсивные ал-го-рит-мы на-хож-де-ния рас-сто-я-ний Ле-вен
--штей-на и Дамерау-
- []
-
-) [21]
+[19 <./inc/img/time_all.png>] [20 <./inc/img/time_with_matrix.png>] [21 <./inc/
+img/time_rec_without_cash.png>]) [22]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [22
+ (50-conclusion.tex) [23
 
 
 
@@ -1484,7 +1470,8 @@ Overfull \hbox (15.62878pt too wide) in paragraph at lines 65--66
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex (report.bbl
+ (51-biblio.tex
+(report.bbl
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 40.
 
@@ -1496,7 +1483,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 45--49
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
  []
 
-)) [23
+)) [24
 
 
 
@@ -1504,17 +1491,20 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
 ] (report.aux (00-title.aux) (01-contents.aux) (02-intro.aux)
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: B9E0F844CA8AB567166FECE8F27BD104;4465.
  ) 
 Here is how much of TeX's memory you used:
- 37882 strings out of 478864
- 868424 string characters out of 2858518
+ 37869 strings out of 478864
+ 867970 string characters out of 2858518
  1695215 words of memory out of 10000000
- 54921 multiletter control sequences out of 15000+600000
+ 54906 multiletter control sequences out of 15000+600000
  419835 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,13n,102p,863b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,13n,102p,865b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
@@ -1534,9 +1524,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (24 pages, 607911 bytes).
+Output written on report.pdf (24 pages, 595306 bytes).
 PDF statistics:
- 926 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
+ 925 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

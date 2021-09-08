@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  6 SEP 2021 22:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 SEP 2021 12:38
 entering extended mode
 **./report.tex
 (report.tex
@@ -1337,34 +1337,34 @@ Package pdftex.def Info: inc/img/l_matrix.png  used on input line 9.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_classic.png, id=166, 645.41125pt x 832.10875pt>
+<inc/img/l_recursion_classic.png, id=166, 644.4075pt x 832.10875pt>
 File: inc/img/l_recursion_classic.png Graphic file (type png)
 <use inc/img/l_recursion_classic.png>
 Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 13
 .
-(pdftex.def)             Requested size: 397.25548pt x 512.1496pt.
+(pdftex.def)             Requested size: 396.63766pt x 512.1496pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/l_recursion_matrix.png, id=168, 828.09375pt x 1066.98625pt>
+<inc/img/l_recursion_matrix.png, id=168, 828.09375pt x 1065.9825pt>
 File: inc/img/l_recursion_matrix.png Graphic file (type png)
 <use inc/img/l_recursion_matrix.png>
 Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 17.
 
-(pdftex.def)             Requested size: 485.82915pt x 625.96062pt.
+(pdftex.def)             Requested size: 486.28403pt x 625.96062pt.
 
-Overfull \hbox (16.35866pt too wide) in paragraph at lines 17--17
+Overfull \hbox (16.81354pt too wide) in paragraph at lines 17--17
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/Dl_recursion.png, id=170, 765.86125pt x 1062.97125pt>
+<inc/img/Dl_recursion.png, id=170, 764.8575pt x 1062.97125pt>
 File: inc/img/Dl_recursion.png Graphic file (type png)
 <use inc/img/Dl_recursion.png>
 Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 23.
-(pdftex.def)             Requested size: 451.00113pt x 625.96062pt.
+(pdftex.def)             Requested size: 450.41003pt x 625.96062pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1534,9 +1534,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (24 pages, 609858 bytes).
+Output written on report.pdf (24 pages, 607911 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
+ 926 PDF objects out of 1000 (max. 8388607)
  156 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

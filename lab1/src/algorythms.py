@@ -3,7 +3,7 @@ import string
 import random
 from time import process_time
 
-DEBUG = False
+DEBUG = True
 
 
 def lowenstein_dist_matrix_classic(str1, str2):
@@ -28,6 +28,7 @@ def lowenstein_dist_matrix_classic(str1, str2):
             matrix[i][j] = min(insertion, deletion, replacement)
 
     if DEBUG:
+        print('Матрица:')
         for line in matrix:
             print(line)
 
@@ -57,6 +58,7 @@ def lowenstein_dist_matrix_optimized(str1, str2):
         matrix[0] = deepcopy(matrix[1])
 
     if DEBUG:
+        print('Матрица:')
         for line in matrix:
             print(line)
 
@@ -111,6 +113,7 @@ def lowenstein_dist_recursion_optimized(str1, str2):
     _lowenstein_dist_recursion_optimized(str1, str2, matrix)
 
     if DEBUG:
+        print('Матрица:')
         for line in matrix:
             print(line)
 
@@ -145,7 +148,6 @@ def answer_user():
     str2 = input('Введите вторую строку: ')
 
     print(f'\nЛевенштейн, итерационный.')
-    print('Матрица:')
     beg = process_time()
     answer = lowenstein_dist_matrix_classic(str1, str2)
     end = process_time()
@@ -158,7 +160,6 @@ def answer_user():
     print(f'Ответ: {answer}, время: {end-beg}')
 
     print(f'\nЛевенштейн, рекурсивный с кешем.')
-    print('Матрица:')
     beg = process_time()
     answer = lowenstein_dist_recursion_optimized(str1, str2)
     end = process_time()

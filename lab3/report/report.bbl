@@ -7,24 +7,36 @@
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
 
-\bibitem{Passenger}
+\bibitem{first_book}
 \selectlanguageifdefined{russian}
-В. М.~Черненький~Ю. Е.~Гапанюк. МЕТОДИКА
-  ИДЕНТИФИКАЦИИ ПАССАЖИРА ПО УСТАНОВОЧНЫМ
-  ДАННЫМ~// Вестник МГТУ им. Н.Э. Баумана. Сер.
-  “Приборостроение”.
-\newblock 2012.
-\newblock Т.~39.
-\newblock {С.}~31--35.
+Д.В.~Шагбазян. Алгоритмы сортировки. Анализ,
+  реализация, применение.
+\newblock Нижний Новгород: Нижегородский
+  госуниверситет, 2019.
+\newblock Т.~42.
 
-\bibitem{Levenshtein}
+\bibitem{first_article}
 \selectlanguageifdefined{russian}
-Левенштейн~В.~И. Двоичные коды с
-  исправлением выпадений, вставок и
-  замещений символов.
-\newblock -- М.: Доклады АН СССР, 1965.
-\newblock Т.~163.
-\newblock {С.}~845--848.
+Лекция 43: Алгоритмы сортировки массивов.
+  Внутренняя сортировка [Электронный
+  ресурс].
+\newblock Режим доступа:
+  \url{https://intuit.ru/studies/courses/648/504/lecture/11472} (дата
+  обращения: 13.09.2021).
+
+\bibitem{article_insert}
+\selectlanguageifdefined{russian}
+Сортировка вставками [Электронный ресурс].
+\newblock Режим доступа: \url{http://cppstudio.com/post/462/}
+  (дата обращения: 13.09.2021).
+
+\bibitem{shaker_sort}
+\selectlanguageifdefined{russian}
+Алгоритм сортировки перемешиванием
+  [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://space-base.ru/library/algoritm/algoritm-sortirovki-peremeshivaniem-shejkernaya-dvunapravlennaya-puzyirkovaya}
+  (дата обращения: 13.09.2021).
 
 \bibitem{PythonBook}
 \selectlanguageifdefined{russian}

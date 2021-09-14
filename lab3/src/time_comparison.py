@@ -79,7 +79,8 @@ def draw_plot_all():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
+    plt.grid()
 
     plt.plot(df['N'], df['insertion_best'], label='insertion_best')
     plt.plot(df['N'], df['bubble_best'], label='bubble_best')
@@ -102,7 +103,7 @@ def draw_plot_insertion():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['insertion_best'], label='insertion_best')
     plt.plot(df['N'], df['insertion_worst'], label='insertion_worst')
@@ -117,7 +118,7 @@ def draw_plot_bubble():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['bubble_best'], label='bubble_best')
     plt.plot(df['N'], df['bubble_worst'], label='bubble_worst')
@@ -132,7 +133,7 @@ def draw_plot_shaker():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['shaker_best'], label='shaker_best')
     plt.plot(df['N'], df['shaker_worst'], label='shaker_worst')
@@ -147,7 +148,7 @@ def draw_plot_best():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['insertion_best'], label='insertion_best')
     plt.plot(df['N'], df['bubble_best'], label='bubble_best')
@@ -162,7 +163,7 @@ def draw_plot_worst():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['insertion_worst'], label='insertion_worst')
     plt.plot(df['N'], df['bubble_worst'], label='bubble_worst')
@@ -177,7 +178,7 @@ def draw_plot_middle():
     df = pd.read_excel(time_file)
 
     plt.xlabel('Длина массива')
-    plt.ylabel('Время работы алгоритма')
+    plt.ylabel('Время работы реализации (c)')
 
     plt.plot(df['N'], df['insertion_middle'], label='insertion_middle')
     plt.plot(df['N'], df['bubble_middle'], label='bubble_middle')

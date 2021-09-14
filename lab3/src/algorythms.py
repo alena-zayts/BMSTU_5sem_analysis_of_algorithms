@@ -42,8 +42,8 @@ def shaker_sort(arr, n):
 
 
 def answer_user():
-    #arr = list(map(int, input('Введите массив (в одну строку):\n ').split()))
-    arr = list(range(5000, 0, -1))
+    arr = list(map(int, input('Введите массив целых чисел (в одну строку, через пробелы):\n ').split()))
+    # arr = list(range(5000, 0, -1))
 
     print(f'\nПузырьковая сортировка:')
     print('До:')

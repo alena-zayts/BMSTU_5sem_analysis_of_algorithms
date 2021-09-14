@@ -5,6 +5,7 @@ from copy import deepcopy
 tests_dict = {
     'empty': [],
     'one_elem': [1],
+    'same': [4, 4, 4, ],
     'sorted_10': list(range(10)),
     'sorted_back_10': list(range(9, -1, -1)),
     'random': [random.randint(0, 10) for i in range(10)]

@@ -80,6 +80,10 @@ def answer_user():
 
 
 if __name__ == '__main__':
+    ф = 2
+    к = 3
+    р = ф + к
+    print(р)
     while True:
         answer_user()
 

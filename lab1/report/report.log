@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 SEP 2021 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  15 SEP 2021 17:43
 entering extended mode
 **./report.tex
 (report.tex
@@ -1425,12 +1425,15 @@ Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
 
 
  <./inc/img/work_example.png>]
+Overfull \hbox (0.36998pt too wide) in paragraph at lines 21--21
+ |[]\T2A/cmr/bx/n/20.74 ¬рем€ вы-пол-не-ни€ ре-а-ли-за-ций ал-го-рит-
+ []
+
 <inc/img/time_all.png, id=333, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1492,15 +1495,18 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: B9E0F844CA8AB567166FECE8F27BD104;4465.
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: EBE73FE3F7B2C6E61E88F91462738726;4484
+(rerunfilecheck)             After:  02C746D3503C43B0BD66826BEF40A33C;4553.
  ) 
 Here is how much of TeX's memory you used:
  37869 strings out of 478864
  867970 string characters out of 2858518
- 1695215 words of memory out of 10000000
+ 1695216 words of memory out of 10000000
  54906 multiletter control sequences out of 15000+600000
  419835 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1524,7 +1530,7 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (24 pages, 595306 bytes).
+Output written on report.pdf (24 pages, 595338 bytes).
 PDF statistics:
  925 PDF objects out of 1000 (max. 8388607)
  158 named destinations out of 1000 (max. 500000)

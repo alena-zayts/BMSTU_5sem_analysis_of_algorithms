@@ -14,7 +14,7 @@
 \contentsline {chapter}{\numberline {4}Исследовательская часть}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Пример работы}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Технические характеристики}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Время выполнения алгоритмов}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Время выполнения реализаций алгоритмов}{18}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Пиковая требуемая алгоритмами память}{19}{section.4.4}%
 \contentsline {chapter}{Заключение}{23}{chapter*.12}%
 \contentsline {chapter}{Список использованной литературы}{24}{Item.9}%

@@ -127,12 +127,12 @@ def damerau_lowenstein_dist_recursion(str1, str2):
     elif not str2:
         return len(str1)
 
-    insertion = lowenstein_dist_recursion_classic(str1, str2[:-1]) + 1
-    deletion = lowenstein_dist_recursion_classic(str1[:-1], str2) + 1
-    replacement = lowenstein_dist_recursion_classic(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
+    insertion = damerau_lowenstein_dist_recursion(str1, str2[:-1]) + 1
+    deletion = damerau_lowenstein_dist_recursion(str1[:-1], str2) + 1
+    replacement = damerau_lowenstein_dist_recursion(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
 
-    if len(str1) > 1 and len(str2) > 1 and str1[-1] == str2[-2] and str1[-2] == str2[-1]:
-        xchange = lowenstein_dist_recursion_classic(str1[:-2], str2[:-2]) + 1
+    if (len(str1) > 1) and (len(str2) > 1) and (str1[-1] == str2[-2]) and (str1[-2] == str2[-1]):
+        xchange = damerau_lowenstein_dist_recursion(str1[:-2], str2[:-2]) + 1
         return min(insertion, deletion, replacement, xchange)
     else:
         return min(insertion, deletion, replacement)
@@ -144,6 +144,8 @@ def random_string(lenght):
 
 
 def answer_user():
+    # str1 = 'йцукен'
+    # str2 = 'йыуекн'
     str1 = input('Введите первую строку: ')
     str2 = input('Введите вторую строку: ')
 

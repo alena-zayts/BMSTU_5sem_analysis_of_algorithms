@@ -12,10 +12,11 @@
 \contentsline {section}{\numberline {3.1}Требования к ПО}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Выбор средств реализации}{9}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Листинги кода}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Тестирование}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Тестирование}{10}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Исследовательская часть}{12}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Пример работы}{12}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Технические характеристики}{13}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Сравнение времени выполнения реализаций алгоритмов}{13}{section.4.3}%
-\contentsline {chapter}{Заключение}{18}{chapter*.15}%
-\contentsline {chapter}{Список использованной литературы}{19}{Item.8}%
+\contentsline {section}{\numberline {4.4}Сравнение трудоемкости реализаций алгоритмов}{14}{section.4.4}%
+\contentsline {chapter}{Заключение}{19}{chapter*.15}%
+\contentsline {chapter}{Список использованной литературы}{20}{Item.8}%

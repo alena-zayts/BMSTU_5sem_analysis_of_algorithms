@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  14 SEP 2021 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  18 SEP 2021 23:23
 entering extended mode
 **./report.tex
 (report.tex
@@ -1184,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=87, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=91, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1319,7 +1319,7 @@ Overfull \hbox (1.34047pt too wide) in paragraph at lines 6--7
 
  (20-design.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<inc/img/insertion.png, id=154, 143.53625pt x 956.57375pt>
+<inc/img/insertion.png, id=159, 143.53625pt x 956.57375pt>
 File: inc/img/insertion.png Graphic file (type png)
 <use inc/img/insertion.png>
 Package pdftex.def Info: inc/img/insertion.png  used on input line 11.
@@ -1329,7 +1329,7 @@ Overfull \hbox (5.79239pt too wide) in paragraph at lines 19--19
  |[]\T2A/cmr/bx/n/20.74 —хема ал-го-рит-ма сор-ти-ров-ки пу-зырь-ком| 
  []
 
-<inc/img/bubble.png, id=157, 296.10625pt x 926.46124pt>
+<inc/img/bubble.png, id=162, 296.10625pt x 926.46124pt>
 File: inc/img/bubble.png Graphic file (type png)
 <use inc/img/bubble.png>
 Package pdftex.def Info: inc/img/bubble.png  used on input line 25.
@@ -1340,7 +1340,7 @@ Package pdftex.def Info: inc/img/bubble.png  used on input line 25.
 
 
  <./inc/img/insertion.png>]
-<inc/img/shaker.png, id=165, 335.2525pt x 1297.84875pt>
+<inc/img/shaker.png, id=170, 335.2525pt x 1297.84875pt>
 File: inc/img/shaker.png Graphic file (type png)
 <use inc/img/shaker.png>
 Package pdftex.def Info: inc/img/shaker.png  used on input line 39.
@@ -1364,9 +1364,6 @@ Overfull \hbox (4.9353pt too wide) in paragraph at lines 13--14
 едо-став-л€-ет функ-
  []
 
-
-LaTeX Warning: Reference `shaker_list' on page 9 undefined on input line 19.
-
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
 22.
 (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
@@ -1382,12 +1379,16 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [10]) [11]
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [10] [11]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/work_example.png, id=238, 360.48964pt x 366.51215pt>
+<inc/img/work_example.png, id=244, 360.48964pt x 366.51215pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
@@ -1398,69 +1399,78 @@ Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
 
 
  <./inc/img/work_example.png>]
-<inc/img/time_all.png, id=246, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=252, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 30.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 31.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_best.png, id=249, 462.528pt x 346.896pt>
+<inc/img/time_best.png, id=255, 462.528pt x 346.896pt>
 File: inc/img/time_best.png Graphic file (type png)
 <use inc/img/time_best.png>
-Package pdftex.def Info: inc/img/time_best.png  used on input line 36.
+Package pdftex.def Info: inc/img/time_best.png  used on input line 37.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_worst.png, id=250, 462.528pt x 346.896pt>
+<inc/img/time_worst.png, id=256, 462.528pt x 346.896pt>
 File: inc/img/time_worst.png Graphic file (type png)
 <use inc/img/time_worst.png>
-Package pdftex.def Info: inc/img/time_worst.png  used on input line 38.
+Package pdftex.def Info: inc/img/time_worst.png  used on input line 39.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_middle.png, id=251, 462.528pt x 346.896pt>
+<inc/img/time_middle.png, id=257, 462.528pt x 346.896pt>
 File: inc/img/time_middle.png Graphic file (type png)
 <use inc/img/time_middle.png>
-Package pdftex.def Info: inc/img/time_middle.png  used on input line 40.
+Package pdftex.def Info: inc/img/time_middle.png  used on input line 41.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_insertion.png, id=254, 462.528pt x 346.896pt>
+<inc/img/time_insertion.png, id=260, 462.528pt x 346.896pt>
 File: inc/img/time_insertion.png Graphic file (type png)
 <use inc/img/time_insertion.png>
-Package pdftex.def Info: inc/img/time_insertion.png  used on input line 46.
+Package pdftex.def Info: inc/img/time_insertion.png  used on input line 47.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_bubble.png, id=255, 462.528pt x 346.896pt>
+<inc/img/time_bubble.png, id=261, 462.528pt x 346.896pt>
 File: inc/img/time_bubble.png Graphic file (type png)
 <use inc/img/time_bubble.png>
-Package pdftex.def Info: inc/img/time_bubble.png  used on input line 48.
+Package pdftex.def Info: inc/img/time_bubble.png  used on input line 49.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/time_shaker.png, id=256, 462.528pt x 346.896pt>
+<inc/img/time_shaker.png, id=262, 462.528pt x 346.896pt>
 File: inc/img/time_shaker.png Graphic file (type png)
 <use inc/img/time_shaker.png>
-Package pdftex.def Info: inc/img/time_shaker.png  used on input line 50.
+Package pdftex.def Info: inc/img/time_shaker.png  used on input line 51.
 (pdftex.def)             Requested size: 379.38832pt x 284.52756pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13] [14 <./inc/img/time_all.png>]) [15 <./inc/img/time_best.png> <./inc/img/ti
-me_worst.png>] [16 <./inc/img/time_middle.png> <./inc/img/time_insertion.png>]
-[17 <./inc/img/time_bubble.png> <./inc/img/time_shaker.png>]
+
+Overfull \hbox (2.92715pt too wide) in paragraph at lines 55--55
+ |[]\T2A/cmr/bx/n/20.74 —равнение тру-до-ем-ко-сти ре-а-ли-за-ций ал-
+ []
+
+[13] [14 <./inc/img/time_all.png>]
+Overfull \vbox (23.31976pt too high) has occurred while \output is active []
+
+
+[15 <./inc/img/time_best.png> <./inc/img/time_worst.png>] [16 <./inc/img/time_m
+iddle.png> <./inc/img/time_insertion.png>] [17 <./inc/img/time_bubble.png> <./i
+nc/img/time_shaker.png>]) [18]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [18
+ (50-conclusion.tex) [19
 
 
 
@@ -1468,7 +1478,8 @@ me_worst.png>] [16 <./inc/img/time_middle.png> <./inc/img/time_insertion.png>]
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex (report.bbl
+ (51-biblio.tex
+(report.bbl
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 24.
 
@@ -1498,7 +1509,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 57--61
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
  []
 
-)) [19
+)) [20
 
 
 
@@ -1506,20 +1517,17 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
 ] (report.aux (00-title.aux) (01-contents.aux) (02-intro.aux)
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: ED141A81CF561E1B2218E4AB931774A8;4654.
+(rerunfilecheck)             Checksum: F070BFA341630DE80EF526FD65086AC2;5061.
  ) 
 Here is how much of TeX's memory you used:
- 37841 strings out of 478864
- 867535 string characters out of 2858518
- 1676216 words of memory out of 10000000
+ 37844 strings out of 478864
+ 867567 string characters out of 2858518
+ 1670216 words of memory out of 10000000
  54934 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,8n,102p,1251b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,8n,102p,1314b,2038s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
@@ -1532,10 +1540,16 @@ k/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\MiKTeX
 \fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk>
-Output written on report.pdf (19 pages, 530505 bytes).
+l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (20 pages, 598536 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

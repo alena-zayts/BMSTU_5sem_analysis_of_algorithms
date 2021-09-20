@@ -1,0 +1,158 @@
+\chapter{Технологическая часть}
+
+В данном разделе производится выбор средств реализации, а также приводятся требования к программному обеспечению (ПО), листинги реализованных алгоритмов и тесты для программы.
+
+\section{Требования к ПО}
+
+На вход программе подаются две строки (регистрозависимые), а на выходе должно быть получено искомое расстояние, посчитанное с помощью каждого реализованного алгоритма: для расстояния Левенштейна - итерационный и рекурсивный (с кешем и без), а для расстояния Дамерау-Левенштейна - рекурсивный без кеша. Также необходимо вывести затраченное каждым алгоритмом процессорное время.
+
+\section{Выбор средств реализации}
+
+В качестве языка программирования для реализации данной лабораторной работы был выбран язык Python  \cite{PythonBook}. Он позволяет быстро реализовывать различные алгоритмы без выделения большого времени на проектирование сруктуры программы и выбор типов данных. 
+
+Кроме того, в Python есть библиотека time, которая предоставляет функцию process\_time для замера процессорного времени \cite{process_time_text}.
+
+В качестве среды разработки выбран PyCharm. Он является кросс-платформенным, а также предоставляет удобный и функциональнаый отладчик и средства для рефакторинга кода, что позволяет быстро находить и исправлять ошибки \cite{pycharm}.
+
+\section{Листинги кода}
+
+В листингах \ref{lev_matrix} - \ref{dlev_recursion} представлены реализации рассматриваемых алгоритмов.
+
+\begin{lstlisting}[caption=Функция поиска расстояния Левенштейна с заполнением матрицы расстояний,
+	label={lev_matrix}]
+	def lowenstein_dist_matrix_classic(str1, str2):
+		# +1 because of an empty string
+		n = len(str1) + 1
+		m = len(str2) + 1
+			matrix = [[0 for i in range(m)] for j in range(n)]  # MATCH
+		
+		# fill with trivial rules
+		for i in range(1, n):
+			matrix[i][0] = i  # DELETION
+		for j in range(1, m):
+			matrix[0][j] = j  # INSERTION
+		
+		# fill the rest of the matrix
+		for i in range(1, n):
+			for j in range(1, m):
+				insertion = matrix[i][j - 1] + 1
+				deletion = matrix[i - 1][j] + 1
+				replacement = matrix[i - 1][j - 1] + int(str1[i - 1] != str2[j - 1])
+				
+				matrix[i][j] = min(insertion, deletion, replacement)
+		
+		
+		return matrix[n - 1][m - 1]
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption=Функция рекурсивного алгоритма поиска расстояния Левенштейна без кеширования,
+	label={lev_recursion_classic}]
+	def lowenstein_dist_recursion_classic(str1, str2):
+		# trivial rules
+		if not str1:
+			return len(str2)
+		elif not str2:
+			return len(str1)
+		
+		insertion = lowenstein_dist_recursion_classic(str1, str2[:-1]) + 1
+		deletion = lowenstein_dist_recursion_classic(str1[:-1], str2) + 1
+		replacement = lowenstein_dist_recursion_classic(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
+		
+		return min(insertion, deletion, replacement)
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Функция рекурсивного алгоритма поиска расстояния Левенштейна c кешированием,
+	label={lev_recursion_optimized}]
+	def lowenstein_dist_recursion_optimized(str1, str2):
+		def _lowenstein_dist_recursion_optimized(str1, str2, matrix):
+			len1 = len(str1)
+			len2 = len(str2)
+			
+			# trivial rules
+			if not len1:
+				matrix[len1][len2] = len2
+			elif not len2:
+				matrix[len1][len2] = len1
+			else:
+				# insertion
+				if matrix[len1][len2 - 1] == -1:
+					_lowenstein_dist_recursion_optimized(str1, str2[:-1], matrix)
+				# deletion
+				if matrix[len1 - 1][len2] == -1:
+					_lowenstein_dist_recursion_optimized(str1[:-1], str2, matrix)
+				# replacement
+				if matrix[len1 - 1][len2 - 1] == -1:
+					_lowenstein_dist_recursion_optimized(str1[:-1], str2[:-1], matrix)
+				
+				matrix[len1][len2] = min(matrix[len1][len2 - 1] + 1,
+				matrix[len1 - 1][len2] + 1,
+				matrix[len1 - 1][len2 - 1] + int(str1[-1] != str2[-1]))
+		
+		# +1 because of an empty string
+		n = len(str1) + 1
+		m = len(str2) + 1
+		matrix = [[-1 for i in range(m)] for j in range(n)]
+		_lowenstein_dist_recursion_optimized(str1, str2, matrix)
+		
+		return matrix[n - 1][m - 1]
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Функция рекурсивного алгоритма поиска расстояния Дамерау-Левенштейна,
+	label={dlev_recursion}]
+	def damerau_lowenstein_dist_recursion(str1, str2):
+		# trivial rules
+		if not str1:
+			return len(str2)
+		elif not str2:
+			return len(str1)
+		
+		insertion = lowenstein_dist_recursion_classic(str1, str2[:-1]) + 1
+		deletion = lowenstein_dist_recursion_classic(str1[:-1], str2) + 1
+		replacement = lowenstein_dist_recursion_classic(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
+		
+		if len(str1) > 1 and len(str2) > 1 and str1[-1] == str2[-2] and str1[-2] == str2[-1]:
+			xchange = lowenstein_dist_recursion_classic(str1[:-2], str2[:-2]) + 1
+			return min(insertion, deletion, replacement, xchange)
+		else:
+			return min(insertion, deletion, replacement)
+\end{lstlisting}
+
+\section{Тестирование}
+
+В таблице \ref{test} приведены функциональные тесты для алгоритмов вычисления расстояний Левенштейна и Дамерау — Левенштейна (в таблице приняты обозначения: РЛ - алгоритм поиска расстояния Левенштейна, РДЛ - алгоритм поиска рассотяния Дамерау-Левенштейна). Все тесты пройдены успешно.
+
+\begin{table}[h]
+	\begin{center}
+		\caption{\label{test} Тесты}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			&                    & \multicolumn{2}{c|}{\bfseries Ожидаемый результат}    \\ \cline{3-4}\hline
+			Строка 1& Строка 2 & РЛ & РДЛ \\ [0.5ex] 
+			\hline
+			 &  & 0 & 0\\
+			\hline
+			abc & abc & 0 & 0\\
+			\hline
+			ab & a & 1 & 1\\
+			\hline
+			a & ab & 1 & 1\\
+			\hline
+			see & sea & 1 & 1\\
+			\hline
+			1234 & 1324 & 2 & 1\\
+			\hline
+			hello & ehlla & 3 & 2\\
+			\hline
+			cat & pop & 3 & 3\\
+			\hline
+			кот & скат & 2 & 2\\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+\section*{Вывод}
+
+Был производен выбор средств реализации, реализованы и протестированы алгоритмы поиска расстояний: Левенштейна - итерационный и рекурсивный (с кешем и без), Дамерау-Левенштейна - рекурсивный без кеша

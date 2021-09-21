@@ -7,24 +7,27 @@
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
 
-\bibitem{Passenger}
+\bibitem{matrix}
 \selectlanguageifdefined{russian}
-В. М.~Черненький~Ю. Е.~Гапанюк. МЕТОДИКА
-  ИДЕНТИФИКАЦИИ ПАССАЖИРА ПО УСТАНОВОЧНЫМ
-  ДАННЫМ~// Вестник МГТУ им. Н.Э. Баумана. Сер.
-  “Приборостроение”.
-\newblock 2012.
-\newblock Т.~39.
-\newblock {С.}~31--35.
+Матрица, ее история и применение
+  [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://urok.1sept.ru/articles/637896} (дата обращения:
+  20.09.2021).
 
-\bibitem{Levenshtein}
+\bibitem{matrix2}
 \selectlanguageifdefined{russian}
-Левенштейн~В.~И. Двоичные коды с
-  исправлением выпадений, вставок и
-  замещений символов.
-\newblock -- М.: Доклады АН СССР, 1965.
-\newblock Т.~163.
-\newblock {С.}~845--848.
+Перемножение матриц [Электронный ресурс].
+\newblock Режим доступа: \url{https://dic.academic.ru/dic.nsf/}
+  (дата обращения: 20.09.2021).
+
+\bibitem{vino}
+\selectlanguageifdefined{russian}
+Умножение матриц по Винограду [Электронный
+  ресурс].
+\newblock Режим доступа:
+  \url{http://algolib.narod.ru/Math/Matrix.html} (дата обращения:
+  20.09.2021).
 
 \bibitem{PythonBook}
 \selectlanguageifdefined{russian}

@@ -1,177 +1,139 @@
 from copy import deepcopy
-import string
-import random
 from time import process_time
 
-DEBUG = True
+debug = False
+
+def standart_mult(a, b, c, m, n, q):
+    for i in range(m):
+        for j in range(q):
+            for k in range(n):
+                c[i][j] = c[i][j] + a[i][k] * b[k][j]
+    return c
 
 
-def lowenstein_dist_matrix_classic(str1, str2):
-    # +1 because of an empty string
-    n = len(str1) + 1
-    m = len(str2) + 1
-    matrix = [[0 for i in range(m)] for j in range(n)]  # MATCH
+def vinograd_usual_mult(a, b, c, m, n, q):
+    mulh = [0 for i in range(m)]
+    for i in range(m):
+        for k in range(n//2):
+            mulh[i] = mulh[i] + a[i][k * 2] * a[i][k * 2 + 1]
 
-    # fill with trivial rules
-    for i in range(1, n):
-        matrix[i][0] = i  # DELETION
-    for j in range(1, m):
-        matrix[0][j] = j  # INSERTION
+    mulv = [0 for i in range(q)]
+    for i in range(q):
+        for k in range(n//2):
+            mulv[i] = mulv[i] + b[k * 2][i] * b[k * 2 + 1][i]
 
-    # fill the rest of the matrix
-    for i in range(1, n):
-        for j in range(1, m):
-            insertion = matrix[i][j - 1] + 1
-            deletion = matrix[i - 1][j] + 1
-            replacement = matrix[i - 1][j - 1] + int(str1[i - 1] != str2[j - 1])
+    for i in range(m):
+        for j in range(q):
+            c[i][j] = -mulh[i] - mulv[j]
+            for k in range(n//2):
+                c[i][j] = c[i][j] + (a[i][k * 2] + b[2 * k + 1][j]) * (a[i][2 * k + 1] + b[2 * k][j])
 
-            matrix[i][j] = min(insertion, deletion, replacement)
+    if n % 2:
+        for i in range(m):
+            for j in range(q):
+                c[i][j] = c[i][j] + a[i][n - 1] * b[n - 1][j]
 
-    if DEBUG:
-        print('Матрица:')
-        for line in matrix:
-            print(line)
-
-    return matrix[n - 1][m - 1]
+    return c
 
 
-def lowenstein_dist_matrix_optimized(str1, str2):
-    # +1 because of an empty string
-    n = len(str1) + 1
-    m = len(str2) + 1
-    matrix = [[0 for i in range(m)] for j in range(2)]  # MATCH
+# 1) замена k < n//2, k++, *2 в цикле  на  k < n, k += 2, ничего. При этом заранее n-=1 и в 4 действии отсутствие -1
+# 2) замена всех a = a +.. на a+=
+# 3) замена в mulh += на -= и тогда c[i][j] = mulh[i] - mulv[j]
+def vinograd_optimized_mult(a, b, c, m, n, q):
+    n -= 1
+    mulh = [0 for i in range(m)]
+    for i in range(m):
+        for k in range(0, n, 2):
+            mulh[i] -= a[i][k] * a[i][k + 1]
 
-    # fill with trivial rules
-    for j in range(1, m):
-        matrix[0][j] = j  # INSERTION
+    mulv = [0 for i in range(q)]
+    for i in range(q):
+        for k in range(0, n, 2):
+            mulv[i] += b[k][i] * b[k + 1][i]
 
-    # fill the rest of the matrix
-    for i in range(1, n):
-        matrix[1][0] = i
-        for j in range(1, m):
-            insertion = matrix[1][j - 1] + 1
-            deletion = matrix[0][j] + 1
-            replacement = matrix[0][j - 1] + int(str1[i - 1] != str2[j - 1])
+    for i in range(m):
+        for j in range(q):
+            c[i][j] = mulh[i] - mulv[j]
+            for k in range(0, n, 2):
+                c[i][j] += ((a[i][k] + b[k + 1][j]) * (a[i][k + 1] + b[k][j]))
 
-            matrix[1][j] = min(insertion, deletion, replacement)
+    if (n % 2) == 0:
+        for i in range(m):
+            for j in range(q):
+                c[i][j] += a[i][n] * b[n][j]
 
-        matrix[0] = deepcopy(matrix[1])
-
-    if DEBUG:
-        print('Матрица:')
-        for line in matrix:
-            print(line)
-
-    return matrix[0][m - 1]
-
-
-def lowenstein_dist_recursion_classic(str1, str2):
-    # trivial rules
-    if not str1:
-        return len(str2)
-    elif not str2:
-        return len(str1)
-
-    insertion = lowenstein_dist_recursion_classic(str1, str2[:-1]) + 1
-    deletion = lowenstein_dist_recursion_classic(str1[:-1], str2) + 1
-    replacement = lowenstein_dist_recursion_classic(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
-
-    return min(insertion, deletion, replacement)
+    return c
 
 
-def lowenstein_dist_recursion_optimized(str1, str2):
-    def _lowenstein_dist_recursion_optimized(str1, str2, matrix):
-        len1 = len(str1)
-        len2 = len(str2)
-
-        # trivial rules
-        if not len1:
-            matrix[len1][len2] = len2
-        elif not len2:
-            matrix[len1][len2] = len1
-        else:
-            # insertion
-            if matrix[len1][len2 - 1] == -1:
-                _lowenstein_dist_recursion_optimized(str1, str2[:-1], matrix)
-            # deletion
-            if matrix[len1 - 1][len2] == -1:
-                _lowenstein_dist_recursion_optimized(str1[:-1], str2, matrix)
-            # replacement
-            if matrix[len1 - 1][len2 - 1] == -1:
-                _lowenstein_dist_recursion_optimized(str1[:-1], str2[:-1], matrix)
-
-            matrix[len1][len2] = min(matrix[len1][len2 - 1] + 1,
-                                     matrix[len1 - 1][len2] + 1,
-                                     matrix[len1 - 1][len2 - 1] + int(str1[-1] != str2[-1]))
-
-        return
-
-    # +1 because of an empty string
-    n = len(str1) + 1
-    m = len(str2) + 1
-    matrix = [[-1 for i in range(m)] for j in range(n)]
-    _lowenstein_dist_recursion_optimized(str1, str2, matrix)
-
-    if DEBUG:
-        print('Матрица:')
-        for line in matrix:
-            print(line)
-
-    return matrix[n - 1][m - 1]
-
-
-def damerau_lowenstein_dist_recursion(str1, str2):
-    # trivial rules
-    if not str1:
-        return len(str2)
-    elif not str2:
-        return len(str1)
-
-    insertion = damerau_lowenstein_dist_recursion(str1, str2[:-1]) + 1
-    deletion = damerau_lowenstein_dist_recursion(str1[:-1], str2) + 1
-    replacement = damerau_lowenstein_dist_recursion(str1[:-1], str2[:-1]) + int(str1[-1] != str2[-1])
-
-    if (len(str1) > 1) and (len(str2) > 1) and (str1[-1] == str2[-2]) and (str1[-2] == str2[-1]):
-        xchange = damerau_lowenstein_dist_recursion(str1[:-2], str2[:-2]) + 1
-        return min(insertion, deletion, replacement, xchange)
-    else:
-        return min(insertion, deletion, replacement)
-
-
-def random_string(lenght):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(lenght))
+def print_matrix(m):
+    for line in m:
+        print(line)
 
 
 def answer_user():
-    # str1 = 'йцукен'
-    # str2 = 'йыуекн'
-    str1 = input('Введите первую строку: ')
-    str2 = input('Введите вторую строку: ')
+    if not debug:
+        print('Введите размерность первой матрицы.')
+        m = int(input('m: '))
+        n = int(input('n: '))
+        print('Введите первую матрицу построчно, через пробелы')
+        a = []
+        for i in range(m):
+            a.append(list(map(int, input().split())))
+            if len(a[-1]) != n:
+                print('Ошибка')
+                return
+        print()
 
-    print(f'\nЛевенштейн, итерационный.')
-    beg = process_time()
-    answer = lowenstein_dist_matrix_classic(str1, str2)
-    end = process_time()
-    print(f'Ответ: {answer}, время: {end-beg}')
+        print('Введите размерность второй матрицы.')
+        nn = int(input('n: '))
+        q = int(input('q: '))
+        if n != nn:
+            print('Ошибка: количество строк в первой матрице должно быть равно количеству столбцов во второй матрице')
+            return
+        print('Введите вторую матрицу построчно, через пробелы')
+        b = []
+        for i in range(nn):
+            b.append(list(map(int, input().split())))
+            if len(b[-1]) != q:
+                print('Ошибка')
+                return
+        print()
 
-    print(f'\nЛевенштейн, рекурсивный без кеша.')
-    beg = process_time()
-    answer = lowenstein_dist_recursion_classic(str1, str2)
-    end = process_time()
-    print(f'Ответ: {answer}, время: {end-beg}')
+    else:
+        m = 2
+        n = 2
+        q = 4
+        a = [[1, 2],
+             [3, 4]]
+        b = [[1, 2, 3, 4],
+             [2, 3, 4, 5]]
 
-    print(f'\nЛевенштейн, рекурсивный с кешем.')
-    beg = process_time()
-    answer = lowenstein_dist_recursion_optimized(str1, str2)
-    end = process_time()
-    print(f'Ответ: {answer}, время: {end-beg}')
+    c = [[0 for i in range(q)] for j in range(m)]
 
-    print(f'\nДамерау-Левенштейн, рекурсивный без кеша.')
+
+    print(f'\nСтандартный алгоритм')
     beg = process_time()
-    answer = damerau_lowenstein_dist_recursion(str1, str2)
+    answer = standart_mult(a, b, deepcopy(c), m, n, q)
     end = process_time()
-    print(f'Ответ: {answer}, время: {end-beg}')
+    print('Ответ:')
+    print_matrix(answer)
+    print(f'Время: {end-beg}')
+
+    print(f'\nАлгоритм Винограда')
+    beg = process_time()
+    answer = vinograd_usual_mult(a, b, deepcopy(c), m, n, q)
+    end = process_time()
+    print('Ответ:')
+    print_matrix(answer)
+    print(f'Время: {end-beg}')
+
+    print(f'\nОптимизированный алгоритм Винограда')
+    beg = process_time()
+    answer = vinograd_optimized_mult(a, b, deepcopy(c), m, n, q)
+    end = process_time()
+    print('Ответ:')
+    print_matrix(answer)
+    print(f'Время: {end-beg}')
 
     print()
     print()
@@ -179,4 +141,7 @@ def answer_user():
 
 if __name__ == '__main__':
     while True:
+        print()
         answer_user()
+
+

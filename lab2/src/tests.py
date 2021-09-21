@@ -1,123 +1,60 @@
+
 from algorythms import *
+from copy import deepcopy
 
 
-class TestDistance:
-    def __init__(self, function, func_name, xchange):
-        self.function = function
-        self.func_name = func_name
-        self.xchange = xchange
-
-    def test_empty(self):
-        print(f'testing empty for {self.func_name}')
-        assert self.function("", "") == 0
-        print('OK\n')
-
-    def test_equal(self):
-        print(f'testing equal for {self.func_name}')
-        assert self.function("abc", "abc") == 0
-        assert self.function("a", "a") == 0
-        print('OK\n')
-
-    def test_different(self):
-        print(f'testing different for {self.func_name}')
-        assert self.function("a", "") == 1
-        assert self.function("", "a") == 1
-        assert self.function("b", "c") == 1
-        assert self.function("bc", "b") == 1
-        assert self.function("bc", "c") == 1
-        assert self.function("bc", "ac") == 1
-        assert self.function("ab", "cd") == 2
-        assert self.function("abc", "cd") == 3
-        assert self.function("кот", "скат") == 2
-        print('OK\n')
-
-    def test_xchange(self):
-        print(f'testing xchange for {self.func_name}')
-        if not self.xchange:
-            assert self.function("ac", "ca") == 2
-            assert self.function("qac", "lca") == 3
-            assert self.function("abc", "cba") == 2
-        else:
-            assert self.function("ac", "ca") == 1
-            assert self.function("qac", "lca") == 2
-            assert self.function("abc", "cba") == 2
-
-        print('OK\n')
-
-    def run_tests(self):
-        self.test_empty()
-        self.test_equal()
-        self.test_different()
-        self.test_xchange()
+def compare_ms(m1, m2):
+    for line1, line2 in zip(m1, m2):
+        for elem1, elem2 in zip(line1, line2):
+            if elem1 != elem2:
+                return False
+    return True
 
 
-class TestTwoFunctions:
-    n = 7
-    lenght = 10
-    dif = 2
+tests_dict = {
+    'empty': {'a': [[]], 'b': [[]], 'c': [[]], 'm': 0, 'n': 0, 'q': 0, 'answer': [[]]},
 
-    def __init__(self, f1, f1_name, f2, f2_name):
-        self.f1 = f1
-        self.f1_name = f1_name
-        self.f2 = f2
-        self.f2_name = f2_name
+'one': {'a': [[2]], 'b': [[2]], 'c': [[0]], 'm': 1, 'n': 1, 'q': 1, 'answer': [[4]]},
 
-    def test_same_len(self):
-        print(f'testing same_len for {self.f1_name} and {self.f2_name}')
-        for i in range(self.n):
-            str1 = random_string(self.lenght)
-            str2 = random_string(self.lenght)
-            print(f'with str1={str1} and str2={str2}')
-            assert self.f1(str1, str2) == self.f2(str1, str2)
 
-    def test_different_len(self):
-        print(f'testing different_len for {self.f1_name} and {self.f2_name}')
-        for i in range(TestTwoFunctions.n):
-            str1 = random_string(self.lenght + self.dif)
-            str2 = random_string(self.lenght - self.dif)
-            print(f'with str1={str1} and str2={str2}')
-            assert self.f1(str1, str2) == self.f2(str1, str2)
-            print(f'with str1={str2} and str2={str1}')
-            assert self.f1(str2, str1) == self.f2(str2, str1)
+    'usual, n=2': {'a': [[1, 1], [1, -1], [2, 2]],
+                   'b': [[0, -1, 1, 2], [0, 1, 1, 3]],
+                   'c': [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+                   'm': 3, 'n': 2, 'q': 4,
+                   'answer': [[0, 0, 2, 5], [0, -2, 0, -1], [0, 0, 4, 10]]},
 
-    def run_tests(self):
-        self.test_same_len()
-        self.test_different_len()
+    'square, n=3': {'a': [[1, 1, 1], [1, 1, 1], [1, 1, 1]],
+                    'b': [[1, 2, 3], [0, 0, 0], [1, 1, 1]],
+                    'c': [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+                    'm': 3, 'n': 3, 'q': 3,
+                    'answer': [[2, 3, 4], [2, 3, 4], [2, 3, 4]]},
+}
+
+
+def test_alg(func, alg_name):
+    print(f'\n\nТестируемый алгоритм: {alg_name}')
+    for test_name, test in tests_dict.items():
+        print(test_name)
+        print('A:')
+        print_matrix(test['a'])
+        print('B:')
+        print_matrix(test['b'])
+        result = func(deepcopy(test['a']), deepcopy(test['b']), deepcopy(test['c']), test['m'], test['n'], test['q'])
+        print('Result:')
+        print_matrix(result)
+        if not compare_ms(result, test['answer']):
+            print('ERROR')
+            print('expected: ')
+            print_matrix(test['answer'])
+            raise Exception
+        print()
+
+
+def test_all():
+    test_alg(standart_mult, 'Стандартный алгоритм')
+    test_alg(vinograd_usual_mult, 'Алгоритм Винограда')
+    test_alg(vinograd_optimized_mult, 'Оптимизированный алгоритм Винограда')
 
 
 if __name__ == '__main__':
-    test = TestDistance(lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic', False)
-    test.run_tests()
-    test = TestDistance(lowenstein_dist_matrix_optimized, 'lowenstein_dist_matrix_optimized', False)
-    test.run_tests()
-    test = TestDistance(lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic', False)
-    test.run_tests()
-    test = TestDistance(lowenstein_dist_recursion_optimized, 'lowenstein_dist_recursion_optimized', False)
-    test.run_tests()
-    test = TestDistance(damerau_lowenstein_dist_recursion, 'damerau_lowenstein_dist_recursion', True)
-    test.run_tests()
-
-    ###
-    test = TestTwoFunctions(lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic',
-                            lowenstein_dist_matrix_optimized, 'lowenstein_dist_matrix_optimized')
-    test.run_tests()
-    test = TestTwoFunctions(lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic',
-                            lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic')
-    test.run_tests()
-    test = TestTwoFunctions(lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic',
-                            lowenstein_dist_recursion_optimized, 'lowenstein_dist_recursion_optimized')
-    test.run_tests()
-
-    ###
-    test = TestTwoFunctions(lowenstein_dist_matrix_optimized, 'lowenstein_dist_matrix_optimized',
-                            lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic')
-    test.run_tests()
-
-    test = TestTwoFunctions(lowenstein_dist_matrix_optimized, 'lowenstein_dist_matrix_optimized',
-                            lowenstein_dist_recursion_optimized, 'lowenstein_dist_recursion_optimized')
-    test.run_tests()
-
-    ##
-    test = TestTwoFunctions(lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic',
-                            lowenstein_dist_recursion_optimized, 'lowenstein_dist_recursion_optimized')
-    test.run_tests()
+    test_all()

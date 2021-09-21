@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  15 SEP 2021 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  21 SEP 2021 23:54
 entering extended mode
 **./report.tex
 (report.tex
@@ -1184,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=83, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=79, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1305,9 +1305,8 @@ o.jpg>])
 (10-analysis.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 
-Overfull \hbox (28.3816pt too wide) in paragraph at lines 11--12
-[]\T2A/cmr/m/n/14.4 Тогда за-да-ча на-хож-де-ния рас-сто-я-ний Ле-вен-штей-на и
- Да-ме-рауЛевенштейна
+Overfull \hbox (5.9579pt too wide) in paragraph at lines 38--38
+ |[]\T2A/cmr/bx/n/20.74 Алгоритм Ви-но-гра-да умно-же-ния мат-риц| 
  []
 
 [4
@@ -1315,111 +1314,103 @@ Overfull \hbox (28.3816pt too wide) in paragraph at lines 11--12
 
 
 
-] [5]
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.73 		\end{array}\\
-                    ,\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [6]
+]) [5]
 \openout2 = `20-design.aux'.
 
  (20-design.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+<inc/img/standard_block.png, id=151, 142.5325pt x 875.27pt>
+File: inc/img/standard_block.png Graphic file (type png)
+<use inc/img/standard_block.png>
+Package pdftex.def Info: inc/img/standard_block.png  used on input line 20.
+(pdftex.def)             Requested size: 99.77205pt x 612.68483pt.
 
-Overfull \hbox (26.84068pt too wide) in paragraph at lines 5--5
- |[]\T2A/cmr/bx/n/20.74 Алгоритмы по-ис-ка рас-сто-я-ния Ле-вен-штей-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/v_block.png, id=153, 513.92pt x 1006.76125pt>
+File: inc/img/v_block.png Graphic file (type png)
+<use inc/img/v_block.png>
+Package pdftex.def Info: inc/img/v_block.png  used on input line 31.
+(pdftex.def)             Requested size: 359.74153pt x 704.72807pt.
+
+LaTeX Warning: Float too large for page by 0.49223pt on input line 37.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/vopt_block.png, id=154, 513.92pt x 1077.02374pt>
+File: inc/img/vopt_block.png Graphic file (type png)
+<use inc/img/vopt_block.png>
+Package pdftex.def Info: inc/img/vopt_block.png  used on input line 42.
+(pdftex.def)             Requested size: 334.04404pt x 700.05714pt.
+
+LaTeX Warning: Float too large for page by 12.8213pt on input line 48.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6
+
+
+
+
+]
+Overfull \hbox (24.73282pt too wide) detected at line 63
+\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 3 = 2 + \OML/cmm/m/it/14.4 m\OT1/cmr/m/n/
+14.4 (2 + 2 + \OML/cmm/m/it/14.4 q\OT1/cmr/m/n/14.4 (2 + 7 + 4 + [](4 + 1 + 12 
++ 5 + 5 \OMS/cmsy/m/n/14.4  \OT1/cmr/m/n/14.4 2))) = 16\OML/cmm/m/it/14.4 mnq 
+\OT1/cmr/m/n/14.4 + 13\OML/cmm/m/it/14.4 mq \OT1/cmr/m/n/14.4 + 4\OML/cmm/m/it/
+14.4 m \OT1/cmr/m/n/14.4 + 2
  []
 
-<inc/img/l_matrix.png, id=164, 519.9425pt x 1005.7575pt>
-File: inc/img/l_matrix.png Graphic file (type png)
-<use inc/img/l_matrix.png>
-Package pdftex.def Info: inc/img/l_matrix.png  used on input line 11.
-(pdftex.def)             Requested size: 259.97061pt x 502.87752pt.
+[7 <./inc/img/standard_block.png>]
+Overfull \hbox (27.13281pt too wide) detected at line 91
+\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 3 = 2 + \OML/cmm/m/it/14.4 m\OT1/cmr/m/n/
+14.4 (2 + 2 + \OML/cmm/m/it/14.4 q\OT1/cmr/m/n/14.4 (2 + 6 + 2 + [](2 + 1 + 10 
++ 4 + 1 \OMS/cmsy/m/n/14.4  \OT1/cmr/m/n/14.4 2))) = []\OML/cmm/m/it/14.4 mnq 
+\OT1/cmr/m/n/14.4 + 10\OML/cmm/m/it/14.4 mq \OT1/cmr/m/n/14.4 + 4\OML/cmm/m/it/
+14.4 m \OT1/cmr/m/n/14.4 + 2
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/l_recursion_classic.png, id=167, 644.4075pt x 832.10875pt>
-File: inc/img/l_recursion_classic.png Graphic file (type png)
-<use inc/img/l_recursion_classic.png>
-Package pdftex.def Info: inc/img/l_recursion_classic.png  used on input line 25
-.
-(pdftex.def)             Requested size: 322.20296pt x 416.05336pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/l_recursion_matrix.png, id=169, 828.09375pt x 1065.9825pt>
-File: inc/img/l_recursion_matrix.png Graphic file (type png)
-<use inc/img/l_recursion_matrix.png>
-Package pdftex.def Info: inc/img/l_recursion_matrix.png  used on input line 39.
-
-(pdftex.def)             Requested size: 414.04587pt x 532.98994pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/Dl_recursion.png, id=171, 654.445pt x 922.44624pt>
-File: inc/img/Dl_recursion.png Graphic file (type png)
-<use inc/img/Dl_recursion.png>
-Package pdftex.def Info: inc/img/Dl_recursion.png  used on input line 55.
-(pdftex.def)             Requested size: 327.2217pt x 461.22198pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [7
-
-
-
-
-] [8 <./inc/img/l_matrix.png>] [9 <./inc/img/l_recursion_classic.png>]
-[10 <./inc/img/l_recursion_matrix.png>] [11 <./inc/img/Dl_recursion.png>]
+[8]) [9] [10 <./inc/img/v_block.png>] [11 <./inc/img/vopt_block.png>]
 \openout2 = `30-impl.aux'.
 
 
 (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
-Overfull \hbox (4.9353pt too wide) in paragraph at lines 13--14
+Overfull \hbox (4.9353pt too wide) in paragraph at lines 11--12
 []\T2A/cmr/m/n/14.4 Кроме то-го, в Python есть биб-лио-те-ка time, ко-то-рая пр
 едо-став-ля-ет функ-
  []
 
-[12
-
-
-
-
-]
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-22.
- (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
+20.
+(C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-38.
+25.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [13] [14]
+) [12
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [15] [16]
+
+
+] [13]) [14] [15]
 \openout2 = `40-research.aux'.
 
- (40-research.tex
+
+(40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/work_example.png, id=325, 253.37518pt x 510.19179pt>
+<inc/img/work_example.png, id=280, 297.25339pt x 510.19179pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
-(pdftex.def)             Requested size: 226.08699pt x 455.24408pt.
-[17
+(pdftex.def)             Requested size: 265.23955pt x 455.24408pt.
+[16
 
 
 
@@ -1429,7 +1420,7 @@ Overfull \hbox (0.36998pt too wide) in paragraph at lines 21--21
  |[]\T2A/cmr/bx/n/20.74 Время вы-пол-не-ния ре-а-ли-за-ций ал-го-рит-
  []
 
-<inc/img/time_all.png, id=333, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=288, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
@@ -1437,35 +1428,10 @@ Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18]
-<inc/img/time_with_matrix.png, id=341, 462.528pt x 346.896pt>
-File: inc/img/time_with_matrix.png Graphic file (type png)
-<use inc/img/time_with_matrix.png>
-Package pdftex.def Info: inc/img/time_with_matrix.png  used on input line 33.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/time_rec_without_cash.png, id=343, 462.528pt x 346.896pt>
-File: inc/img/time_rec_without_cash.png Graphic file (type png)
-<use inc/img/time_rec_without_cash.png>
-Package pdftex.def Info: inc/img/time_rec_without_cash.png  used on input line 
-38.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (4.26593pt too wide) in paragraph at lines 47--47
- |[]\T2A/cmr/bx/n/20.74 Пиковая тре-бу-е-мая ал-го-рит-ма-ми па-мять| 
- []
-
-[19 <./inc/img/time_all.png>] [20 <./inc/img/time_with_matrix.png>] [21 <./inc/
-img/time_rec_without_cash.png>]) [22]
+[17]) [18 <./inc/img/time_all.png>]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [23
+ (50-conclusion.tex) [19
 
 
 
@@ -1476,17 +1442,17 @@ img/time_rec_without_cash.png>]) [22]
  (51-biblio.tex
 (report.bbl
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-40.
+15.
 
 (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Underfull \hbox (badness 1742) in paragraph at lines 45--49
+Underfull \hbox (badness 1742) in paragraph at lines 48--52
 \T2A/cmtt/m/n/14.4 / / py-[]charm . blogspot . com / 2017 / 09 / pycharm . html
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
  []
 
-)) [24
+)) [20
 
 
 
@@ -1494,45 +1460,38 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
 ] (report.aux (00-title.aux) (01-contents.aux) (02-intro.aux)
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: EBE73FE3F7B2C6E61E88F91462738726;4484
-(rerunfilecheck)             After:  02C746D3503C43B0BD66826BEF40A33C;4553.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 7A21E779AAB130AF9393A8D9DC9BFAA6;4000.
  ) 
 Here is how much of TeX's memory you used:
- 37869 strings out of 478864
- 867970 string characters out of 2858518
- 1695216 words of memory out of 10000000
- 54906 multiletter control sequences out of 15000+600000
- 419835 words of font info for 60 fonts, out of 8000000 for 9000
+ 37793 strings out of 478864
+ 866024 string characters out of 2858518
+ 1797216 words of memory out of 10000000
+ 54870 multiletter control sequences out of 15000+600000
+ 418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,13n,102p,865b,1925s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,16n,102p,1073b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\lasi1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\lass1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\lasx1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\larm0600.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\alena\AppData\Local\MiKTeX
-\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\
-Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (24 pages, 595338 bytes).
+tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
+2a/dpi600\lass1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/
+lh-t2a/dpi600\lasx1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour
+/lh/lh-t2a/dpi600\larm0600.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/lj
+four/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/p
+k/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\MiKTeX
+\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (20 pages, 453818 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

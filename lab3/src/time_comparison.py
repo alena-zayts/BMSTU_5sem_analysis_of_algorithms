@@ -1,206 +1,162 @@
-from copy import deepcopy
-from time import process_time
-import matplotlib.pyplot as plt
 from algorythms import *
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+from time import process_time
 
-path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab3/report/inc/img/'
+funcs = [[lowenstein_dist_matrix_classic, 'lowenstein_dist_matrix_classic'],
+         [lowenstein_dist_matrix_optimized, 'lowenstein_dist_matrix_optimized'],
+         [lowenstein_dist_recursion_optimized, 'lowenstein_dist_recursion_optimized'],
+         [lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic'],
+         [damerau_lowenstein_dist_recursion, 'damerau_lowenstein_dist_recursion']]
+
+strings = [[length, random_string(length), random_string(length)] for length in range(0, 11, 1)] + \
+          [[length, random_string(length), random_string(length)] for length in range(20, 201, 10)]
+
+n_repeats = 15
+stop_recursive = 10
+
+path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab1/report/inc/img/'
 
 time_file = path + 'time.xlsx'
-
 filename_all = path + 'time_all.png'
+filename_with = path + 'time_with_matrix.png'
+filename_without = path + 'time_rec_without_cash.png'
 
-filename_insertion = path + 'time_insertion.png'
-filename_bubble = path + 'time_bubble.png'
-filename_shaker = path + 'time_shaker.png'
-
-filename_best = path + 'time_best.png'
-filename_worst = path + 'time_worst.png'
-filename_middle = path + 'time_middle.png'
+time_dl_file = path + 'time_dl.xlsx'
+filename_dl = path + 'time_dl.png'
 
 
-def time_compare():
+def compare_dl():
+    df_time = pd.DataFrame({'StringLength': list(range(0, 12, 2))})
 
-    def count_middle_time(n, arr, alg, n_repeats):
-        time = 0
-        for i in range(n_repeats):
-            current = deepcopy(arr)
+    for func, func_name in [[damerau_lowenstein_dist_recursion, 'damerau_lowenstein_dist_recursion'],
+                            [lowenstein_dist_recursion_classic, 'lowenstein_dist_recursion_classic']]:
+        print(func_name)
+        time_measures = []
+        two_letters = 'ab'
+        two_letters_rev = 'ba'
+
+        for string_length in range(6):
+            string1 = two_letters * string_length
+            string2 = two_letters_rev * string_length
             start = process_time()
-            answer = alg(current, n)
+            for i in range(n_repeats):
+                answer = func(string1, string2)
             end = process_time()
-            time += (end - start)
-        time /= n_repeats
-        return time
+            time = (end - start) / n_repeats
+            time_measures.append(time)
+            print(string_length * 2, time)
 
-    n_repeats = 5
-    n_list = list(range(0, 100, 10)) + list(range(100, 500, 100)) + \
-             list(range(500, 2000, 500)) + list(range(2000, 5001, 1000))
+        df_time[func_name] = time_measures
+        print(time_measures)
 
-    insertion_dict = {'best': [], 'worst': [], 'middle': []}
-    bubble_dict = {'best': [], 'worst': [], 'middle': []}
-    shaker_dict = {'best': [], 'worst': [], 'middle': []}
+    df_time.to_excel(time_dl_file)
 
-    for n in n_list:
-        print(n)
-        print('best')
-        best = list(range(0, n, 1))
-        insertion_dict['best'].append(count_middle_time(n, best, insertion_sort, n_repeats))
-        bubble_dict['best'].append(count_middle_time(n, best, bubble_sort, n_repeats))
-        shaker_dict['best'].append(count_middle_time(n, best, shaker_sort, n_repeats))
 
-        print('worst')
-        worst = list(range(n, 0, -1))
-        insertion_dict['worst'].append(count_middle_time(n, worst, insertion_sort, n_repeats))
-        bubble_dict['worst'].append(count_middle_time(n, worst, bubble_sort, n_repeats))
-        shaker_dict['worst'].append(count_middle_time(n, worst, shaker_sort, n_repeats))
+def compare():
+    compare_dl()
+    df_time = pd.DataFrame({'StringLength': [x[0] for x in strings]})
 
-        print('middle')
-        middle = [random.randint(0, n) for i in range(n)]
-        insertion_dict['middle'].append(count_middle_time(n, middle, insertion_sort, n_repeats))
-        bubble_dict['middle'].append(count_middle_time(n, middle, bubble_sort, n_repeats))
-        shaker_dict['middle'].append(count_middle_time(n, middle, shaker_sort, n_repeats))
+    for func, func_name in funcs:
+        print(func_name)
+        time_measures = []
+        for string_length, string1, string2 in strings:
+            if re.search('recursion', func_name) and \
+                    not re.search('optimized', func_name) and \
+                    string_length > stop_recursive:
+                time_measures.append(None)
+            else:
+                start = process_time()
+                for i in range(n_repeats):
+                    answer = func(string1, string2)
+                end = process_time()
+                time = (end - start) / n_repeats
+                time_measures.append(time)
+                print(string_length, time)
 
-    df = pd.DataFrame({'N': n_list})
-    df['insertion_best'] = insertion_dict['best']
-    df['insertion_worst'] = insertion_dict['worst']
-    df['insertion_middle'] = insertion_dict['middle']
+        df_time[func_name] = time_measures
+        print(time_measures)
 
-    df['bubble_best'] = bubble_dict['best']
-    df['bubble_worst'] = bubble_dict['worst']
-    df['bubble_middle'] = bubble_dict['middle']
+    df_time.to_excel(time_file)
 
-    df['shaker_best'] = shaker_dict['best']
-    df['shaker_worst'] = shaker_dict['worst']
-    df['shaker_middle'] = shaker_dict['middle']
-
-    df.to_excel(time_file)
+    plt.xlim([0, 10])
 
 
 def draw_plot_all():
     df = pd.read_excel(time_file)
 
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-    plt.grid()
+    plt.xlabel('Длина строки')
+    plt.ylabel('Время работы алгоритма')
 
-    plt.plot(df['N'], df['insertion_best'], label='insertion_best')
-    plt.plot(df['N'], df['bubble_best'], label='bubble_best')
-    plt.plot(df['N'], df['shaker_best'], label='shaker_best')
-
-    plt.plot(df['N'], df['insertion_worst'], label='insertion_worst')
-    plt.plot(df['N'], df['bubble_worst'], label='bubble_worst')
-    plt.plot(df['N'], df['shaker_worst'], label='shaker_worst')
-
-    plt.plot(df['N'], df['insertion_middle'], label='insertion_middle')
-    plt.plot(df['N'], df['bubble_middle'], label='bubble_middle')
-    plt.plot(df['N'], df['shaker_middle'], label='shaker_middle')
-
+    plt.plot(df['StringLength'], df['lowenstein_dist_matrix_classic'], '-.', label='Левенштейн, итерационный')
+    plt.plot(df['StringLength'], df['lowenstein_dist_recursion_classic'], '*', label='Левенштейн, рекурсивный без кеша')
+    plt.plot(df['StringLength'], df['damerau_lowenstein_dist_recursion'], '--',
+             label='Дамерау-Левенштейн, рекурсивный без кеша')
+    plt.plot(df['StringLength'], df['lowenstein_dist_recursion_optimized'], ':',
+             label='Левенштейн, рекурсивный с кешем')
     plt.legend(loc='best')
     plt.savefig(filename_all)
     plt.gcf().clear()
 
 
-def draw_plot_insertion():
+def draw_plot_rec_without_cash():
     df = pd.read_excel(time_file)
+    plt.grid()
+    plt.xlabel('Длина строки')
+    plt.ylabel('Время работы алгоритма')
+    plt.xlim([0, 10])
 
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['insertion_best'], label='insertion_best')
-    plt.plot(df['N'], df['insertion_worst'], label='insertion_worst')
-    plt.plot(df['N'], df['insertion_middle'], label='insertion_middle')
+    plt.plot(df['StringLength'], df['lowenstein_dist_recursion_classic'], '*', label='Левенштейн, рекурсивный без кеша')
+    plt.plot(df['StringLength'], df['damerau_lowenstein_dist_recursion'], '--',
+             label='Дамерау-Левенштейн, рекурсивный без кеша')
 
     plt.legend(loc='best')
-    plt.savefig(filename_insertion)
+    plt.savefig(filename_without)
     plt.gcf().clear()
 
 
-def draw_plot_bubble():
+def draw_plot_with_matrix():
     df = pd.read_excel(time_file)
+    plt.grid()
+    plt.xlabel('Длина строки')
+    plt.ylabel('Время работы алгоритма')
 
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['bubble_best'], label='bubble_best')
-    plt.plot(df['N'], df['bubble_worst'], label='bubble_worst')
-    plt.plot(df['N'], df['bubble_middle'], label='bubble_middle')
-
+    plt.plot(df['StringLength'], df['lowenstein_dist_matrix_classic'], '-.', label='Левенштейн, итерационный')
+    plt.plot(df['StringLength'], df['lowenstein_dist_recursion_optimized'], ':',
+             label='Левенштейн, рекурсивный с кешем')
     plt.legend(loc='best')
-    plt.savefig(filename_bubble)
+    plt.savefig(filename_with)
     plt.gcf().clear()
 
 
-def draw_plot_shaker():
-    df = pd.read_excel(time_file)
+def draw_plot_dl():
+    df = pd.read_excel(time_dl_file)
+    plt.grid()
+    plt.xlabel('Длина строки')
+    plt.ylabel('Время работы алгоритма')
 
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['shaker_best'], label='shaker_best')
-    plt.plot(df['N'], df['shaker_worst'], label='shaker_worst')
-    plt.plot(df['N'], df['shaker_middle'], label='shaker_middle')
-
-    plt.legend(loc='best')
-    plt.savefig(filename_shaker)
-    plt.gcf().clear()
-
-
-def draw_plot_best():
-    df = pd.read_excel(time_file)
-
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['insertion_best'], label='insertion_best')
-    plt.plot(df['N'], df['bubble_best'], label='bubble_best')
-    plt.plot(df['N'], df['shaker_best'], label='shaker_best')
+    plt.plot(df['StringLength'], df['lowenstein_dist_recursion_classic'], '*', label='Левенштейн, рекурсивный без кеша')
+    plt.plot(df['StringLength'], df['damerau_lowenstein_dist_recursion'], '--',
+             label='Дамерау-Левенштейн, рекурсивный без кеша')
 
     plt.legend(loc='best')
-    plt.savefig(filename_best)
-    plt.gcf().clear()
-
-
-def draw_plot_worst():
-    df = pd.read_excel(time_file)
-
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['insertion_worst'], label='insertion_worst')
-    plt.plot(df['N'], df['bubble_worst'], label='bubble_worst')
-    plt.plot(df['N'], df['shaker_worst'], label='shaker_worst')
-
-    plt.legend(loc='best')
-    plt.savefig(filename_worst)
-    plt.gcf().clear()
-
-
-def draw_plot_middle():
-    df = pd.read_excel(time_file)
-
-    plt.xlabel('Длина массива')
-    plt.ylabel('Время работы реализации (c)')
-
-    plt.plot(df['N'], df['insertion_middle'], label='insertion_middle')
-    plt.plot(df['N'], df['bubble_middle'], label='bubble_middle')
-    plt.plot(df['N'], df['shaker_middle'], label='shaker_middle')
-
-    plt.legend(loc='best')
-    plt.savefig(filename_middle)
+    plt.savefig(filename_dl)
     plt.gcf().clear()
 
 
 def draw_plots():
+    draw_plot_dl()
+    draw_plot_rec_without_cash()
     draw_plot_all()
-
-    draw_plot_bubble()
-    draw_plot_insertion()
-    draw_plot_shaker()
-
-    draw_plot_best()
-    draw_plot_worst()
-    draw_plot_middle()
+    draw_plot_with_matrix()
 
 
 if __name__ == '__main__':
-    # time_compare()
+    # try:
+    #     draw_plots()
+    # except:
+    #     print('er')
+    compare()
     draw_plots()
+

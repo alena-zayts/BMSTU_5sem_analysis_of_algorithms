@@ -16,6 +16,7 @@
 
 В листингах \ref{standart} - \ref{vin_opt} представлены реализации рассматриваемых алгоритмов.
 
+\clearpage
 \begin{lstlisting}[caption=Стандартный алгоритм умножения матриц,
 	label={standart}]
 def standart_mult(a, b, c, m, n, q):
@@ -26,7 +27,7 @@ def standart_mult(a, b, c, m, n, q):
 	return c
 \end{lstlisting}
 
-
+\clearpage
 \begin{lstlisting}[caption=Алгоритм умножения матриц Винограда,
 	label={vin}]
 def vinograd_usual_mult(a, b, c, m, n, q):
@@ -54,6 +55,7 @@ def vinograd_usual_mult(a, b, c, m, n, q):
 	return c
 \end{lstlisting}
 
+\clearpage
 \begin{lstlisting}[caption=Оптимизированный алгоритм умножения матриц Винограда,
 	label={vin_opt}]
 def vinograd_optimized_mult(a, b, c, m, n, q):
@@ -83,7 +85,7 @@ def vinograd_optimized_mult(a, b, c, m, n, q):
 \end{lstlisting}
 
 
-
+\clearpage
 \section{Тестирование}
 В таблице ~\ref{tabular:test_rec} приведены функциональные тесты для алгоритмов умножения матриц: стандартного, Винограда и оптимизированного Винограда. Все тесты пройдены успешно каждым алгоритмом.
 

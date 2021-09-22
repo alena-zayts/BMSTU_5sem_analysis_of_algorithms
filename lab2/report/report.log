@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  21 SEP 2021 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  22 SEP 2021 19:49
 entering extended mode
 **./report.tex
 (report.tex
@@ -1319,43 +1319,47 @@ Overfull \hbox (5.9579pt too wide) in paragraph at lines 38--38
 
  (20-design.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
-<inc/img/standard_block.png, id=151, 142.5325pt x 875.27pt>
-File: inc/img/standard_block.png Graphic file (type png)
-<use inc/img/standard_block.png>
-Package pdftex.def Info: inc/img/standard_block.png  used on input line 20.
-(pdftex.def)             Requested size: 99.77205pt x 612.68483pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/v_block.png, id=153, 513.92pt x 1006.76125pt>
-File: inc/img/v_block.png Graphic file (type png)
-<use inc/img/v_block.png>
-Package pdftex.def Info: inc/img/v_block.png  used on input line 31.
-(pdftex.def)             Requested size: 359.74153pt x 704.72807pt.
-
-LaTeX Warning: Float too large for page by 0.49223pt on input line 37.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/vopt_block.png, id=154, 513.92pt x 1077.02374pt>
-File: inc/img/vopt_block.png Graphic file (type png)
-<use inc/img/vopt_block.png>
-Package pdftex.def Info: inc/img/vopt_block.png  used on input line 42.
-(pdftex.def)             Requested size: 334.04404pt x 700.05714pt.
-
-LaTeX Warning: Float too large for page by 12.8213pt on input line 48.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [6
 
 
 
 
 ]
-Overfull \hbox (24.73282pt too wide) detected at line 63
+<inc/img/standard_block.png, id=161, 142.5325pt x 875.27pt>
+File: inc/img/standard_block.png Graphic file (type png)
+<use inc/img/standard_block.png>
+Package pdftex.def Info: inc/img/standard_block.png  used on input line 21.
+(pdftex.def)             Requested size: 99.77205pt x 612.68483pt.
+ [7
+
+ <./inc/img/standard_block.png>]
+<inc/img/v_block.png, id=169, 513.92pt x 1006.76125pt>
+File: inc/img/v_block.png Graphic file (type png)
+<use inc/img/v_block.png>
+Package pdftex.def Info: inc/img/v_block.png  used on input line 33.
+(pdftex.def)             Requested size: 359.74153pt x 704.72807pt.
+
+
+LaTeX Warning: Float too large for page by 0.49223pt on input line 39.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./inc/img/v_block.png>]
+<inc/img/vopt_block.png, id=175, 513.92pt x 1077.02374pt>
+File: inc/img/vopt_block.png Graphic file (type png)
+<use inc/img/vopt_block.png>
+Package pdftex.def Info: inc/img/vopt_block.png  used on input line 45.
+(pdftex.def)             Requested size: 334.04404pt x 700.05714pt.
+
+
+LaTeX Warning: Float too large for page by 12.8213pt on input line 51.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./inc/img/vopt_block.png>]
+Overfull \hbox (24.73282pt too wide) detected at line 68
 \OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 3 = 2 + \OML/cmm/m/it/14.4 m\OT1/cmr/m/n/
 14.4 (2 + 2 + \OML/cmm/m/it/14.4 q\OT1/cmr/m/n/14.4 (2 + 7 + 4 + [](4 + 1 + 12 
 + 5 + 5 \OMS/cmsy/m/n/14.4  \OT1/cmr/m/n/14.4 2))) = 16\OML/cmm/m/it/14.4 mnq 
@@ -1363,8 +1367,12 @@ Overfull \hbox (24.73282pt too wide) detected at line 63
 14.4 m \OT1/cmr/m/n/14.4 + 2
  []
 
-[7 <./inc/img/standard_block.png>]
-Overfull \hbox (27.13281pt too wide) detected at line 91
+[10
+
+
+
+]
+Overfull \hbox (27.13281pt too wide) detected at line 96
 \OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 3 = 2 + \OML/cmm/m/it/14.4 m\OT1/cmr/m/n/
 14.4 (2 + 2 + \OML/cmm/m/it/14.4 q\OT1/cmr/m/n/14.4 (2 + 6 + 2 + [](2 + 1 + 10 
 + 4 + 1 \OMS/cmsy/m/n/14.4  \OT1/cmr/m/n/14.4 2))) = []\OML/cmm/m/it/14.4 mnq 
@@ -1372,11 +1380,10 @@ Overfull \hbox (27.13281pt too wide) detected at line 91
 14.4 m \OT1/cmr/m/n/14.4 + 2
  []
 
-[8]) [9] [10 <./inc/img/v_block.png>] [11 <./inc/img/vopt_block.png>]
+) [11]
 \openout2 = `30-impl.aux'.
 
-
-(30-impl.tex
+ (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
 Overfull \hbox (4.9353pt too wide) in paragraph at lines 11--12
@@ -1384,33 +1391,42 @@ Overfull \hbox (4.9353pt too wide) in paragraph at lines 11--12
 едо-став-л€-ет функ-
  []
 
+[12
+
+
+
+
+]
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-20.
-(C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
+21.
+ (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-25.
+26.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [12
+) [13
 
+] [14
 
+] [15
 
+]) [16
 
-] [13]) [14] [15]
+]
 \openout2 = `40-research.aux'.
 
 
 (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/work_example.png, id=280, 297.25339pt x 510.19179pt>
+<inc/img/work_example.png, id=284, 297.25339pt x 510.19179pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 7.
 (pdftex.def)             Requested size: 265.23955pt x 455.24408pt.
-[16
+[17
 
 
 
@@ -1420,18 +1436,30 @@ Overfull \hbox (0.36998pt too wide) in paragraph at lines 21--21
  |[]\T2A/cmr/bx/n/20.74 ¬рем€ вы-пол-не-ни€ ре-а-ли-за-ций ал-го-рит-
  []
 
-<inc/img/time_all.png, id=288, 462.528pt x 346.896pt>
+[18]
+<inc/img/time_all.png, id=300, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 28.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+<inc/img/time_all_w.png, id=301, 462.528pt x 346.896pt>
+File: inc/img/time_all_w.png Graphic file (type png)
+<use inc/img/time_all_w.png>
+Package pdftex.def Info: inc/img/time_all_w.png  used on input line 30.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17]) [18 <./inc/img/time_all.png>]
+[19
+
+ <./inc/img/time_all.png>] [20 <./inc/img/time_all_w.png>]) [21
+
+]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [19
+
+(50-conclusion.tex) [22
 
 
 
@@ -1439,8 +1467,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex
-(report.bbl
+ (51-biblio.tex (report.bbl
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 15.
 
@@ -1452,7 +1479,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 48--52
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
  []
 
-)) [20
+)) [23
 
 
 
@@ -1461,16 +1488,16 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 7A21E779AAB130AF9393A8D9DC9BFAA6;4000.
+(rerunfilecheck)             Checksum: 9B029A6EACDBA223CE6118C5B058C1C9;4001.
  ) 
 Here is how much of TeX's memory you used:
- 37793 strings out of 478864
- 866024 string characters out of 2858518
- 1797216 words of memory out of 10000000
- 54870 multiletter control sequences out of 15000+600000
+ 37809 strings out of 478864
+ 866360 string characters out of 2858518
+ 1687216 words of memory out of 10000000
+ 54881 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,16n,102p,1073b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,16n,102p,1173b,1518s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
@@ -1489,9 +1516,9 @@ public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (20 pages, 453818 bytes).
+Output written on report.pdf (23 pages, 488519 bytes).
 PDF statistics:
- 818 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 834 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

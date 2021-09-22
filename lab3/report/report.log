@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  18 SEP 2021 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  22 SEP 2021 16:21
 entering extended mode
 **./report.tex
 (report.tex
@@ -1523,7 +1523,7 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  37844 strings out of 478864
  867567 string characters out of 2858518
- 1670216 words of memory out of 10000000
+ 1670217 words of memory out of 10000000
  54934 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

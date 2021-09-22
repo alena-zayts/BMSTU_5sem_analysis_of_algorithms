@@ -1,4 +1,3 @@
-
 from algorythms import *
 from copy import deepcopy
 
@@ -14,8 +13,7 @@ def compare_ms(m1, m2):
 tests_dict = {
     'empty': {'a': [[]], 'b': [[]], 'c': [[]], 'm': 0, 'n': 0, 'q': 0, 'answer': [[]]},
 
-'one': {'a': [[2]], 'b': [[2]], 'c': [[0]], 'm': 1, 'n': 1, 'q': 1, 'answer': [[4]]},
-
+    'one': {'a': [[2]], 'b': [[2]], 'c': [[0]], 'm': 1, 'n': 1, 'q': 1, 'answer': [[4]]},
 
     'usual, n=2': {'a': [[1, 1], [1, -1], [2, 2]],
                    'b': [[0, -1, 1, 2], [0, 1, 1, 3]],

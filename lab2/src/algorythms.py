@@ -3,6 +3,7 @@ from time import process_time
 
 debug = False
 
+
 def standart_mult(a, b, c, m, n, q):
     for i in range(m):
         for j in range(q):

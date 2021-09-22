@@ -3,10 +3,11 @@ from time import process_time
 import matplotlib.pyplot as plt
 from algorythms import *
 from random import randint
+import pandas as pd
 
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab2/report/inc/img/'
-time_file = path + 'time.xlsx'
-filename_all = path + 'time_all.png'
+time_file = path + 'time_w.xlsx'
+filename_all = path + 'time_all_w.png'
 
 
 def time_compare():
@@ -14,7 +15,7 @@ def time_compare():
     vinograd = []
     vinograd_optimized = []
 
-    n_list = list(range(100, 1001, 100))
+    n_list = list(range(101, 1002, 100))
 
     for i in range(len(n_list)):
         n = n_list[i]

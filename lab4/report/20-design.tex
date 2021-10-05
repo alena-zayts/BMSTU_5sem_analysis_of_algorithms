@@ -2,45 +2,43 @@
 
 В данном разделе будет приведеная схема последедовательного алгоритма обратной трассировки лучей, а также схемы главного и рабочего потока для параллельной реализации этого алгоритма.
 
-\section{Схема алгоритма сортировки вставками}
+\section{Схема последовательного алгоритма трассировки лучей}
 
-На рисунке \ref{fig:insertion} приведена схема алгоритма сортировки вставками.
+На рисунке \ref{fig:trass_simple} приведена схема последовательного алгоритма трассировки лучей.
 
 \begin{figure}[h!]
 	
-	\centering{\includegraphics[scale=0.5]{inc/img/insertion.png}}
+	\centering{\includegraphics[scale=0.7]{inc/img/trass_simple.png}}
 	
-	\caption{Схема алгоритма сортировки вставками}
+	\caption{Схема последовательного алгоритма трассировки лучей}
 	
-	\label{fig:insertion}
+	\label{fig:trass_simple}
 	
 \end{figure}
 
-\section{Схема алгоритма сортировки пузырьком}
+\section{Схема параллельного алгоритма трассировки лучей}
 
-На рисунке \ref{fig:bubble} приведена схема алгоритма сортировки пузырьком.
+На рисунке \ref{fig:trass_split} приведена схема главного потока для параллельной реализации алгоритма трассировки лучей, который разбивает экран на вертикальные участки.
 
 \begin{figure}[h!]
 	
-	\centering{\includegraphics[scale=0.5]{inc/img/bubble.png}}
+	\centering{\includegraphics[scale=0.7]{inc/img/trass_split.png}}
 	
-	\caption{Схема алгоритма сортировки пузырьком}
+	\caption{Схема главного потока}
 	
-	\label{fig:bubble}
+	\label{fig:trass_split}
 	
 \end{figure}
 
-\section{Схема алгоритма шейкерной сортировки}
-
-На рисунке \ref{fig:shaker} приведена схема алгоритма шейкерной сортировки.
+На рисунке \ref{fig:trass_count} приведена схема рабочего потока для параллельной реализации алгоритма трассировки лучей.
 
 \begin{figure}[h!]
 	
-	\centering{\includegraphics[scale=0.5]{inc/img/shaker.png}}
+	\centering{\includegraphics[scale=0.7]{inc/img/trass_count.png}}
 	
-	\caption{Схема алгоритма шейкерной сортировки}
+	\caption{Схема рабочего потока}
 	
-	\label{fig:shaker}
+	\label{fig:trass_count}
 	
 \end{figure}
 
@@ -48,6 +46,6 @@
 
 \section*{Вывод}
 
-Были разработаны схемы трех алгоритмов сортировки.
+Были разработаны схемы базового и параллельного алгоритмов обратной трассировки лучей.
 
 

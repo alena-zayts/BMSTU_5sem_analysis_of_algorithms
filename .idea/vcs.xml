@@ -6,5 +6,6 @@
     <mapping directory="$PROJECT_DIR$/lab1/kononenko/aa-5th-sem-labs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lab1/perestronin/bmstu-aa" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lab1/wilsem/analysis-of-algorithms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/BMSTU5_AA" vcs="Git" />
   </component>
 </project>

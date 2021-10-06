@@ -31,25 +31,11 @@
   \url{https://cyberleninka.ru/article/n/parallelnaya-obrabotka-v-algoritmah-vizualizatsii-s-trassirovkoy-luchey}
   (дата обращения: 05.10.2021).
 
-\bibitem{PythonBook}
+\bibitem{CBook}
 \selectlanguageifdefined{russian}
-Лутц~Марк. Изучаем Python, том 1, 5-е изд.
-\newblock Пер. с англ. — СПб.: ООО “Диалектика”,
-  2019.
-\newblock Т.~832.
-
-\bibitem{process_time_text}
-\selectlanguageifdefined{russian}
-time — Time access and conversions [Электронный ресурс].
+Краткий обзор языка C\#. [Электронный ресурс].
 \newblock Режим доступа:
-  \url{https://docs.python.org/3/library/time.html} (дата
-  обращения: 05.09.2021).
-
-\bibitem{pycharm}
-\selectlanguageifdefined{russian}
-Python и Pycharm [Электронный ресурс].
-\newblock Режим доступа:
-  \url{https://py-charm.blogspot.com/2017/09/pycharm.html} (дата
-  обращения: 05.09.2021).
+  \url{https://docs.microsoft.com/ru-ru/dotnet/csharp/tour-of-csharp/}
+  (дата обращения: 06.10.2021).
 
 \end{thebibliography}

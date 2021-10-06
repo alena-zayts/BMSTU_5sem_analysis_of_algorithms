@@ -39,29 +39,6 @@
 \usepackage{listings}
 \usepackage{xcolor}
 
-\lstdefinestyle{rust}{
-	%language=Rust,
-	backgroundcolor=\color{white},
-	basicstyle=\footnotesize\ttfamily,
-	keywordstyle=\color{blue},
-	stringstyle=\color{red},
-	commentstyle=\color{gray},
-	directivestyle=\color{orange},
-	numbers=left,
-	numberstyle=\tiny,
-	stepnumber=1,
-	numbersep=5pt,
-	frame=single,
-	tabsize=4,
-	captionpos=t,
-	breaklines=true,
-	breakatwhitespace=true,
-	escapeinside={\#*}{*)},
-	morecomment=[l][\color{magenta}]{\#},
-	columns=fullflexible
-}
-
-
 \usepackage{pgfplots}
 \usetikzlibrary{datavisualization}
 \usetikzlibrary{datavisualization.formats.functions}
@@ -90,7 +67,7 @@
 \usepackage{csvsimple}
 
 \usepackage{listings}
-\lstloadlanguages{Python}
+\lstloadlanguages{[Visual]C++}
 % Для листинга кода:
 \lstset{ %
 	language=Python,                 
@@ -109,6 +86,11 @@
 	breakatwhitespace=false, % переносить строки только если есть пробел
 	escapeinside={\#*}{*)}   % если нужно добавить комментарии в коде
 }
+
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
+
+	
+	
 
 
 

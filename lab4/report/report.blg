@@ -24,46 +24,45 @@ The style file: utf8gost705u.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: 51-biblio.bib
 Warning--empty booktitle in trass
-Warning--empty booktitle in PythonBook
-You've used 6 entries,
+You've used 4 entries,
             2958 wiz_defined-function locations,
-            700 strings with 6582 characters,
-and the built_in function-call counts, 972 in all, are:
-= -- 108
-> -- 14
-< -- 2
-+ -- 8
-- -- 2
-* -- 24
-:= -- 101
-add.period$ -- 16
-call.type$ -- 6
+            691 strings with 6254 characters,
+and the built_in function-call counts, 613 in all, are:
+= -- 65
+> -- 8
+< -- 1
++ -- 5
+- -- 1
+* -- 14
+:= -- 66
+add.period$ -- 10
+call.type$ -- 4
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 52
-empty$ -- 131
-format.name$ -- 2
-if$ -- 251
+cite$ -- 5
+duplicate$ -- 33
+empty$ -- 82
+format.name$ -- 1
+if$ -- 154
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 4
 missing$ -- 0
-newline$ -- 42
-num.names$ -- 6
-pop$ -- 44
+newline$ -- 31
+num.names$ -- 3
+pop$ -- 28
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 28
+skip$ -- 17
 stack$ -- 0
 substring$ -- 0
-swap$ -- 24
+swap$ -- 15
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 2
-width$ -- 7
-write$ -- 85
-(There were 2 warnings)
+warning$ -- 1
+while$ -- 1
+width$ -- 5
+write$ -- 58
+(There was 1 warning)

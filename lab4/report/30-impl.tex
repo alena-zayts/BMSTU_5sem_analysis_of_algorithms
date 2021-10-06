@@ -1,88 +1,102 @@
 \chapter{Технологическая часть}
 
-В данном разделе производится выбор средств реализации, а также приводятся требования к программному обеспечению (ПО), листинги реализованных алгоритмов и тесты для программы.
+В данном разделе производится выбор средств реализации, а также приводятся листинги реализованных алгоритмов и результаты тестирования программы.
 
-\section{Требования к ПО}
-
-На вход программе подается массив целых чисел, а на выходе должен быть получен масссив, отсортированный с помощью каждого реализованного алгоритма сортировки: вставками, пузырьком и шейкерной. Также необходимо вывести затраченное каждой реализацией процессорное время.
 
 \section{Выбор средств реализации}
 
-В качестве языка программирования для реализации данной лабораторной работы был выбран язык Python  \cite{PythonBook}. Он позволяет быстро реализовывать различные алгоритмы без выделения большого времени на проектирование сруктуры программы и выбор типов данных. 
+Основное требование к языку программирования в данной лабораторной работе - наличие в нем нативных потоков. Язык C\# обладает этим свойством и уже использовался мною ранее, поэтому и был выбран  \cite{CBook}. 
 
-Кроме того, в Python есть библиотека time, которая предоставляет функцию process\_time для замера процессорного времени \cite{process_time_text}.
+Для замеров времени используется предоставляемый класс Stopwatch, а для организации распараллеливания - пространство имен System.Threading , которое содержит в себе классы, поддерживающие многопоточное программирование \cite{CBook}, и самостоятельно реализованный вспомогательный класс Limits.
 
-В качестве среды разработки выбран PyCharm. Он является кросс-платформенным, а также предоставляет удобный и функциональнаый отладчик и средства для рефакторинга кода, что позволяет быстро находить и исправлять ошибки \cite{pycharm}.
+В качестве среды разработки выбрана “Visual Studio 2019” так как она предоставляет умную проверку кода и его автоматический рефакторинг, что делает возможным быстрое выявление и исправление ошибок.
+
 
 \section{Листинги кода}
 
-В листингах \ref{insertion_list} - \ref{shaker_list} представлены реализации рассматриваемых алгоритмов.
+\lstset{style=sharpc}
 
-\begin{lstlisting}[caption=Реализация алгоритма сортировки вставками,
-	label={insertion_list}]
-	def insertion_sort(arr, n):
-		for i in range(1, n):
-			j = i
-			cur = arr[j]
-			while arr[j - 1] > cur and j > 0:
-				arr[j] = arr[j - 1]
-				j -= 1
-			arr[j] = cur
-		return arr
+В листингах \ref{tras_basic} - \ref{tras_work} представлены реализации рассматриваемых алгоритмов.
+
+\begin{lstlisting}[caption=Реализация  последовательного алгоритма трассировки лучей,
+	label={tras_basic}]
+public Bitmap render_simple()
+{
+	Camera camera = scene.camera;
+	Vec3 view_vector = null;
+	Vec3 color = null;
+	for (int x = -scene.canvasWidth / 2; x < scene.canvasWidth / 2; x++)
+	{
+		for (int y = -scene.canvasHeight / 2; y < scene.canvasHeight / 2; y++)
+		{
+			view_vector = ProjectPixel(x, y) * camera.rotation_mtrx;
+			color = TraceRay(camera.position, view_vector, projection_plane_d, Double.PositiveInfinity, recursion_depth, x, y);
+			SetPixel(x, y, CountColor(color));
+			
+		}
+	}
+	
+	return this.bmp;
+}
 \end{lstlisting}
 
 
-\begin{lstlisting}[caption=Реализация алгоритма сортировки пузырьком,
-	label={bubble_list}]
-	def bubble_sort(arr, n):
-		for i in range(n - 1):
-			for j in range(n - i - 1):
-				if arr[j] > arr[j + 1]:
-					arr[j], arr[j + 1] = arr[j + 1], arr[j]
-		return arr
-\end{lstlisting}
-
-\begin{lstlisting}[caption=Реализация алгоритма шейкерной сортировки,
-	label={shaker_list}]
-
-	def shaker_sort(arr, n):
-		left = 0
-		right = n - 1
-		while left <= right:
-			for i in range(right, left, -1):
-				if arr[i - 1] > arr[i]:
-					arr[i - 1], arr[i] = arr[i], arr[i - 1]
-			left += 1
-			for i in range(left, right, 1):
-				if arr[i] > arr[i + 1]:
-					arr[i + 1], arr[i] = arr[i], arr[i + 1]
-			right -= 1
+\begin{lstlisting}[caption=Реализация главного потока параллельного алгоритма трассировки лучей,
+	label={tras_main}]
+public Bitmap render_parallelized()
+	{
+		Thread[] threads = new Thread[numThreads];
+		for (int i = 0; i < numThreads; i++)
+		{
+			Limits p = new Limits(scene.canvasWidth / numThreads, scene.canvasHeight, -scene.canvasWidth / 2 + scene.canvasWidth / numThreads * i, -scene.canvasHeight / 2);
+			threads[i] = new Thread(render_par_working);
+			threads[i].Start(p);
+		}
+		foreach (Thread thread in threads)
+		{
+			thread.Join();
+		}
 		
-		return arr
+		return this.bmp;
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Реализация рабочего потока параллельного алгоритма трассировки лучей,
+	label={tras_work}]
+
+	public void render_par_working(object obj)
+	{
+		Limits p = (Limits)obj;
+		Camera camera = scene.camera;
+		Vec3 view_vector = null;
+		Vec3 color = null;
+		for (int x = p.start_x; x < p.start_x + p.width; x++)
+		{
+			for (int y = p.start_y; y < p.start_y + p.height; y++)
+			{
+				view_vector = ProjectPixel(x, y) * camera.rotation_mtrx;
+				color = TraceRay(camera.position, view_vector, projection_plane_d, Double.PositiveInfinity, recursion_depth, x, y);
+				SetPixel(x, y, CountColor(color));
+				
+			}
+		}
 \end{lstlisting}
 
 \section{Тестирование}
 
-В таблице \ref{test} приведены функциональные тесты для реализаций алгоритмов сортировок. Все тесты пройдены успешно каждой реализацией.
+На рисунке \ref{fig:work_example} приведен результат тестирования программы.
 
-\begin{table}[h]
-	\begin{center}
-		\caption{\label{test} Тесты}
-\begin{tabular}{ | l | l | }
-	\hline
-	Исходный массив & Ожидаемый результат \\ \hline
-	 &  \\
-	1 & 1 \\
-	4, 4, 4, 4 & 4, 4, 4, 4 \\
-	-1, 1, 2, 2, 10 & -1, 1, 2, 2, 10 \\
-	9, 8, 0 & 0, 8, 9 \\
-	4, 5, 2, -1, 5, 6 & -1, 2, 4, 5, 5, 6 \\
-	\hline
-\end{tabular}
-	\end{center}
-\end{table}
+\begin{figure}[h!]
+	
+	\centering{\includegraphics[scale=0.7]{inc/img/work_example.png}}
+	
+	\caption{Результат тестирования программы}
+	
+	\label{fig:work_example}
+	
+\end{figure}
 
 
 \section*{Вывод}
 
-Был производен выбор средств реализации, реализованы и протестированы алгоритмы сортировок (вставками, пузырьком и шейкером), а также приведены требования к ПО.
+Был производен выбор средств реализации, реализованы и протестированы последовательный и параллельный алгоритмы обратной трассировки лучей.

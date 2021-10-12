@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  6 OCT 2021 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 OCT 2021 18:11
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -1322,12 +1322,7 @@ Overfull \hbox (3.01633pt too wide) in paragraph at lines 12--12
 
 
 
- <./inc/img/tras_img.png>]
-Overfull \hbox (28.0931pt too wide) in paragraph at lines 23--23
- |[]\T2A/cmr/bx/n/20.74 ѕараллельна€ ре-а-ли-за-ци€ ал-го-рит-ма трас-
- []
-
-) [5]
+ <./inc/img/tras_img.png>]) [5]
 \openout2 = `20-design.aux'.
 
  (20-design.tex
@@ -1337,27 +1332,27 @@ Overfull \hbox (19.91391pt too wide) in paragraph at lines 5--5
  |[]\T2A/cmr/bx/n/20.74 —хема по-сле-до-ва-тель-но-го ал-го-рит-ма трас-
  []
 
-<inc/img/trass_simple.png, id=138, 142.5325pt x 744.7825pt>
+<inc/img/trass_simple.png, id=138, 162.6075pt x 875.27pt>
 File: inc/img/trass_simple.png Graphic file (type png)
 <use inc/img/trass_simple.png>
 Package pdftex.def Info: inc/img/trass_simple.png  used on input line 11.
-(pdftex.def)             Requested size: 99.77205pt x 521.3442pt.
+(pdftex.def)             Requested size: 113.82446pt x 612.68483pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/trass_split.png, id=140, 353.32pt x 655.44875pt>
+<inc/img/trass_split.png, id=140, 368.37625pt x 725.71124pt>
 File: inc/img/trass_split.png Graphic file (type png)
 <use inc/img/trass_split.png>
 Package pdftex.def Info: inc/img/trass_split.png  used on input line 25.
-(pdftex.def)             Requested size: 247.32231pt x 458.81099pt.
+(pdftex.def)             Requested size: 257.8616pt x 507.99442pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<inc/img/trass_count.png, id=142, 162.6075pt x 835.12pt>
+<inc/img/trass_count.png, id=142, 162.6075pt x 925.4575pt>
 File: inc/img/trass_count.png Graphic file (type png)
 <use inc/img/trass_count.png>
 Package pdftex.def Info: inc/img/trass_count.png  used on input line 37.
-(pdftex.def)             Requested size: 113.82446pt x 584.58pt.
+(pdftex.def)             Requested size: 113.82446pt x 647.81584pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1507,19 +1502,13 @@ com / ru-[]ru / dotnet / csharp /
 ] (Report.aux (00-title.aux) (01-contents.aux) (02-intro.aux)
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
-
-Package rerunfilecheck Warning: File `Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report.out':
-(rerunfilecheck)             Before: 3B1EA6744F3FF3FE3A24BA974F72BB75;4281
-(rerunfilecheck)             After:  56E8998D753E50009CF878B35F453274;4282.
+Package rerunfilecheck Info: File `Report.out' has not changed.
+(rerunfilecheck)             Checksum: 87832D519CEAE2F5F78880B6FCD16660;4210.
  ) 
 Here is how much of TeX's memory you used:
  37765 strings out of 478864
- 866227 string characters out of 2858518
- 1641449 words of memory out of 10000000
+ 866228 string characters out of 2858518
+ 1641454 words of memory out of 10000000
  54850 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1537,7 +1526,7 @@ ts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\MiKTeX
 \fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk>
-Output written on Report.pdf (18 pages, 1722074 bytes).
+Output written on Report.pdf (18 pages, 1730541 bytes).
 PDF statistics:
  784 PDF objects out of 1000 (max. 8388607)
  110 named destinations out of 1000 (max. 500000)

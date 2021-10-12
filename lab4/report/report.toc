@@ -2,7 +2,7 @@
 \contentsline {chapter}{Введение}{3}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Аналитическая часть}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Алгоритм трасссировки ллучей}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Параллельная реализация алгоритма трассировки лучей}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Параллелизация алгоритма трассировки лучей}{5}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Конструкторская часть}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Схема последовательного алгоритма трассировки лучей}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Схема параллельного алгоритма трассировки лучей}{6}{section.2.2}%

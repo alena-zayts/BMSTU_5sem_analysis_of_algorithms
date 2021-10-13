@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  8 OCT 2021 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  13 OCT 2021 18:15
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -1187,7 +1187,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=71, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=87, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1307,7 +1307,7 @@ o.jpg>])
 
 (10-analysis.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
-<inc/img/tras_img.png, id=120, 409.53pt x 147.98143pt>
+<inc/img/tras_img.png, id=140, 409.53pt x 147.98143pt>
 File: inc/img/tras_img.png Graphic file (type png)
 <use inc/img/tras_img.png>
 Package pdftex.def Info: inc/img/tras_img.png  used on input line 12.
@@ -1332,45 +1332,39 @@ Overfull \hbox (19.91391pt too wide) in paragraph at lines 5--5
  |[]\T2A/cmr/bx/n/20.74 Схема по-сле-до-ва-тель-но-го ал-го-рит-ма трас-
  []
 
-<inc/img/trass_simple.png, id=138, 162.6075pt x 875.27pt>
+[6
+
+
+
+
+]
+<inc/img/trass_simple.png, id=163, 162.6075pt x 875.27pt>
 File: inc/img/trass_simple.png Graphic file (type png)
 <use inc/img/trass_simple.png>
-Package pdftex.def Info: inc/img/trass_simple.png  used on input line 11.
+Package pdftex.def Info: inc/img/trass_simple.png  used on input line 12.
 (pdftex.def)             Requested size: 113.82446pt x 612.68483pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/trass_split.png, id=140, 368.37625pt x 725.71124pt>
+ [7 <./inc/img/trass_simple.png>]
+<inc/img/trass_split.png, id=171, 373.395pt x 725.71124pt>
 File: inc/img/trass_split.png Graphic file (type png)
 <use inc/img/trass_split.png>
-Package pdftex.def Info: inc/img/trass_split.png  used on input line 25.
-(pdftex.def)             Requested size: 257.8616pt x 507.99442pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/trass_count.png, id=142, 162.6075pt x 925.4575pt>
+Package pdftex.def Info: inc/img/trass_split.png  used on input line 26.
+(pdftex.def)             Requested size: 261.37471pt x 507.99442pt.
+ [8 <./inc/img/trass_split.png>] [9]
+<inc/img/trass_count.png, id=184, 162.6075pt x 925.4575pt>
 File: inc/img/trass_count.png Graphic file (type png)
 <use inc/img/trass_count.png>
-Package pdftex.def Info: inc/img/trass_count.png  used on input line 37.
+Package pdftex.def Info: inc/img/trass_count.png  used on input line 39.
 (pdftex.def)             Requested size: 113.82446pt x 647.81584pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [6
-
-
-
-
-] [7 <./inc/img/trass_simple.png>] [8 <./inc/img/trass_split.png>] [9 <./inc/im
-g/trass_count.png>]
+)
+[10 <./inc/img/trass_count.png>] [11]
 \openout2 = `30-impl.aux'.
 
  (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
-Overfull \hbox (6.26811pt too wide) in paragraph at lines 10--11
-\T2A/cmr/m/n/14.4 грам-ми-ро-ва-ние [[]], и са-мо-сто-я-тель-но ре-а-ли-зо-ван-
-ный вспо-мо-га-тель-ный класс
+Overfull \hbox (3.10323pt too wide) in paragraph at lines 10--11
+\T2A/cmr/m/n/14.4 для ор-га-ни-за-ции рас-па-рал-ле-ли-ва-ния - про-стран-ство 
+имен System.Threading,
  []
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1387,41 +1381,37 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [10
+) [12
 
 
 
 
-] [11]
-<inc/img/work_example.png, id=224, 504.16928pt x 503.30893pt>
+] [13] [14]
+<inc/img/work_example.png, id=273, 504.16928pt x 503.30893pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
-Package pdftex.def Info: inc/img/work_example.png  used on input line 91.
+Package pdftex.def Info: inc/img/work_example.png  used on input line 92.
 (pdftex.def)             Requested size: 352.91609pt x 352.31384pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [12] [13 <./inc/img/work_example.png>]
+) [15 <./inc/img/work_example.png>]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-[14
+[16
 
 
 
 
 ]
-<inc/img/time_all.png, id=256, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=285, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 29.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
- [15 <./inc/img/time_all.png>]) [16]
+ [17 <./inc/img/time_all.png>]) [18]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [17
+ (50-conclusion.tex) [19
 
 
 
@@ -1494,7 +1484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
 com / ru-[]ru / dotnet / csharp /
  []
 
-)) [18
+)) [20
 
 
 
@@ -1503,16 +1493,16 @@ com / ru-[]ru / dotnet / csharp /
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 87832D519CEAE2F5F78880B6FCD16660;4210.
+(rerunfilecheck)             Checksum: CCA18799C2C00168C726D526EDBFFB6C;5438.
  ) 
 Here is how much of TeX's memory you used:
- 37765 strings out of 478864
- 866228 string characters out of 2858518
- 1641454 words of memory out of 10000000
- 54850 multiletter control sequences out of 15000+600000
+ 37775 strings out of 478864
+ 866338 string characters out of 2858518
+ 1638701 words of memory out of 10000000
+ 54854 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,7n,102p,1040b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,7n,102p,1108b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
@@ -1526,9 +1516,9 @@ ts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\alena\AppData\Local\MiKTeX
 \fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\alena\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\alena\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk>
-Output written on Report.pdf (18 pages, 1730541 bytes).
+Output written on Report.pdf (20 pages, 1737003 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 815 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,7 +14,7 @@ def solve_gauss():
             ratio = a[j][i] / a[i][i]               # 8
             for k in range(n + 1):                  # 9
                 sub = ratio * a[i][k]               # 10
-                a[j][k] -= sub                      # 11 дальше гаверное от этого а не а, и то же от x
+                a[j][k] -= sub                      # 11
 
     x[n - 1] = a[n - 1][n] / a[n - 1][n - 1]        # 12
 
@@ -27,6 +27,7 @@ def solve_gauss():
         x[i] /= a[i][i]                             # 18
 
     return x
+
 
 if __name__ == '__main__':
     x = solve_gauss()

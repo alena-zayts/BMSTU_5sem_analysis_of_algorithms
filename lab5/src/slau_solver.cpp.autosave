@@ -1,0 +1,67 @@
+#include "slau_solver.h"
+
+Mean::Mean(int n, double *arr)
+{
+    double sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+    
+    this->mean = sum / n;
+}
+
+// Вычисление мощности движка (a^x)
+Engine::Engine(int a, int x)
+{    
+    this->engine_power = a;
+
+    for (int i = 0; i < x; i++)
+    {
+        this->engine_power *= a;
+    }
+}
+
+// Вычисление числа колес (n-ое число Фибоначчи)
+Wheels::Wheels(int n)
+{
+    size_t f1 = 1, f2 = 1;
+    this->wheels_cnt = f1;
+
+    for (int i = 2; i < n; i++)
+    {
+        this->wheels_cnt = f1 + f2;
+        f1 = f2;
+        f2 = this->wheels_cnt;
+    }
+}
+
+void Standardizer::create_engine(size_t task_num)
+{
+    Logger::log_current_event(task_num, "Part 2 | Start");
+
+    if (this->meanC->is_freight)
+    {
+        this->engine = std::unique_ptr<Engine>(new Engine(10, 150000));
+    }
+    else
+    {
+        this->engine = std::unique_ptr<Engine>(new Engine(5,  150000));
+    }
+
+    Logger::log_current_event(task_num, "Part 2 | End  ");
+}
+
+void Standardizer::find_mean(size_t task_num)
+{
+    Logger::log_current_event(task_num, "Part 1 | Start");
+    this->meanC = std::unique_ptr<Determinant>(new Determinant(27644437));
+    Logger::log_current_event(task_num, "Part 1 | End  ");
+}
+
+void Standardizer::create_wheels(size_t task_num)
+{
+    Logger::log_current_event(task_num, "Part 3 | Start");
+    this->wheels = std::unique_ptr<Wheels>(new Wheels(this->engine->engine_power));
+    Logger::log_current_event(task_num, "Part 3 | End  ");
+}

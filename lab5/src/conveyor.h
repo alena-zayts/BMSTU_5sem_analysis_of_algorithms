@@ -17,7 +17,7 @@ public:
     void run_parallel(size_t n_tasks, int n, double *arr, double *new_arr);
     void run_linear(size_t n_tasks, int n, double *arr, double *new_arr);
 
-    void find_mean();
+    void find_mean(size_t n_tasks);
     void find_std_dev();
     void transform();
 

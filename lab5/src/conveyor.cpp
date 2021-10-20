@@ -9,13 +9,14 @@ void Conveyor::run_parallel(size_t n_tasks, int n, double *arr, double *new_arr)
         new_task->in1 = system_clock::now();
     }
 
-    this->threads[0] = std::thread(&Conveyor::find_mean, this);
+    this->threads[0] = std::thread(&Conveyor::find_mean, this, n_tasks);
     this->threads[1] = std::thread(&Conveyor::find_std_dev, this);
     this->threads[2] = std::thread(&Conveyor::transform, this);
 
     for (int i = 0; i < THRD_CNT; i++)
     {
-        this->threads[i].join();
+        if (this->threads[i].joinable())
+            this->threads[i].join();
     }
 }
 
@@ -54,7 +55,7 @@ void Conveyor::run_linear(size_t n_tasks, int n, double *arr, double *new_arr)
     }
 }
 
-void Conveyor::find_mean()
+void Conveyor::find_mean(size_t n_tasks)
 {
     size_t task_num = 0;
 

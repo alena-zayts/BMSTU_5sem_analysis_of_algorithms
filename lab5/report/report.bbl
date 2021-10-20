@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{first_article}
+\selectlanguageifdefined{russian}
+Принципы конвейерной технологии
+  [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://www.sites.google.com/site/shoradimon/18-principy-konvejernoj-tehnologii}
+  (дата обращения: 19.10.2021).
+
+\bibitem{trass}
+\selectlanguageifdefined{russian}
+Роджерс~Д. Математические основы машинной
+  графики.
+\newblock М.: Мир, 1989.
+\newblock Т.~512.
+
+\bibitem{article_paral}
+\selectlanguageifdefined{russian}
+Параллельная обработка в алгоритме
+  визуализации с трассировкой лучей.
+  [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://cyberleninka.ru/article/n/parallelnaya-obrabotka-v-algoritmah-vizualizatsii-s-trassirovkoy-luchey}
+  (дата обращения: 05.10.2021).
+
+\bibitem{CBook}
+\selectlanguageifdefined{russian}
+Краткий обзор языка C#. [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://docs.microsoft.com/ru-ru/dotnet/csharp/tour-of-csharp/}
+  (дата обращения: 06.10.2021).
+
+\end{thebibliography}

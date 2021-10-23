@@ -1,9 +1,9 @@
 #include "standardizer.h"
 
-Mean::Mean(int n, double *arr)
+Mean::Mean(size_t n, double *arr)
 {
     double sum = 0;
-    for (int i = 0; i < n; i++)
+    for (size_t i = 0; i < n; i++)
     {
         sum += arr[i];
     }
@@ -11,10 +11,10 @@ Mean::Mean(int n, double *arr)
     this->mean = sum / n;
 }
 
-StdDev::StdDev(int n, double *arr, double mean)
+StdDev::StdDev(size_t n, double *arr, double mean)
 {    
     double sum = 0;
-    for (int i = 0; i < n; i++)
+    for (size_t i = 0; i < n; i++)
     {
         sum += (arr[i] - mean) * (arr[i] - mean);
     }
@@ -22,15 +22,15 @@ StdDev::StdDev(int n, double *arr, double mean)
     this->std_dev = sqrt(sum / n);
 }
 
-Transformer::Transformer(int n, double *arr, double mean, double std_dev, double *new_arr)
+Transformer::Transformer(size_t n, double *arr, double mean, double std_dev, double *new_arr)
 {
-    for (int i = 0; i < n; i++)
+    for (size_t i = 0; i < n; i++)
     {
         new_arr[i] = (arr[i] - mean) / std_dev;
     }
 }
 
-Standardizer::Standardizer(int n, double *arr, double *new_arr)
+Standardizer::Standardizer(size_t n, double *arr, double *new_arr)
 {
     this->n = n;
     this->arr = arr;

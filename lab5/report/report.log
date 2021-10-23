@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  20 OCT 2021 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  23 OCT 2021 13:55
 entering extended mode
 **./report.tex
 (report.tex
@@ -1187,7 +1187,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=95, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=103, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1308,15 +1308,6 @@ o.jpg>])
 (10-analysis.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 
-LaTeX Warning: Citation `second_article' on page 4 undefined on input line 9.
-
-
-LaTeX Warning: Citation `third_article' on page 4 undefined on input line 14.
-
-
-LaTeX Warning: Citation `fourth_article' on page 4 undefined on input line 22.
-
-
 Overfull \hbox (24.62172pt too wide) in paragraph at lines 22--23
 []\T2A/cmr/m/n/14.4 где $\OML/cmm/m/it/14.4 x[]$ \T2A/cmr/m/n/14.4  ис-ход-ное
  зна-че-ние при-зна-ка, $\OML/cmm/m/it/14.4 X[]$ \T2A/cmr/m/n/14.4 = $[]$ и $\O
@@ -1339,25 +1330,25 @@ ML/cmm/m/it/14.4 D[]$ \T2A/cmr/m/n/14.4 = $[]$
 
 
 ] [7]
-<inc/img/mean.png, id=184, 162.6075pt x 784.9325pt>
+<inc/img/mean.png, id=200, 162.6075pt x 784.9325pt>
 File: inc/img/mean.png Graphic file (type png)
 <use inc/img/mean.png>
 Package pdftex.def Info: inc/img/mean.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82446pt x 549.449pt.
  [8 <./inc/img/mean.png>]
-<inc/img/std_dev.png, id=191, 162.6075pt x 784.9325pt>
+<inc/img/std_dev.png, id=207, 162.6075pt x 784.9325pt>
 File: inc/img/std_dev.png Graphic file (type png)
 <use inc/img/std_dev.png>
 Package pdftex.def Info: inc/img/std_dev.png  used on input line 43.
 (pdftex.def)             Requested size: 113.82446pt x 549.449pt.
  [9 <./inc/img/std_dev.png>]
-<inc/img/transformer.png, id=198, 162.6075pt x 614.295pt>
+<inc/img/transformer.png, id=214, 162.6075pt x 614.295pt>
 File: inc/img/transformer.png Graphic file (type png)
 <use inc/img/transformer.png>
 Package pdftex.def Info: inc/img/transformer.png  used on input line 54.
 (pdftex.def)             Requested size: 113.82446pt x 430.00356pt.
  [10 <./inc/img/transformer.png>] [11]
-<inc/img/linear.png, id=210, 162.6075pt x 886.31125pt>
+<inc/img/linear.png, id=226, 162.6075pt x 886.31125pt>
 File: inc/img/linear.png Graphic file (type png)
 <use inc/img/linear.png>
 Package pdftex.def Info: inc/img/linear.png  used on input line 71.
@@ -1368,30 +1359,30 @@ Overfull \hbox (22.1914pt too wide) in paragraph at lines 80--80
  []
 
 [13]
-<inc/img/parallel.png, id=223, 534.99875pt x 926.46124pt>
+<inc/img/parallel.png, id=239, 534.99875pt x 836.12375pt>
 File: inc/img/parallel.png Graphic file (type png)
 <use inc/img/parallel.png>
 Package pdftex.def Info: inc/img/parallel.png  used on input line 87.
-(pdftex.def)             Requested size: 374.49657pt x 648.51845pt.
+(pdftex.def)             Requested size: 374.49657pt x 585.28264pt.
  [14 <./inc/img/parallel.png>]
-<inc/img/paral_mean.png, id=231, 394.47375pt x 605.26125pt>
+<inc/img/paral_mean.png, id=247, 394.47375pt x 605.26125pt>
 File: inc/img/paral_mean.png Graphic file (type png)
 <use inc/img/paral_mean.png>
 Package pdftex.def Info: inc/img/paral_mean.png  used on input line 101.
 (pdftex.def)             Requested size: 276.12973pt x 423.67998pt.
  [15 <./inc/img/paral_mean.png>]
-<inc/img/paral_std_dev.png, id=239, 524.96124pt x 826.08624pt>
+<inc/img/paral_std_dev.png, id=255, 523.9575pt x 825.0825pt>
 File: inc/img/paral_std_dev.png Graphic file (type png)
 <use inc/img/paral_std_dev.png>
 Package pdftex.def Info: inc/img/paral_std_dev.png  used on input line 112.
-(pdftex.def)             Requested size: 367.47037pt x 578.25642pt.
+(pdftex.def)             Requested size: 366.76775pt x 577.55382pt.
  [16 <./inc/img/paral_std_dev.png>]
-<inc/img/paral_transformer.png, id=246, 514.92375pt x 856.19875pt>
+<inc/img/paral_transformer.png, id=262, 513.92pt x 855.195pt>
 File: inc/img/paral_transformer.png Graphic file (type png)
 <use inc/img/paral_transformer.png>
 Package pdftex.def Info: inc/img/paral_transformer.png  used on input line 123.
 
-(pdftex.def)             Requested size: 360.44417pt x 599.33504pt.
+(pdftex.def)             Requested size: 359.74153pt x 598.63243pt.
  [17 <./inc/img/paral_transformer.png>]) [18]
 \openout2 = `30-impl.aux'.
 
@@ -1399,59 +1390,92 @@ Package pdftex.def Info: inc/img/paral_transformer.png  used on input line 123.
 (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
-LaTeX Warning: Citation `CBook2' on page 19 undefined on input line 10.
-
-
 Overfull \hbox (78.58255pt too wide) in paragraph at lines 10--11
 []\T2A/cmr/m/n/14.4 Для за-ме-ров вре-ме-ни ис-поль-зу-ет-ся предо-став-ля-е-мы
 й класс system_clock::time_poin,
  []
 
+[19
+
+
+
+
+] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-22.
+34.
 
 (C:\Users\alena\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-28.
+43.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [19
-
-
-
-
-] [20] [21]
-<inc/img/work_example.png, id=334, 504.16928pt x 503.30893pt>
+) [20] [21] [22] [23]
+<inc/img/work_example.png, id=409, 309.29839pt x 113.56714pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
-Package pdftex.def Info: inc/img/work_example.png  used on input line 92.
-(pdftex.def)             Requested size: 352.91609pt x 352.31384pt.
-) [22 <./inc/img/work_example.png>]
+Package pdftex.def Info: inc/img/work_example.png  used on input line 157.
+(pdftex.def)             Requested size: 309.29762pt x 113.56685pt.
+
+[24 <./inc/img/work_example.png>]
+<inc/img/work_example2.png, id=417, 619.02696pt x 384.57964pt>
+File: inc/img/work_example2.png Graphic file (type png)
+<use inc/img/work_example2.png>
+Package pdftex.def Info: inc/img/work_example2.png  used on input line 173.
+(pdftex.def)             Requested size: 495.22224pt x 307.66411pt.
+
+Overfull \hbox (25.75175pt too wide) in paragraph at lines 173--174
+ [][] 
+ []
+
+<inc/img/stats.png, id=419, 423.72589pt x 91.62804pt>
+File: inc/img/stats.png Graphic file (type png)
+<use inc/img/stats.png>
+Package pdftex.def Info: inc/img/stats.png  used on input line 188.
+(pdftex.def)             Requested size: 338.98117pt x 73.30252pt.
+[25 <./inc/img/work_example2.png> <./inc/img/stats.png>]
+<inc/img/work_example3.png, id=430, 371.67429pt x 50.33089pt>
+File: inc/img/work_example3.png Graphic file (type png)
+<use inc/img/work_example3.png>
+Package pdftex.def Info: inc/img/work_example3.png  used on input line 203.
+(pdftex.def)             Requested size: 371.67337pt x 50.33075pt.
+) [26 <./inc/img/work_example3.png>]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-[23
-
-
-
-
-]
-<inc/img/time_all.png, id=346, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=438, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 29.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
- [24 <./inc/img/time_all.png>]) [25]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27
+
+
+
+
+] [28 <./inc/img/time_all.png>]
+File: inc/img/stats.png Graphic file (type png)
+<use inc/img/stats.png>
+Package pdftex.def Info: inc/img/stats.png  used on input line 40.
+(pdftex.def)             Requested size: 423.72485pt x 91.6278pt.
+) [29] [30]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [26
+ (50-conclusion.tex) [31
 
 
 
@@ -1479,36 +1503,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--33
-[]\T2A/cmr/m/n/14.4 Параллельная об-ра-бот-ка в ал-го-рит-ме ви-зу-а-ли-за-ции
+Underfull \hbox (badness 2809) in paragraph at lines 27--32
+[]\T2A/cmr/m/n/14.4 Стандартизация дан-ных (Data standardization) [Элек-трон-ны
+й ре-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--33
-\T2A/cmr/m/n/14.4 с трас-си-ров-кой лу-чей. [Элек-трон-ный ре-сурс].  Ре-
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+\T2A/cmr/m/n/14.4 сурс].  Ре-жим до-сту-па: []$\T2A/cmtt/m/n/14.4 https : / / w
+iki . loginom . ru / articles /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--33
-\T2A/cmr/m/n/14.4 жим до-сту-па: []$\T2A/cmtt/m/n/14.4 https : / / cyberleninka
- . ru / article / n /
+Underfull \hbox (badness 1442) in paragraph at lines 35--40
+[]\T2A/cmr/m/n/14.4 Стандартное от-кло-не-ние [Элек-трон-ный ре-сурс].  Ре-жим 
+до-сту-па:
  []
 
 
-Overfull \hbox (74.4357pt too wide) in paragraph at lines 27--33
-\T2A/cmtt/m/n/14.4 parallelnaya-[]obrabotka-[]v-[]algoritmah-[]vizualizatsii-[]
-s-[]trassirovkoy-[]luchey$[]
+Underfull \hbox (badness 6741) in paragraph at lines 50--54
+[]\T2A/cmr/m/n/14.4 Структура systemclock [Элек-трон-ный ре-сурс].  Ре-жим до-с
+ту-
  []
 
-! You can't use `macro parameter character #' in horizontal mode.
-l.36 РљСЂР°С‚РєРёР№ РѕР±Р·РѕСЂ СЏР·С‹РєР° C#
-                                            . [Р­Р»РµРєС‚СЂРѕРЅРЅС‹Р№ СЂРµСЃ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-)) [27
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
+\T2A/cmr/m/n/14.4 па: []$\T2A/cmtt/m/n/14.4 https : / / docs . microsoft . com 
+/ ru-[]ru / cpp / standard-[]library /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
+\T2A/cmtt/m/n/14.4 system-[]clock-[]structure ? view = msvc-[]160$[] \T2A/cmr/m
+/n/14.4 (да-та об-ра-ще-ния:
+ []
+
+)) [32
 
 
 
@@ -1516,20 +1546,17 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ] (report.aux (00-title.aux) (01-contents.aux) (02-intro.aux)
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9DA5996BDB1791735315F441B9D65999;5773.
+(rerunfilecheck)             Checksum: 67F6CE1571E6246E49FEBB1E2568843F;6323.
  ) 
 Here is how much of TeX's memory you used:
- 37824 strings out of 478864
- 867190 string characters out of 2858518
- 1642395 words of memory out of 10000000
- 54882 multiletter control sequences out of 15000+600000
+ 38013 strings out of 478864
+ 870061 string characters out of 2858518
+ 1600650 words of memory out of 10000000
+ 55000 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,7n,102p,1108b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,7n,102p,899b,2004s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
@@ -1550,9 +1577,9 @@ nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (27 pages, 1785312 bytes).
+Output written on report.pdf (32 pages, 583180 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1023 PDF objects out of 1200 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

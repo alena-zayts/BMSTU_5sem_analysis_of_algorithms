@@ -12,7 +12,7 @@ public:
     Logger() = default;
     ~Logger() = default;
 
-    static void log_current_event(size_t task_num, const char *const event, int tab);
+    static void log_current_event(size_t task_num, const char *const event, size_t tab);
 };
 
 #endif

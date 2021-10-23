@@ -9,7 +9,7 @@
 class Mean
 {
 public:
-    Mean(int n, double *arr);
+    Mean(size_t n, double *arr);
     ~Mean() = default;
 
     double mean;
@@ -18,7 +18,7 @@ public:
 class StdDev
 {
 public:
-    StdDev(int n, double *arr, double mean);
+    StdDev(size_t n, double *arr, double mean);
     ~StdDev() = default;
 
     double std_dev;
@@ -27,14 +27,14 @@ public:
 class Transformer
 {
 public:
-    Transformer(int n, double *arr, double mean, double std_dev, double *new_arr);
+    Transformer(size_t n, double *arr, double mean, double std_dev, double *new_arr);
     ~Transformer() = default;
 };
 
 class Standardizer
 {
 public:
-    Standardizer(int n, double *arr, double *new_arr);
+    Standardizer(size_t n, double *arr, double *new_arr);
     ~Standardizer() = default;
 
     void find_mean(size_t task_num);
@@ -49,14 +49,16 @@ public:
     system_clock::time_point out3;
     system_clock::time_point out_system;
 
+    double *new_arr;
+
 private:
     std::unique_ptr<Mean> meanC;
     std::unique_ptr<StdDev> stdDevC;
     std::unique_ptr<Transformer> transformer;
 
-    int n;
+    size_t n;
     double *arr;
-    double *new_arr;
+
 };
 
 #endif

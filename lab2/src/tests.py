@@ -55,4 +55,38 @@ def test_all():
 
 
 if __name__ == '__main__':
-    test_all()
+    #test_all()
+    # y = (x - mean) / standard_deviation
+    # mean = sum(x) / count(x)
+    # standard_deviation = sqrt(sum((x - mean) ^ 2) / count(x))
+    x = [1, 2, 3, 4]
+    n = len(x)
+
+    sum = 0
+    for i in range(n):
+        sum += x[i]
+    mean = float(sum) / n
+
+    sum = 0
+    for i in range(n):
+        sum += (x[i] - mean) ** 2
+    std: float = (sum / n) ** (1/2)
+
+    for i in range(n):
+        x[i] = (x[i] - mean) / std
+
+
+
+    print(x)
+
+    sum = 0
+    for i in range(n):
+        sum += x[i]
+    mean = float(sum) / n
+    print(mean)
+    sum = 0
+    for i in range(n):
+        sum += (x[i] - mean) ** 2
+    std: float = (sum / n) ** (1/2)
+
+    print(std)

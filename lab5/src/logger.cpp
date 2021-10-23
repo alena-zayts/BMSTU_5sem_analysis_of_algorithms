@@ -1,6 +1,6 @@
 #include "logger.h"
 
-void Logger::log_current_event(size_t task_num, const char *const event, int tab)
+void Logger::log_current_event(size_t task_num, const char *const event, size_t tab)
 {
     system_clock::time_point now = system_clock::now();
     system_clock::duration tp = now.time_since_epoch();

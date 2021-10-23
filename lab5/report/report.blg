@@ -23,46 +23,44 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 The style file: utf8gost705u.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: 51-biblio.bib
-Warning--empty booktitle in trass
-You've used 4 entries,
+You've used 6 entries,
             2958 wiz_defined-function locations,
-            691 strings with 6281 characters,
-and the built_in function-call counts, 613 in all, are:
-= -- 65
-> -- 8
-< -- 1
-+ -- 5
-- -- 1
-* -- 14
-:= -- 66
-add.period$ -- 10
-call.type$ -- 4
+            695 strings with 6697 characters,
+and the built_in function-call counts, 686 in all, are:
+= -- 66
+> -- 6
+< -- 0
++ -- 6
+- -- 0
+* -- 8
+:= -- 67
+add.period$ -- 12
+call.type$ -- 6
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 33
-empty$ -- 82
-format.name$ -- 1
-if$ -- 154
+cite$ -- 6
+duplicate$ -- 42
+empty$ -- 97
+format.name$ -- 0
+if$ -- 169
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 6
 missing$ -- 0
-newline$ -- 31
-num.names$ -- 3
-pop$ -- 28
+newline$ -- 40
+num.names$ -- 0
+pop$ -- 36
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 18
 stack$ -- 0
 substring$ -- 0
-swap$ -- 15
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 1
-width$ -- 5
-write$ -- 58
-(There was 1 warning)
+warning$ -- 0
+while$ -- 0
+width$ -- 7
+write$ -- 75

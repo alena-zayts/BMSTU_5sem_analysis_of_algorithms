@@ -15,27 +15,41 @@
   \url{https://www.sites.google.com/site/shoradimon/18-principy-konvejernoj-tehnologii}
   (дата обращения: 19.10.2021).
 
-\bibitem{trass}
+\bibitem{second_article}
 \selectlanguageifdefined{russian}
-Роджерс~Д. Математические основы машинной
-  графики.
-\newblock М.: Мир, 1989.
-\newblock Т.~512.
+Аппаратное ускорение для OpenGL [Электронный
+  ресурс].
+\newblock Режим доступа: \url{https://www.osp.ru/os/1997/02/179130}
+  (дата обращения: 19.10.2021).
 
-\bibitem{article_paral}
+\bibitem{third_article}
 \selectlanguageifdefined{russian}
-Параллельная обработка в алгоритме
-  визуализации с трассировкой лучей.
+Стандартизация данных (Data standardization)
   [Электронный ресурс].
 \newblock Режим доступа:
-  \url{https://cyberleninka.ru/article/n/parallelnaya-obrabotka-v-algoritmah-vizualizatsii-s-trassirovkoy-luchey}
-  (дата обращения: 05.10.2021).
+  \url{https://wiki.loginom.ru/articles/data-standartization.html} (дата
+  обращения: 19.10.2021).
+
+\bibitem{fourth_article}
+\selectlanguageifdefined{russian}
+Стандартное отклонение [Электронный
+  ресурс].
+\newblock Режим доступа:
+  \url{https://www.uznaychtotakoe.ru/standartnoe-otklonenie/} (дата
+  обращения: 19.10.2021).
 
 \bibitem{CBook}
 \selectlanguageifdefined{russian}
-Краткий обзор языка C#. [Электронный ресурс].
+Thread support library [Электронный ресурс].
 \newblock Режим доступа:
-  \url{https://docs.microsoft.com/ru-ru/dotnet/csharp/tour-of-csharp/}
-  (дата обращения: 06.10.2021).
+  \url{https://en.cppreference.com/w/cpp/thread} (дата обращения:
+  20.10.2021).
+
+\bibitem{CBook2}
+\selectlanguageifdefined{russian}
+Структура systemclock [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://docs.microsoft.com/ru-ru/cpp/standard-library/system-clock-structure?view=msvc-160}
+  (дата обращения: 20.10.2021).
 
 \end{thebibliography}

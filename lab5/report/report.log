@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  23 OCT 2021 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  27 OCT 2021 18:08
 entering extended mode
 **./report.tex
 (report.tex
@@ -1283,7 +1283,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--29
 o.jpg>])
 \openout2 = `01-contents.aux'.
 
- (01-contents.tex (report.toc)
+ (01-contents.tex (report.toc
+Overfull \hbox (1.5566pt too wide) in paragraph at lines 11--11
+ [][] [][]\T2A/cmr/m/n/14.4 —хемы па-рал-лель-ной об-ра-бот-ки дан-ных кон-вей-
+е-ром дл€ стан- 
+ []
+
+)
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
@@ -1304,14 +1310,13 @@ o.jpg>])
 ]
 \openout2 = `10-analysis.aux'.
 
-
-(10-analysis.tex
+ (10-analysis.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 
-Overfull \hbox (24.62172pt too wide) in paragraph at lines 22--23
-[]\T2A/cmr/m/n/14.4 где $\OML/cmm/m/it/14.4 x[]$ \T2A/cmr/m/n/14.4  ис-ход-ное
- зна-че-ние при-зна-ка, $\OML/cmm/m/it/14.4 X[]$ \T2A/cmr/m/n/14.4 = $[]$ и $\O
-ML/cmm/m/it/14.4 D[]$ \T2A/cmr/m/n/14.4 = $[]$
+Overfull \hbox (3.47197pt too wide) in paragraph at lines 20--22
+\T2A/cmr/m/n/14.4 где $\OML/cmm/m/it/14.4 x[]$ \T2A/cmr/m/n/14.4  ис-ход-ное з
+на-че-ние при-зна-ка, $\OML/cmm/m/it/14.4 X[]$ \T2A/cmr/m/n/14.4 = $[]$ и $\OML
+/cmm/m/it/14.4 D[]$ \T2A/cmr/m/n/14.4 = $[]$
  []
 
 [4
@@ -1330,54 +1335,49 @@ ML/cmm/m/it/14.4 D[]$ \T2A/cmr/m/n/14.4 = $[]$
 
 
 ] [7]
-<inc/img/mean.png, id=200, 162.6075pt x 784.9325pt>
+<inc/img/mean.png, id=201, 162.6075pt x 784.9325pt>
 File: inc/img/mean.png Graphic file (type png)
 <use inc/img/mean.png>
 Package pdftex.def Info: inc/img/mean.png  used on input line 32.
 (pdftex.def)             Requested size: 113.82446pt x 549.449pt.
  [8 <./inc/img/mean.png>]
-<inc/img/std_dev.png, id=207, 162.6075pt x 784.9325pt>
+<inc/img/std_dev.png, id=208, 162.6075pt x 784.9325pt>
 File: inc/img/std_dev.png Graphic file (type png)
 <use inc/img/std_dev.png>
 Package pdftex.def Info: inc/img/std_dev.png  used on input line 43.
 (pdftex.def)             Requested size: 113.82446pt x 549.449pt.
  [9 <./inc/img/std_dev.png>]
-<inc/img/transformer.png, id=214, 162.6075pt x 614.295pt>
+<inc/img/transformer.png, id=215, 162.6075pt x 614.295pt>
 File: inc/img/transformer.png Graphic file (type png)
 <use inc/img/transformer.png>
 Package pdftex.def Info: inc/img/transformer.png  used on input line 54.
 (pdftex.def)             Requested size: 113.82446pt x 430.00356pt.
  [10 <./inc/img/transformer.png>] [11]
-<inc/img/linear.png, id=226, 162.6075pt x 886.31125pt>
+<inc/img/linear.png, id=227, 162.6075pt x 885.3075pt>
 File: inc/img/linear.png Graphic file (type png)
 <use inc/img/linear.png>
 Package pdftex.def Info: inc/img/linear.png  used on input line 71.
-(pdftex.def)             Requested size: 113.82446pt x 620.41365pt.
- [12 <./inc/img/linear.png>]
-Overfull \hbox (22.1914pt too wide) in paragraph at lines 80--80
- |[]\T2A/cmr/bx/n/20.74 —хемы па-рал-лель-но-го кон-вей-е-ра дл€ стан-
- []
-
-[13]
-<inc/img/parallel.png, id=239, 534.99875pt x 836.12375pt>
+(pdftex.def)             Requested size: 113.82446pt x 619.71101pt.
+ [12 <./inc/img/linear.png>] [13]
+<inc/img/parallel.png, id=240, 534.99875pt x 836.12375pt>
 File: inc/img/parallel.png Graphic file (type png)
 <use inc/img/parallel.png>
 Package pdftex.def Info: inc/img/parallel.png  used on input line 87.
 (pdftex.def)             Requested size: 374.49657pt x 585.28264pt.
  [14 <./inc/img/parallel.png>]
-<inc/img/paral_mean.png, id=247, 394.47375pt x 605.26125pt>
+<inc/img/paral_mean.png, id=248, 393.47pt x 604.2575pt>
 File: inc/img/paral_mean.png Graphic file (type png)
 <use inc/img/paral_mean.png>
 Package pdftex.def Info: inc/img/paral_mean.png  used on input line 101.
-(pdftex.def)             Requested size: 276.12973pt x 423.67998pt.
+(pdftex.def)             Requested size: 275.42711pt x 422.97737pt.
  [15 <./inc/img/paral_mean.png>]
-<inc/img/paral_std_dev.png, id=255, 523.9575pt x 825.0825pt>
+<inc/img/paral_std_dev.png, id=256, 523.9575pt x 825.0825pt>
 File: inc/img/paral_std_dev.png Graphic file (type png)
 <use inc/img/paral_std_dev.png>
 Package pdftex.def Info: inc/img/paral_std_dev.png  used on input line 112.
 (pdftex.def)             Requested size: 366.76775pt x 577.55382pt.
  [16 <./inc/img/paral_std_dev.png>]
-<inc/img/paral_transformer.png, id=262, 513.92pt x 855.195pt>
+<inc/img/paral_transformer.png, id=263, 513.92pt x 855.195pt>
 File: inc/img/paral_transformer.png Graphic file (type png)
 <use inc/img/paral_transformer.png>
 Package pdftex.def Info: inc/img/paral_transformer.png  used on input line 123.
@@ -1386,8 +1386,7 @@ Package pdftex.def Info: inc/img/paral_transformer.png  used on input line 123.
  [17 <./inc/img/paral_transformer.png>]) [18]
 \openout2 = `30-impl.aux'.
 
-
-(30-impl.tex
+ (30-impl.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
 
 Overfull \hbox (78.58255pt too wide) in paragraph at lines 10--11
@@ -1421,14 +1420,14 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [20] [21] [22] [23]
-<inc/img/work_example.png, id=409, 309.29839pt x 113.56714pt>
+<inc/img/work_example.png, id=410, 309.29839pt x 113.56714pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 157.
 (pdftex.def)             Requested size: 309.29762pt x 113.56685pt.
 
 [24 <./inc/img/work_example.png>]
-<inc/img/work_example2.png, id=417, 619.02696pt x 384.57964pt>
+<inc/img/work_example2.png, id=418, 619.02696pt x 384.57964pt>
 File: inc/img/work_example2.png Graphic file (type png)
 <use inc/img/work_example2.png>
 Package pdftex.def Info: inc/img/work_example2.png  used on input line 173.
@@ -1438,13 +1437,13 @@ Overfull \hbox (25.75175pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
-<inc/img/stats.png, id=419, 423.72589pt x 91.62804pt>
+<inc/img/stats.png, id=420, 423.72589pt x 91.62804pt>
 File: inc/img/stats.png Graphic file (type png)
 <use inc/img/stats.png>
 Package pdftex.def Info: inc/img/stats.png  used on input line 188.
 (pdftex.def)             Requested size: 338.98117pt x 73.30252pt.
 [25 <./inc/img/work_example2.png> <./inc/img/stats.png>]
-<inc/img/work_example3.png, id=430, 371.67429pt x 50.33089pt>
+<inc/img/work_example3.png, id=431, 371.67429pt x 50.33089pt>
 File: inc/img/work_example3.png Graphic file (type png)
 <use inc/img/work_example3.png>
 Package pdftex.def Info: inc/img/work_example3.png  used on input line 203.
@@ -1454,7 +1453,7 @@ Package pdftex.def Info: inc/img/work_example3.png  used on input line 203.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/time_all.png, id=438, 462.528pt x 346.896pt>
+<inc/img/time_all.png, id=439, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
 Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
@@ -1547,12 +1546,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 67F6CE1571E6246E49FEBB1E2568843F;6323.
+(rerunfilecheck)             Checksum: 15A388F9A549834552877325C6D19E61;6459.
  ) 
 Here is how much of TeX's memory you used:
  38013 strings out of 478864
  870061 string characters out of 2858518
- 1600650 words of memory out of 10000000
+ 1600732 words of memory out of 10000000
  55000 multiletter control sequences out of 15000+600000
  418953 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1577,9 +1576,9 @@ nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (32 pages, 583180 bytes).
+Output written on report.pdf (32 pages, 583678 bytes).
 PDF statistics:
- 1023 PDF objects out of 1200 (max. 8388607)
+ 1024 PDF objects out of 1200 (max. 8388607)
  198 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

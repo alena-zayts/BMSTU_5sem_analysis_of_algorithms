@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{first_article}
+\selectlanguageifdefined{russian}
+Ульянов~М.~В. РЕСУРСНО-ЭФФЕКТИВНЫЕ
+  КОМПЬЮТЕРНЫЕ АЛГОРИТМЫ. РАЗРАБОТКА И
+  АНАЛИЗ~// НАУКА ФИЗМАТЛИТ.
+\newblock 2007.
+\newblock {С.}~201--205.
+
+\bibitem{second_article}
+\selectlanguageifdefined{russian}
+Задача коммивояжера [Электронный ресурс].
+\newblock Режим доступа:
+  \url{http://www.math.nsc.ru/LBRT/k5/OR-MMF/TSPr.pdf} (дата
+  обращения: 28.10.2021).
+
+\bibitem{third_article}
+\selectlanguageifdefined{russian}
+Алгоритмы решения задачи коммивояжера
+  [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://scienceforum.ru/2021/article/2018025171} (дата
+  обращения: 28.10.2021).
+
+\bibitem{fourth_article}
+\selectlanguageifdefined{russian}
+Стандартное отклонение [Электронный
+  ресурс].
+\newblock Режим доступа:
+  \url{https://www.uznaychtotakoe.ru/standartnoe-otklonenie/} (дата
+  обращения: 19.10.2021).
+
+\bibitem{CBook}
+\selectlanguageifdefined{russian}
+Thread support library [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://en.cppreference.com/w/cpp/thread} (дата обращения:
+  20.10.2021).
+
+\bibitem{CBook2}
+\selectlanguageifdefined{russian}
+Структура systemclock [Электронный ресурс].
+\newblock Режим доступа:
+  \url{https://docs.microsoft.com/ru-ru/cpp/standard-library/system-clock-structure?view=msvc-160}
+  (дата обращения: 20.10.2021).
+
+\end{thebibliography}

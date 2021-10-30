@@ -7,6 +7,7 @@ ALPHA = 0.5
 PO = 0.5
 TMAX = 100
 
+
 def count_way_lenth(D, visited_cities):
     lk = 0
 
@@ -20,10 +21,10 @@ def count_way_lenth(D, visited_cities):
 
 def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
     Q = 0
-    for j in range(n_cities):
-        for j in range(n_cities):
-            if D[j][j] < INF:
-                Q += D[j][j]
+    for i in range(n_cities):
+        for j in range(i):
+            if D[i][j] < INF:
+                Q += D[i][j]
     beta = 1 - alpha
 
     # Инициализация ребер — присвоение видимости eta
@@ -31,18 +32,16 @@ def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
     eta = [[0 for i in range(n_cities)] for j in range(n_cities)]
     tau = [[0 for i in range(n_cities)] for j in range(n_cities)]
     for i in range(n_cities):
-        for j in range(n_cities):
-            if j != i:
-                eta[i][j] = 1 / D[i][j]
-                tau[i][j] = 2 * EPS
+        for j in range(i):
+            eta[i][j] = 1 / D[i][j]
+            eta[j][i] = 1 / D[j][i]
+            tau[i][j] = 2 * EPS
+            tau[j][i] = 2 * EPS
 
     min_way_length = INF
 
     # Цикл по времени жизни колонии
     for t in range(tmax):
-        # Размещение муравьев в случайно выбранные города без совпадений.
-        l = list(range(n_cities))
-        shuffle(l)
         visited_cities = [[i] for i in range(n_cities)]
 
         #  Цикл по всем муравьям
@@ -106,7 +105,7 @@ def full_search(D, n_cities):
         # просмотреть текущую перестановку справа налево и при этом следить за тем,
         # чтобы каждый следующий элемент перестановки был не более чем предыдущий.
         j = n - 2
-        while j != -1 and a[j] >= a[j + 1]:
+        while j != -1 and a[j] > a[j + 1]:
             j -= 1
         if j == -1:
             return False  # больше перестановок нет
@@ -114,7 +113,7 @@ def full_search(D, n_cities):
         # cнова просмотреть пройденный путь справа налево пока не дойдем до первого числа,
         # которое больше чем отмеченное на предыдущем шаге.
         k = n - 1
-        while a[j] >= a[k]:
+        while a[j] > a[k]:
             k -= 1
         # поменять местами два полученных элемента.
         a[j], a[k] = a[k], a[j]

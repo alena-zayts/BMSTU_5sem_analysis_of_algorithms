@@ -1,7 +1,16 @@
 from algs import *
-from random import randint, choice
+from random import randint, choices
 from time import process_time
 import matplotlib.pyplot as plt
+
+
+path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab6/report/inc/img/'
+time_file = path + 'times.txt'
+filename_all = path + 'time_all.png'
+filename_ant = path + 'time_ant.png'
+
+diff = 300
+coef  = 3
 
 
 def generate_matrix_one_way(n):
@@ -10,23 +19,35 @@ def generate_matrix_one_way(n):
         for j in range(i):
             if i != j:
                 if i == j + 1:
-                    D[i][j] = i + j + 1
-                    D[j][i] = i + j + 1
+                    D[i][j] = diff / 3
+                    D[j][i] = diff / 3
                 else:
-                    D[i][j] = INF
-                    D[j][i] = INF
-    D[0][n - 1] = n
-    D[n - 1][0] = n
+                    D[i][j] = diff
+                    D[j][i] = diff
+    D[0][n - 1] = diff / 3
+    D[n - 1][0] = diff / 3
     return D
 
 
 def generate_matrix_all_same(n):
-    D = [[0 for i in range(n)] for j in range(n)]
+    # D = [[0 for i in range(n)] for j in range(n)]
+
+
+    # for i in range(n):
+    #     for j in range(i):
+    #         if i != j:
+    #             D[i][j] = diff
+    #             D[j][i] = diff
+    # return D
+
+    D = generate_matrix_one_way(n)
     for i in range(n):
         for j in range(i):
-            if i != j:
-                D[i][j] = 3
-                D[j][i] = 3
+            if D[i][j] == diff:
+                rand_num = randint(1, diff * coef)
+                res = choices([rand_num, INF], weights=[0.8, 0.2])[0]
+                D[i][j] = res
+                D[j][i] = res
     return D
 
 
@@ -34,17 +55,12 @@ def generate_matrix_random(n):
     D = generate_matrix_one_way(n)
     for i in range(n):
         for j in range(i):
-            if D[i][j] == INF:
-                rand_num = randint(1, 10)
-                res = choice([rand_num, INF])
+            if D[i][j] == diff:
+                rand_num = randint(1, diff)
+                res = choices([rand_num, INF], weights=[0.8, 0.2])[0]
                 D[i][j] = res
                 D[j][i] = res
     return D
-
-
-path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab6/report/inc/img/'
-time_file = path + 'times.txt'
-filename_all = path + 'time_all.png'
 
 
 def time_cmp():
@@ -129,7 +145,32 @@ def draw_plot_all():
     plt.legend(loc='best')
     plt.savefig(filename_all)
 
+def draw_plot_ant():
+    plt.gcf().clear()
+    with open(time_file, 'r') as f:
+        ns = list(map(float, f.readline().split()))
+        time_fulls = list(map(float, f.readline().split()))
+        time_ant_rands = list(map(float, f.readline().split()))
+        time_ant_one_ways = list(map(float, f.readline().split()))
+        time_ant_all_sames = list(map(float, f.readline().split()))
+
+
+    plt.xlabel('Количество городов')
+    plt.xticks(ns)
+    plt.ylabel('Время работы реализации (с)')
+    plt.grid()
+
+    plt.plot(ns, time_ant_rands, label='Муравьиный (случайная)')
+    plt.plot(ns, time_ant_one_ways, label='Муравьиный (с одним путем)')
+    plt.plot(ns, time_ant_all_sames, label='Муравьиный (с равными путями)')
+
+    plt.legend(loc='best')
+    plt.savefig(filename_ant)
+
+
+
 
 if __name__ == '__main__':
-    time_cmp()
+    # time_cmp()
     draw_plot_all()
+    draw_plot_ant()

@@ -1,217 +1,218 @@
 \chapter{Технологическая часть}
 
-В данном разделе производится выбор средств реализации, а также приводятся: описание подхода к сбору статистики, листинги реализованных алгоритмов, результаты тестирования программы.
+В данном разделе производится выбор средств реализации, приведятся требования к ПО, листинги реализованных алгоритмов решения задачи коммивояжера, а также результаты их тестированиия.
 
+\section{Требования к ПО}
+
+На вход программе подаются количество городов и симметричная матрица смежности, а также параметры $\alpha$ (коэффициент жадности), po (коэффициент испарения) и tmax (время жизни колонии) для муравьиного алгоритма. На выходе должны быть получены решения задачи коммивояжера, найденые с помощью каждого реализованного алгоритма: алгоритма полного перебора и муравьиного алгоритма. 
 
 \section{Выбор средств реализации}
 
-Основное требование к языку программирования в данной лабораторной работе - наличие в нем нативных потоков. Язык C++ обладает этим свойством \cite{CBook} и уже использовался мною ранее, поэтому и был выбран. 
+В качестве языка программирования для реализации данной лабораторной работы был выбран язык Python  \cite{PythonBook}. Он позволяет быстро реализовывать различные алгоритмы без выделения большого времени на проектирование сруктуры программы и выбор типов данных. 
 
-Для замеров времени используется предоставляемый класс system\_clock::time\_poin, использующий данные системных часов в реальном времени \cite{CBook2}, а для организации распараллеливания -  std::thread.
+Кроме того, в Python есть библиотека time, которая предоставляет функцию process\_time для замера процессорного времени \cite{process_time_text}.
 
-В качестве среды разработки выбран “QT Creator” так как он был часто использована мною ранее.
+В качестве среды разработки выбран PyCharm. Он является кросс-платформенным, а также предоставляет удобный и функциональнаый отладчик и средства для рефакторинга кода, что позволяет быстро находить и исправлять ошибки \cite{pycharm}.
 
-\section{Сбор статистки}
+\section{Листинги кода}
 
-Чтобы наглядно показать, что ленты конвейра работают параллельно, в класс завок добавлены отметки времени поступления заявки в очередную очередь (или в пул обработанных задач) и времени покидания очередной очереди. В процессе обработки заявок конвейром в лог выводится информация о каждом подобном событии для каждой заявки.
+В листинге \ref{full} представлена реализация алгоритма полного перебора для решения задачи коммивояжера.
 
-На выходе, когда все заявки обработаны системой, собирается следующая статистика.
-\begin{enumerate}[label={\arabic*)}]
-	\item На сколько время обработки N заявок снижено в параллельной реализации конвейера по сравнению с последовательной обработкой одним потоком. Для этого перед запуском и после завершения каждой из реализаций запоминаются данные системных часов в реальном времени, затем второе время вычитается из первого, и получается время работы этой реализации. Далее показания реализаций сравниваются.
-	
-	\item Минимальное, максимальное и среднее время: проведенное заявкой в очереди, проведенное заявкой в системе. Для этого после обработки всех заявок для каждой из них вычисляется время, проведенной в каждой очереди, а также суммарные: время, проведенное в очередях и время, проведенное в системе. Затем вычисляется среднее, максимальное и минимальное каждого из этих значений среди всех заявок.
-\end{enumerate}
-
-
-
-\section{Реализация алгоритмов}
-
-\lstset{language=C++}
-
-В листинге \ref{meanl} представлены реализации рабочих потоков параллельного конвейера.
-
-\begin{lstlisting}[caption=Реализация рабочих потоков параллельного конвейера,
-	label={meanl}]
-void Conveyor::find_mean(size_t n_tasks)
-{
-	size_t task_num = 0;
-	
-	while (task_num < n_tasks)
-	{
-		std::shared_ptr<Standardizer> task = q1.front();
-		q1.pop();
-		task->out1 = system_clock::now();
+\clearpage
+\begin{lstlisting}[caption=Алгоритм полного перебора,
+	label={full}]
+	def full_search(D, n_cities):
+		min_way_length = INF
+		min_way = None
+		cur_way = []
 		
-		task->find_mean(++task_num);
+		while next_set(cur_way, n_cities):
+			cur_way_lenth = count_way_lenth(D, cur_way + [cur_way[0], ])
+			if cur_way_lenth < min_way_length:
+				min_way_length = cur_way_lenth
+				min_way = cur_way
 		
-		m2.lock();
-		q2.push(task);
-		task->in2 = system_clock::now();
-		m2.unlock();
-	}
-}
-void Conveyor::find_std_dev(size_t n_tasks)
-{
-	size_t task_num = 0;
-	
-	while(task_num < n_tasks)
-	{
-		m2.lock();
-		if (!this->q2.empty())
-		{
-			std::shared_ptr<Standardizer> task = q2.front();
-			q2.pop();
-			task->out2 = system_clock::now();
-			m2.unlock();
-			
-			task->find_std_dev(++task_num);
-			
-			m3.lock();
-			q3.push(task);
-			task->in3 = system_clock::now();
-			m3.unlock();
-		}
-		else
-		m2.unlock();
-	}
-}
-void Conveyor::transform(size_t n_tasks)
-{
-	size_t task_num = 0;
-	
-	while (task_num < n_tasks)
-	{
-		m3.lock();
-		if (!this->q3.empty())
-		{
-			std::shared_ptr<Standardizer> task = q3.front();
-			q3.pop();
-			task->out3 = system_clock::now();
-			m3.unlock();
-			
-			task->transform(++task_num);
-			
-			tasks.push_back(task);
-			task->out_system = system_clock::now();
-			
-		}
-		else
-		m3.unlock();
-	}
-}
+		return min_way_length, min_way + [min_way[0]]
 \end{lstlisting}
 
-\newpage
-В листинге \ref{main} представлена реализация главного потока параллельного конвейера.
+\clearpage
+В листинге \ref{ant} представлена реализация муравьиного алгоритма для решения задачи коммивояжера.
 
-\begin{lstlisting}[caption=Реализация главного потока параллельного конвейера,
-	label={main}]
-void Conveyor::run_parallel(size_t n_tasks, size_t n, double *arr, double *new_arr)
-{
-	for (size_t i = 0; i < n_tasks; i++)
-	{
-		std::shared_ptr<Standardizer> new_task(new Standardizer(n, arr, new_arr));
-		q1.push(new_task);
-		new_task->in1 = system_clock::now();
-	}
+
+\begin{lstlisting}[caption=Муравьиный алгоритм,
+	label={ant}]
+	def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
+		Q = 0
+		for i in range(n_cities):
+			for j in range(i):
+				if D[i][j] < INF:
+					Q += D[i][j]
+		beta = 1 - alpha
+		
+		eta = [[0 for i in range(n_cities)] for j in range(n_cities)]
+		tau = [[0 for i in range(n_cities)] for j in range(n_cities)]
+		for i in range(n_cities):
+			for j in range(i):
+				eta[i][j] = 1 / D[i][j]
+				eta[j][i] = 1 / D[j][i]
+				tau[i][j] = 2 * EPS
+				tau[j][i] = 2 * EPS
+		
+		min_way_length = INF
+		
 	
-	this->threads[0] = std::thread(&Conveyor::find_mean, this, n_tasks);
-	this->threads[1] = std::thread(&Conveyor::find_std_dev, this, n_tasks);
-	this->threads[2] = std::thread(&Conveyor::transform, this, n_tasks);
-	
-	for (size_t i = 0; i < numThreads; i++)
-	{
-		if (this->threads[i].joinable())
-		this->threads[i].join();
-	}
-}
+		for t in range(tmax):
+			visited_cities = [[i] for i in range(n_cities)]
+		
+			for k in range(n_cities):
+		
+				while len(visited_cities[k]) != n_cities:
+					P_ch = [0 for i in range(n_cities)]
+					for j in range(n_cities):
+						if j not in visited_cities[k]:
+							i = visited_cities[k][-1]
+							P_ch[j] = (tau[i][j] ** alpha) * (eta[i][j] ** beta)
+					
+					P_zn = sum(P_ch)
+					for j in range(n_cities):
+						P_ch[j] /= P_zn
+					
+					coin = random()
+					summ, j = 0, 0
+					while summ < coin:
+						summ += P_ch[j]
+						j += 1
+					visited_cities[k].append(j - 1)
+				
+				visited_cities[k].append(visited_cities[k][0])
+				way_length = count_way_lenth(D, visited_cities[k])
+				
+			
+				if way_length < min_way_length:
+					min_way_length = way_length
+					min_way = visited_cities[k]
+			
+		
+			for i in range(n_cities):
+				for j in range(i):
+					delta_tau = 0
+				
+					for k in range(n_cities):
+						way_length = count_way_lenth(D, visited_cities[k])
+						for m in range(1, len(visited_cities[k])):
+							if (visited_cities[k][m], visited_cities[k][m - 1]) in ((i, j), (j, i)):
+								delta_tau += Q / way_length
+								break
+			
+				tau[i][j] = tau[i][j] * (1 - po) + delta_tau
+				if tau[i][j] < EPS:
+					tau[i][j] = EPS
+		
+		return min_way_length, min_way
 \end{lstlisting}
 
-\newpage
-В листинге \ref{linear} представлена реализация последовательной обработки данных одним потоком.
+\clearpage
+В листинге \ref{help} представлены реализации вспомогательных функций.
 
-\begin{lstlisting}[caption=Реализация последовательной обработки данных одним потоком,
-	label={linear}]
-void Conveyor::run_linear(size_t n_tasks, size_t n, double *arr, double *new_arr)
-{
-	for (size_t i = 0; i < n_tasks; i++)
-	{
-		std::shared_ptr<Standardizer> task(new Standardizer(n, arr, new_arr));
-		
-		task->find_mean(i + 1);
-		task->find_std_dev(i + 1);
-		task->transform(i + 1);
-		
-		tasks.push_back(task);
-	}
-}
+
+\begin{lstlisting}[caption=Вспомогательные функции,
+	label={help}]
+
+def next_set(a, n):
+	if not a:
+		for i in range(n):
+			a.append(i)
+		return True
+	
+	j = n - 2
+	while j != -1 and a[j] > a[j + 1]:
+		j -= 1
+	if j == -1:
+		return False  
+	
+	k = n - 1
+	while a[j] > a[k]:
+		k -= 1
+	a[j], a[k] = a[k], a[j]
+	
+	l = j + 1
+	r = n - 1
+	while l < r:
+		a[l], a[r] = a[r], a[l]
+		l += 1
+		r -= 1
+	return True
+
+def count_way_lenth(D, visited_cities):
+	lk = 0
+	for l in range(1, len(visited_cities)):
+		i = visited_cities[l - 1]
+		j = visited_cities[l]
+		lk += D[i][j]
+	
+	return lk
 \end{lstlisting}
 
-\newpage
+
+\clearpage
 \section{Тестирование}
 
-Произведено тестирования алгоритма стандартизации программы по методу черного ящика: проведен запуск программного обеспечения для стандартизации массива из 10 элементов. Содержание массива до и после стандартизации приведено на рисунке  \ref{fig:work_example}. 
+На рисунке \ref{fig:work_example} приведен пример работы программы.
+
 
 \begin{figure}[h!]
 	
 	\centering{\includegraphics[scale=1]{inc/img/work_example.png}}
 	
-	\caption{Результат тестирования алгоритма стандартизации}
+	\caption{Пример работы программы}
 	
 	\label{fig:work_example}
 	
 \end{figure}
 
-Как видно на рисунке выше, цель стандартизации достигнута: получен массив с нулевым средним и стандартным отклонением, равным 1.
+\clearpage
+В таблице ~\ref{tabular:test_rec} приведены функциональные тесты для алгоритмов решения задачи коммивояжера:алгоритма полного перебора и муравьиного алгоритма. Тест считается успешно пройденным, если длина найденного пути совпадает с ожидаемой, а в найденном пути созраняется ожидаемая последовательность городов (то есть город, с которого начинается посследовательность, не является принципиальным). Все тесты пройдены успешно каждым алгоритмом.
 
-\newpage
-На рисунке \ref{fig:work_example2} приведен пример вывода лога при обработке параллельным конвейером 5 заявок на стандартизацию массива из 100000 элементов.
-
-
-\begin{figure}[h!]
-	
-	\centering{\includegraphics[scale=0.8]{inc/img/work_example2.png}}
-	
-	\caption{Результат логирования}
-	
-	\label{fig:work_example2}
-	
-\end{figure}
-
-
-Как видно на рисунке выше, заявки действительно обрабатываются параллельно. Например, после завершения обработки первой заявки первым потоком, и ее помещения в очередь второго потока, параллельно начинается обработка второй заявки первым потоком и первой заявки вторым потоком.
-
-На рисунке \ref{fig:stats2} приведен пример вывода собранной статистики при обработке параллельным конвейером 1000 заявок на стандартизацию массива из 100000 элементов.
-
-\begin{figure}[h!]
-	
-	\centering{\includegraphics[scale=0.8]{inc/img/stats.png}}
-	
-	\caption{Пример собранной статистики}
-	
-	\label{fig:stats2}
-	
-\end{figure}
-
-
-\newpage
-На рисунке \ref{fig:work_example3} приведен пример вывода результатов сравнения времени выполнения при параллельной и линейной обработке 100 заявок на стандартизацию массива из 100000 элементов. 
-
-
-\begin{figure}[h!]
-	
-	\centering{\includegraphics[scale=1]{inc/img/work_example3.png}}
-	
-	\caption{Результат сравнения времени выполнения параллельной и линейной реализаций}
-	
-	\label{fig:work_example3}
-	
-\end{figure}
-
-Более подробно статистика и сравнение времени работы реализаций будут рассмотрены в следующем разделе.
+\begin{table}[h!]
+	\begin{center}
+		
+		\caption{\label{tabular:test_rec} Тестирование функций}
+		\begin{tabular}{c@{\hspace{7mm}}c@{\hspace{7mm}}c@{\hspace{7mm}}c@{\hspace{7mm}}}
+			\hline
+			Матрица смежности & Ожидаемый наименьший путь \\ \hline
+			\vspace{4mm}
+			$\begin{pmatrix}
+				0 &  3 &  4 &  7\\
+				3 &  0 &  3 &  7\\
+				4 &  3 &  0 &  7\\
+				7 &  7 &  7 &  0
+			\end{pmatrix}$ &
+			20, [0, 1, 2, 3, 0]\\
+			\vspace{2mm}
+			\vspace{2mm}
+			$\begin{pmatrix}
+				0 &  1 &  1 &  1 &  1 &  1\\
+				1 &  0 &  1 &  1 &  1 &  1\\
+				1 &  1 &  0 &  1 &  1 &  1\\
+				1 &  1 &  1 &  0 &  1 &  1\\
+				1 &  1 &  1 &  1 &  0 &  1\\
+				1 &  1 &  1 &  1 &  1 &  0\\
+			\end{pmatrix}$ &
+			6, [0, 1, 2, 3, 4, 5, 0]\\
+			\vspace{2mm}
+			\vspace{2mm}
+			$\begin{pmatrix}
+				0 &  1 &  INF &  4\\
+				1 &  0 &  2 &  INF\\
+				INF &  2 &  0 &  3\\
+				4 &  INF &  3 &  0
+			\end{pmatrix}$ &
+			10, [0, 1, 2, 3, 0]\\
+		\end{tabular}
+	\end{center}
+\end{table}
 
 
+\section*{Вывод}
 
-\section{Вывод из технологической части}
-
-Был произведен выбор средств реализации,  реализованы и протестированы последовательный и параллельный конвейерный подходы к стандартизации массива.
+Был производен выбор средств реализации, приведены требования к ПО, реализованы и протестированы алгоритмы регения задачи коммивояжера.

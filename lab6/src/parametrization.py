@@ -12,14 +12,14 @@ tmaxs = [100, 200, 300, 400, 500]
 # pos = pos[:3]
 # tmaxs = tmaxs[:3]
 
-n_cities = 11
+n_cities = 10
 
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab6/report/inc/img/'
-df_file = path + 'df.xlsx'
+df_file = path + 'df2.xlsx'
 
 
 def make_table():
-    df = pd.DataFrame(columns=['alpha', 'po', 'tmax', 'diff_rand', 'diff_one_way', 'diff_all_same'])
+    df = pd.DataFrame(columns=['alpha', 'po', 'tmax', 'diff_all_same', 'diff_rand', 'diff_one_way'])
 
     D_rand = generate_matrix_random(n_cities)
     print_matrix(D_rand, n_cities, message='D_rand')
@@ -46,19 +46,19 @@ def make_table():
 
                 results = {'alpha': alpha, 'po': po, 'tmax': tmax,
                            'diff_rand': answer_ant_rand - answer_full_rand,
-                           'diff_one_way': answer_ant_one_way-answer_full_one_way,
-                           'diff_all_same': answer_ant_all_same-answer_full_all_same}
+                           'diff_one_way': answer_ant_one_way - answer_full_one_way,
+                           'diff_all_same': answer_ant_all_same - answer_full_all_same}
                 df = df.append(results, ignore_index=True)
                 print(results)
 
-    df = df.rename(columns={"diff_all_same": "diff_rand_2"})
-    df = df.sort_values(['diff_rand_2', 'diff_rand', 'diff_one_way'], ascending=False)
+    df = df.rename(columns={"diff_all_same": "diff1", 'diff_rand': 'diff2', 'diff_one_way': 'diff3'})
+    df = df.sort_values(['diff1', 'diff2', 'diff3', 'tmax'], ascending=True)
     df.to_excel(df_file)
     return df
 
 
 if __name__ == '__main__':
     print()
-    # df = make_table()
+    df = make_table()
     #df.show()
 

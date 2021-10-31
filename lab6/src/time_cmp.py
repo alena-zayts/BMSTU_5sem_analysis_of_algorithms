@@ -2,15 +2,15 @@ from algs import *
 from random import randint, choices
 from time import process_time
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab6/report/inc/img/'
 time_file = path + 'times.txt'
 filename_all = path + 'time_all.png'
 filename_ant = path + 'time_ant.png'
 
-diff = 300
-coef  = 3
+diff = 30
+coef = 10
 
 
 def generate_matrix_one_way(n):
@@ -134,13 +134,15 @@ def draw_plot_all():
 
     plt.xlabel('Количество городов')
     plt.xticks(ns)
+    plt.yticks(np.arange(0, 14, 0.5))
+    plt.figure(figsize=(7, 10))
     plt.ylabel('Время работы реализации (с)')
     plt.grid()
 
-    plt.plot(ns, time_fulls, label='Полный перебор')
-    plt.plot(ns, time_ant_rands, label='Муравьиный (случайная)')
-    plt.plot(ns, time_ant_one_ways, label='Муравьиный (с одним путем)')
-    plt.plot(ns, time_ant_all_sames, label='Муравьиный (с равными путями)')
+    plt.plot(ns, time_fulls, label='Алгоритм полного перебора')
+    plt.plot(ns, time_ant_rands, label='Муравьиный алгоритм')
+    # plt.plot(ns, time_ant_one_ways, label='Муравьиный (с одним путем)')
+    # plt.plot(ns, time_ant_all_sames, label='Муравьиный (с равными путями)')
 
     plt.legend(loc='best')
     plt.savefig(filename_all)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  30 OCT 2021 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  31 OCT 2021 21:57
 entering extended mode
 **./report.tex
 (report.tex
@@ -1184,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=95, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=103, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1332,7 +1332,7 @@ Overfull \hbox (48.75713pt too wide) in paragraph at lines 25--26
 
 
 ]
-<inc/img/next_set.png, id=188, 624.3325pt x 1055.945pt>
+<inc/img/next_set.png, id=199, 624.3325pt x 1055.945pt>
 File: inc/img/next_set.png Graphic file (type png)
 <use inc/img/next_set.png>
 Package pdftex.def Info: inc/img/next_set.png  used on input line 12.
@@ -1345,7 +1345,7 @@ Overfull \hbox (16.94615pt too wide) in paragraph at lines 21--22
 й функ-ции count_way_len,
  []
 
-<inc/img/count_len.png, id=196, 162.6075pt x 876.27374pt>
+<inc/img/count_len.png, id=207, 162.6075pt x 876.27374pt>
 File: inc/img/count_len.png Graphic file (type png)
 <use inc/img/count_len.png>
 Package pdftex.def Info: inc/img/count_len.png  used on input line 26.
@@ -1355,7 +1355,7 @@ Package pdftex.def Info: inc/img/count_len.png  used on input line 26.
  <./inc/img/count_len.png>] [10
 
 ]
-<inc/img/full_search.png, id=209, 300.12125pt x 1007.765pt>
+<inc/img/full_search.png, id=220, 300.12125pt x 1007.765pt>
 File: inc/img/full_search.png Graphic file (type png)
 <use inc/img/full_search.png>
 Package pdftex.def Info: inc/img/full_search.png  used on input line 40.
@@ -1368,7 +1368,7 @@ LaTeX Warning: Float too large for page by 1.19485pt on input line 46.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11 <./inc/img/full_search.png>]
-<inc/img/ant_search.png, id=216, 646.415pt x 715.67375pt>
+<inc/img/ant_search.png, id=227, 646.415pt x 715.67375pt>
 File: inc/img/ant_search.png Graphic file (type png)
 <use inc/img/ant_search.png>
 Package pdftex.def Info: inc/img/ant_search.png  used on input line 56.
@@ -1412,46 +1412,80 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [17] [18
 
-]
-<inc/img/work_example.png, id=379, 404.79803pt x 293.38179pt>
-File: inc/img/work_example.png Graphic file (type png)
-<use inc/img/work_example.png>
-Package pdftex.def Info: inc/img/work_example.png  used on input line 165.
-(pdftex.def)             Requested size: 404.79704pt x 293.38106pt.
-
+])
 [19
-
- <./inc/img/work_example.png>]) [20
 
 ]
 \openout2 = `40-research.aux'.
 
  (40-research.tex
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
-<inc/img/time_all.png, id=394, 462.528pt x 346.896pt>
+[20
+
+
+
+
+]
+<inc/img/work_example.png, id=402, 404.79803pt x 293.38179pt>
+File: inc/img/work_example.png Graphic file (type png)
+<use inc/img/work_example.png>
+Package pdftex.def Info: inc/img/work_example.png  used on input line 22.
+(pdftex.def)             Requested size: 404.79704pt x 293.38106pt.
+ [21
+
+ <./inc/img/work_example.png>] [22]
+<inc/img/tab1.png, id=416, 329.51678pt x 437.06143pt>
+File: inc/img/tab1.png Graphic file (type png)
+<use inc/img/tab1.png>
+Package pdftex.def Info: inc/img/tab1.png  used on input line 45.
+(pdftex.def)             Requested size: 329.51598pt x 437.06035pt.
+ [23
+
+ <./inc/img/tab1.png>]
+<inc/img/tab2.png, id=422, 328.65643pt x 226.27393pt>
+File: inc/img/tab2.png Graphic file (type png)
+<use inc/img/tab2.png>
+Package pdftex.def Info: inc/img/tab2.png  used on input line 56.
+(pdftex.def)             Requested size: 328.65562pt x 226.27336pt.
+ [24
+
+ <./inc/img/tab2.png>]
+<inc/img/tab3.png, id=429, 328.65643pt x 393.61339pt>
+File: inc/img/tab3.png Graphic file (type png)
+<use inc/img/tab3.png>
+Package pdftex.def Info: inc/img/tab3.png  used on input line 67.
+(pdftex.def)             Requested size: 328.65562pt x 393.61241pt.
+ [25
+
+ <./inc/img/tab3.png>]
+<inc/img/tab4.png, id=437, 329.51678pt x 263.26929pt>
+File: inc/img/tab4.png Graphic file (type png)
+<use inc/img/tab4.png>
+Package pdftex.def Info: inc/img/tab4.png  used on input line 78.
+(pdftex.def)             Requested size: 329.51598pt x 263.26865pt.
+ [26
+
+ <./inc/img/tab4.png>]
+<inc/img/tab5.png, id=444, 330.37714pt x 343.71268pt>
+File: inc/img/tab5.png Graphic file (type png)
+<use inc/img/tab5.png>
+Package pdftex.def Info: inc/img/tab5.png  used on input line 89.
+(pdftex.def)             Requested size: 330.37631pt x 343.71184pt.
+ [27
+
+ <./inc/img/tab5.png>] [28]
+<inc/img/time_all.png, id=461, 505.89pt x 722.7pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 27.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 123.
+(pdftex.def)             Requested size: 239.0034pt x 341.43306pt.
+ [29
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[21
-
-
-
-
-] [22 <./inc/img/time_all.png>]
-<inc/img/stats.png, id=407, 423.72589pt x 91.62804pt>
-File: inc/img/stats.png Graphic file (type png)
-<use inc/img/stats.png>
-Package pdftex.def Info: inc/img/stats.png  used on input line 40.
-(pdftex.def)             Requested size: 423.72485pt x 91.6278pt.
-) [23 <./inc/img/stats.png>] [24]
+ <./inc/img/time_all.png>]) [30]
 \openout2 = `50-conclusion.aux'.
 
-
-(50-conclusion.tex) [25
+ (50-conclusion.tex)
+[31
 
 
 
@@ -1483,7 +1517,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 49--53
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
  []
 
-)) [26
+)) [32
 
 
 
@@ -1492,16 +1526,16 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: F9FCC3509D6F30C1E98536D050CBF1D3;5852.
+(rerunfilecheck)             Checksum: 3C6B27552DA4839F2614FF6A46BE4B02;6379.
  ) 
 Here is how much of TeX's memory you used:
- 37922 strings out of 478864
- 867889 string characters out of 2858518
+ 37974 strings out of 478864
+ 868702 string characters out of 2858518
  1727409 words of memory out of 10000000
- 54920 multiletter control sequences out of 15000+600000
+ 54952 multiletter control sequences out of 15000+600000
  420783 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,16n,102p,1172b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,16n,102p,1567b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt14
 40.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcss1200.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
@@ -1522,9 +1556,9 @@ nts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
 ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report.pdf (26 pages, 545595 bytes).
+Output written on report.pdf (32 pages, 915691 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1058 PDF objects out of 1200 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

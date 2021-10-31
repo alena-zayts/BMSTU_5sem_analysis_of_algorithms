@@ -63,7 +63,7 @@ def tests_alg():
 
 
 if __name__ == '__main__':
-    #tests_alg()
+    tests_alg()
     n = int(input('Введите количество городов: '))
     print('Введите матрицу смежности:')
     D = [[0 for i in range(n)] for j in range(n)]

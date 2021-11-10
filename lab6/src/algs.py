@@ -7,6 +7,20 @@ ALPHA = 0.5
 PO = 0.5
 TMAX = 100
 
+DEBUG = True
+ant_to_debug_n = [2, ]
+t_to_debug = [0, 50, 99]
+
+def print_matrix(D, n_cities, message='Матрица:'):
+    print(message)
+    for i in range(n_cities):
+        for j in range(n_cities):
+            if D[i][j] != INF:
+                print("%3d" % D[i][j], end=' ')
+            else:
+                print("INF", end=' ')
+        print()
+
 
 def count_way_lenth(D, visited_cities):
     lk = 0
@@ -20,6 +34,7 @@ def count_way_lenth(D, visited_cities):
 
 
 def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
+    print('Муравьиный алгоритм')
     Q = 0
     for i in range(n_cities):
         for j in range(i):
@@ -48,6 +63,12 @@ def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
         for k in range(n_cities):
             # Построить маршрут
             while len(visited_cities[k]) != n_cities:
+
+                if DEBUG and k in ant_to_debug_n and t in t_to_debug:
+                    print(f'\n\nОтладочный муравей {k} на {t}-й итерации')
+                    print(
+                        f'    Поиск {len(visited_cities[k]) + 1}-го города для посещения после посещения городов {visited_cities[k]}')
+
                 P_ch = [0 for i in range(n_cities)]
                 for j in range(n_cities):
                     if j not in visited_cities[k]:
@@ -64,9 +85,19 @@ def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
                     summ += P_ch[j]
                     j += 1
                 visited_cities[k].append(j - 1)
+                if DEBUG and k in ant_to_debug_n and t in t_to_debug:
+
+                    print(f'        Подсчитанные вероятности посещения городов: {P_ch}')
+                    print(f'        Результат "подброса монетки": {coin}')
+                    print(f'        Выбранный город": {j - 1}')
+                    print(f'        Полученный список посещенных городов": {visited_cities[k]}')
 
             visited_cities[k].append(visited_cities[k][0])
             way_length = count_way_lenth(D, visited_cities[k])
+
+            if DEBUG and k in ant_to_debug_n and t in t_to_debug:
+                print(f'Итоговый результат отладочного муравья:\n'
+                      f'    список посещенных городов: {visited_cities[k]}; длина пути: {way_length}')
 
             # Выбрать лучшее решение
             if way_length < min_way_length:
@@ -89,6 +120,11 @@ def ant_search(D, n_cities, alpha=ALPHA, po=PO, tmax=TMAX):
                 tau[i][j] = tau[i][j] * (1 - po) + delta_tau
                 if tau[i][j] < EPS:
                     tau[i][j] = EPS
+                tau[j][i] = tau[i][j]
+        if DEBUG and t in t_to_debug:
+            print(f'\n\nПосле {t}-й отладочной итерации')
+            print_matrix(tau, n_cities, message=f'    Матрица следов феромонов:')
+            print(f'Наиболее оптимальный путь: {min_way} длиной {min_way_length}')
 
     return min_way_length, min_way
 

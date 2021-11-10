@@ -57,31 +57,33 @@ def tests_alg():
     expexcted_answ3 = 10
     expexcted_way3 = [0, 1, 2, 3, 0]
 
-    test_alg(D1, n_cities1, expexcted_answ1, expexcted_way1)
-    test_alg(D2, n_cities2, expexcted_answ2, expexcted_way2)
+    # test_alg(D1, n_cities1, expexcted_answ1, expexcted_way1)
+    # test_alg(D2, n_cities2, expexcted_answ2, expexcted_way2)
     test_alg(D3, n_cities3, expexcted_answ3, expexcted_way3)
+
+
 
 
 if __name__ == '__main__':
     tests_alg()
-    n = int(input('Введите количество городов: '))
-    print('Введите матрицу смежности:')
-    D = [[0 for i in range(n)] for j in range(n)]
-    for i in range(n):
-        for j in range(i + 1):
-            print("%3d" % D[i][j], end=' ')
-        if i != n - 1:
-            rest = list(map(float, input().split()))
-            for j in range(i + 1, n):
-                D[i][j] = rest[j - i - 1]
-                D[j][i] = rest[j - i - 1]
-    print()
-    alpha = float(input('Введите параметр alpha: '))
-    po = float(input('Введите параметр po: '))
-    tmax = int(input('Введите параметр tmax: '))
-
-    print_matrix(D, n, message='Матрица смежности: ')
-    res, way = full_search(D, n)
-    print(f'Алгоритм полного перебора: ответ={res}, путь={way}')
-    res, way = ant_search(D, n, alpha, po, tmax)
-    print(f'Муравьиный алгоритм: ответ={res}, путь={way}')
+    # n = int(input('Введите количество городов: '))
+    # print('Введите матрицу смежности:')
+    # D = [[0 for i in range(n)] for j in range(n)]
+    # for i in range(n):
+    #     for j in range(i + 1):
+    #         print("%3d" % D[i][j], end=' ')
+    #     if i != n - 1:
+    #         rest = list(map(float, input().split()))
+    #         for j in range(i + 1, n):
+    #             D[i][j] = rest[j - i - 1]
+    #             D[j][i] = rest[j - i - 1]
+    # print()
+    # alpha = float(input('Введите параметр alpha: '))
+    # po = float(input('Введите параметр po: '))
+    # tmax = int(input('Введите параметр tmax: '))
+    #
+    # print_matrix(D, n, message='Матрица смежности: ')
+    # res, way = full_search(D, n)
+    # print(f'Алгоритм полного перебора: ответ={res}, путь={way}')
+    # res, way = ant_search(D, n, alpha, po, tmax)
+    # print(f'Муравьиный алгоритм: ответ={res}, путь={way}')

@@ -14,12 +14,12 @@
 \contentsline {section}{\numberline {3.2}Выбор средств реализации}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Листинги кода}{14}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Тестирование}{19}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Исследовательская часть}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Технические характеристики}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Пример работы программы}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Параметризация муравьиного алгоритма}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Сравнение трудоемкостей реализаций}{28}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Сравнение времени выполнения реализаций алгоритмов}{28}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{29}{section.4.6}%
-\contentsline {chapter}{Заключение}{31}{chapter*.15}%
-\contentsline {chapter}{Список использованной литературы}{32}{Item.12}%
+\contentsline {chapter}{\numberline {4}Исследовательская часть}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Технические характеристики}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Пример работы программы}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Параметризация муравьиного алгоритма}{26}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Сравнение трудоемкостей реализаций}{33}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Сравнение времени выполнения реализаций алгоритмов}{33}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{34}{section.4.6}%
+\contentsline {chapter}{Заключение}{36}{chapter*.20}%
+\contentsline {chapter}{Список использованной литературы}{37}{Item.12}%

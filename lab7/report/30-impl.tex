@@ -1,0 +1,119 @@
+\chapter{Технологическая часть}
+
+В данном разделе производится выбор средств реализации, приводятся требования к ПО, листинги реализованных алгоритмов поиска в словаре, а также результаты их тестированиия.
+
+\section{Требования к ПО}
+
+На вход программе подается ключ, на выходе ожидается значение, найденное в словаре по заданному ключу каждым реализованным алгоритмом, или значение -1, если такого ключа в словаре нет. 
+
+\section{Выбор средств реализации}
+
+В качестве языка программирования для реализации данной лабораторной работы был выбран язык Python  \cite{PythonBook}. Он позволяет быстро реализовывать различные алгоритмы без выделения большого времени на проектирование сруктуры программы и выбор типов данных. 
+
+Кроме того, в Python есть библиотека time, которая предоставляет функцию process\_time для замера процессорного времени \cite{process_time_text}.
+
+В качестве среды разработки выбран PyCharm. Он является кросс-платформенным, а также предоставляет удобный и функциональнаый отладчик и средства для рефакторинга кода, что позволяет быстро находить и исправлять ошибки \cite{pycharm}.
+
+\section{Листинги кода}
+
+В листинге \ref{full} представлена реализация алгоритма полного перебора поиска в словаре.
+
+\clearpage
+\begin{lstlisting}[caption=Алгоритм полного перебора,
+	label={full}]
+def full_search(my_dict, key):
+	for cur_key in my_dict.keys():
+		if cur_key == key:
+			return my_dict[cur_key]
+	return -1
+\end{lstlisting}
+
+В листинге \ref{bin} представлена реализация алгоритма бинарного поиска в словаре.
+
+
+\begin{lstlisting}[caption=Алгоритм бинарного поиска в словаре,
+	label={bin}]
+def binary_search(my_dict, key):
+	my_keys = list(my_dict.keys())
+	my_len = len(my_keys)
+	l = 0
+	r = my_len - 1
+	
+	while l <= r:
+		middle = (r + l) // 2
+		cur_key = my_keys[middle]
+		
+		if cur_key == key:
+			return my_dict[cur_key]
+		elif cur_key > key:
+			r = middle - 1
+		else:
+			l = middle + 1
+	
+	return -1
+\end{lstlisting}
+
+\clearpage
+В листинге \ref{help} представлена реализация функции для создания сегментированного словаря.
+
+
+\begin{lstlisting}[caption=Функция для создания сегментированного словаря,
+	label={help}]
+
+def segmentate(my_dict):
+	seg_frequency_dict = {letter: 0 for letter in "abcdefghijklmnopqrstuvwxyz"}
+	for key in my_dict.keys():
+		seg_frequency_dict[key[0]] += 1
+	
+	seg_frequency_dict = sort_by_values(seg_frequency_dict, reverse=True)
+	
+	new_dict = {letter: dict() for letter in seg_frequency_dict.keys()}
+	for key in my_dict.keys():
+		new_dict[key[0]].update({key: my_dict[key]})
+	for key in new_dict:
+		new_dict[key] = sort_by_keys(new_dict[key])
+	
+	return new_dict
+
+\end{lstlisting}
+
+В листинге \ref{seg} представлена реализация алгоритма поиска в сегментированном словаре.
+
+
+\begin{lstlisting}[caption=Алгоритм поиска в сегментированном словаре,
+	label={seg}]
+def segment_search(my_dict, key):
+	for k in my_dict:
+		if key[0] == k:
+			if my_dict[k]:
+				return binary_search(my_dict[k], key)
+			else:
+				return -1
+	return -1
+\end{lstlisting}
+
+\clearpage
+\section{Тестирование}
+
+В таблице ~\ref{tab:test_rec} приведены функциональные тесты для алгоритмов поиска в словаре. Все тесты пройдены успешно этим каждым алгоритмом.
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|c | c | c | c |}
+			\hline
+			Ключ & Словарь & Ожидание & Результат \\
+			\hline
+			"few" & \texttt{\{\}} & -1 & -1 \\
+			"few" & \texttt{\{"few": "неск."\,, "little": "немн." \}} & "неск." & "неск." \\
+			"much" & \texttt{\{"few": "неск."\,, "little": "немн." \}} & -1 & -1 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{\label{tab:test_rec} Функциональные тесты.}
+\end{table}
+
+
+
+\section*{Вывод}
+
+Был производен выбор средств реализации, приведены требования к ПО, реализованы и протестированы алгоритмы поиска в словаре.

@@ -1,7 +1,10 @@
+import matplotlib.pyplot as plt
+
+path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
+count_file = path + 'counts.txt'
 
 DICT_FILENAME = 'ENRUS.TXT'
-N = 2
-DEBUG = False
+N = 63
 
 
 def load_data():
@@ -49,30 +52,41 @@ def sort_by_values(my_dict, reverse=False):
 
 
 def full_search(my_dict, key):
+    count = 0
     for cur_key in my_dict.keys():
+        count += 1
         if cur_key == key:
-            return my_dict[cur_key]
-    return -1
+            break
+    return count, 0
 
 
 def binary_search(my_dict, key):
+    count_k = 0
+    count_g = 0
     my_keys = list(my_dict.keys())
     my_len = len(my_keys)
     l = 0
     r = my_len - 1
 
     while l <= r:
+        count_g += 1
         middle = (r + l) // 2
         cur_key = my_keys[middle]
 
         if cur_key == key:
-            return my_dict[cur_key]
+            count_k += 1
+            return count_k, count_g
         elif cur_key > key:
             r = middle - 1
         else:
             l = middle + 1
+        count_k += 2
 
-    return -1
+    count_g += 1
+
+    return count_k, count_g
+
+
 
 
 def segmentate(my_dict):
@@ -95,45 +109,75 @@ def segmentate(my_dict):
 
 
 def segment_search(my_dict, key):
+    count_k = 0
+    count_g = 0
     for k in my_dict:
+        count_k += 1
         if key[0] == k:
             if my_dict[k]:
-                return binary_search(my_dict[k], key)
+                count_kb, count_gb = binary_search(my_dict[k], key)
+                count_k += count_kb
+                count_g += count_gb
+                return count_k, count_g
             else:
-                return -1
-    return -1
+                count_k += 1
+                return count_k, count_g
+    return count_k, count_g
+
+
+def find_all_keys(my_dict, alg, keys, name):
+    results_k = []
+    results_g = []
+    for key in keys:
+        count_k, count_g = alg(my_dict, key)
+        results_k.append(count_k)
+        results_g.append(count_g)
+
+    with open(path + f'{name}.txt', 'w') as f:
+        f.write(' '.join(list(map(str, keys))) + '\n')
+        f.write(' '.join(list(map(str, results_k))) + '\n')
+        f.write(' '.join(list(map(str, results_g))) + '\n')
+    return results_k, results_g
+
+
+def draw_plots_for_alg(name):
+    with open(path + f'{name}.txt', 'r') as f:
+        keys = list(map(str, f.readline().split()))
+        results_k = list(map(int, f.readline().split()))
+        results_g = list(map(int, f.readline().split()))
+
+    for i in range(len(results_g)):
+        results_g[i] += results_k[i]
+
+    plt.bar(keys, results_k, width=0.5, color='#0504aa', alpha=0.7)
+    ax = plt.gca()
+    ax.tick_params(axis='x', labelrotation=90)
+    plt.savefig(path + f'{name}_k.png')
+    plt.gcf().clear()
+
+    plt.bar(keys, results_g, width=0.5, color='#0504aa', alpha=0.7)
+    ax = plt.gca()
+    ax.tick_params(axis='x', labelrotation=90)
+    plt.savefig(path + f'{name}_kg.png')
+    plt.gcf().clear()
 
 
 def main():
     enrus_dict = load_data()
-    print("Словарь:")
-    print(enrus_dict)
+    enrus_dict = sort_by_keys(enrus_dict)
+
+    find_all_keys(enrus_dict, full_search, enrus_dict.keys(), 'full')
+    draw_plots_for_alg('full')
 
 
-    key = input("Input key: ")
-    print(f'Python search: {enrus_dict.get(key)}')
+    find_all_keys(enrus_dict, binary_search, enrus_dict.keys(), 'binary')
+    draw_plots_for_alg('binary')
 
-
-    value = full_search(enrus_dict, key)
-    print(f"Full search: {value}")
-
-
-
-    sorted_enrus_dict = sort_by_keys(enrus_dict)
-    if DEBUG:
-        print('sorted')
-        print(sorted_enrus_dict)
-    value = binary_search(sorted_enrus_dict, key)
-    print(f"Binary search: {value}")
 
 
     segmentated_enrus_dict = segmentate(enrus_dict)
-    if DEBUG:
-        print('segmentated')
-        print(segmentated_enrus_dict)
-    value = segment_search(segmentated_enrus_dict, key)
-    print(f"Segment search: {value}")
-
+    find_all_keys(segmentated_enrus_dict, segment_search, enrus_dict.keys(), 'segment')
+    draw_plots_for_alg('segment')
 
 
 

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
 time_file = path + 'times.txt'
 filename_all = path + 'time_all.png'
-n_repeats = [1, 10**2, 10**3, 10**4, 10**5, 10**8]
+n_repeats = [1, 5, 10, 15, 20, 25]
 
 
 def find_all_keys(my_dict, alg, exist, keys):

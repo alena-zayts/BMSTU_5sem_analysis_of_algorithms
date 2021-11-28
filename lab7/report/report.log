@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  28 NOV 2021 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  28 NOV 2021 23:40
 entering extended mode
 **./report.tex
 (report.tex
@@ -1184,7 +1184,7 @@ Package geometry Warning: `pdftex': not available in `\newgeometry'; skipped.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<inc/img/b_logo.jpg, id=107, 57.816pt x 65.3715pt>
+<inc/img/b_logo.jpg, id=111, 57.816pt x 65.3715pt>
 File: inc/img/b_logo.jpg Graphic file (type jpg)
 <use inc/img/b_logo.jpg>
 Package pdftex.def Info: inc/img/b_logo.jpg  used on input line 5.
@@ -1325,7 +1325,7 @@ Overfull \hbox (21.66374pt too wide) in paragraph at lines 20--20
 
 
 ]
-<inc/img/full_search.png, id=194, 327.2225pt x 785.93625pt>
+<inc/img/full_search.png, id=199, 327.2225pt x 785.93625pt>
 File: inc/img/full_search.png Graphic file (type png)
 <use inc/img/full_search.png>
 Package pdftex.def Info: inc/img/full_search.png  used on input line 16.
@@ -1333,7 +1333,7 @@ Package pdftex.def Info: inc/img/full_search.png  used on input line 16.
  [8
 
  <./inc/img/full_search.png>]
-<inc/img/binary_search.png, id=202, 737.75626pt x 785.93625pt>
+<inc/img/binary_search.png, id=207, 737.75626pt x 785.93625pt>
 File: inc/img/binary_search.png Graphic file (type png)
 <use inc/img/binary_search.png>
 Package pdftex.def Info: inc/img/binary_search.png  used on input line 32.
@@ -1348,12 +1348,12 @@ Overfull \hbox (10.0654pt too wide) in paragraph at lines 32--33
  <./inc/img/binary_search.png>] [10
 
 ]
-<inc/img/segmentate.png, id=215, 483.8075pt x 866.23625pt>
+<inc/img/segmentate.png, id=220, 483.8075pt x 866.23625pt>
 File: inc/img/segmentate.png Graphic file (type png)
 <use inc/img/segmentate.png>
 Package pdftex.def Info: inc/img/segmentate.png  used on input line 48.
 (pdftex.def)             Requested size: 338.66293pt x 606.36125pt.
-<inc/img/segment_search.png, id=217, 524.96124pt x 910.40125pt>
+<inc/img/segment_search.png, id=222, 524.96124pt x 910.40125pt>
 File: inc/img/segment_search.png Graphic file (type png)
 <use inc/img/segment_search.png>
 Package pdftex.def Info: inc/img/segment_search.png  used on input line 60.
@@ -1422,7 +1422,7 @@ Overfull \hbox (9.82425pt too wide) in paragraph at lines 102--111
 
 
 ]
-<inc/img/work_example.png, id=324, 266.28053pt x 158.73589pt>
+<inc/img/work_example.png, id=329, 266.28053pt x 158.73589pt>
 File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 22.
@@ -1434,19 +1434,81 @@ Overfull \hbox (23.15007pt too wide) detected at line 45
 
 [19
 
- <./inc/img/work_example.png>] [20]
-<inc/img/time_all.png, id=343, 462.528pt x 346.896pt>
+ <./inc/img/work_example.png>]
+Overfull \hbox (8.18312pt too wide) in paragraph at lines 68--69
+\T2A/cmr/m/n/14.4 ре-а-ли-за-ций ал-го-рит-мов. Ќа гра-фи-ке вве-де-ны сле-ду-ю
+-щие обо-зна-че-ни€: full_x
+ []
+
+
+Overfull \hbox (25.93983pt too wide) in paragraph at lines 68--69
+\T2A/cmr/m/n/14.4 - ал-го-ритм пол-но-го пе-ре-бо-ра, binary_x - ал-го-ритм би-
+нар-но-го по-ис-ка, segment_x
+ []
+
+[20] [21]
+<inc/img/time_all.png, id=352, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 69.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 71.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
- [21
+ [22
 
- <./inc/img/time_all.png>]) [22]
+ <./inc/img/time_all.png>]
+<inc/img/full_k.png, id=360, 462.528pt x 346.896pt>
+File: inc/img/full_k.png Graphic file (type png)
+<use inc/img/full_k.png>
+Package pdftex.def Info: inc/img/full_k.png  used on input line 85.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+<inc/img/full_kg.png, id=361, 462.528pt x 346.896pt>
+File: inc/img/full_kg.png Graphic file (type png)
+<use inc/img/full_kg.png>
+Package pdftex.def Info: inc/img/full_kg.png  used on input line 86.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/binary_k.png, id=362, 462.528pt x 346.896pt>
+File: inc/img/binary_k.png Graphic file (type png)
+<use inc/img/binary_k.png>
+Package pdftex.def Info: inc/img/binary_k.png  used on input line 88.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/binary_kg.png, id=363, 462.528pt x 346.896pt>
+File: inc/img/binary_kg.png Graphic file (type png)
+<use inc/img/binary_kg.png>
+Package pdftex.def Info: inc/img/binary_kg.png  used on input line 89.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/segment_k.png, id=364, 462.528pt x 346.896pt>
+File: inc/img/segment_k.png Graphic file (type png)
+<use inc/img/segment_k.png>
+Package pdftex.def Info: inc/img/segment_k.png  used on input line 91.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<inc/img/segment_kg.png, id=365, 462.528pt x 346.896pt>
+File: inc/img/segment_kg.png Graphic file (type png)
+<use inc/img/segment_kg.png>
+Package pdftex.def Info: inc/img/segment_kg.png  used on input line 92.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23 <./inc/img/full_k.png>] [24 <./inc/img/full_kg.png>] [25 <./inc/img/binary_
+k.png>] [26 <./inc/img/binary_kg.png>] [27 <./inc/img/segment_k.png>] [28 <./in
+c/img/segment_kg.png>]) [29
+
+]
 \openout2 = `50-conclusion.aux'.
 
-
-(50-conclusion.tex) [23
+ (50-conclusion.tex) [30
 
 
 
@@ -1454,7 +1516,8 @@ Package pdftex.def Info: inc/img/time_all.png  used on input line 69.
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex (report.bbl
+ (51-biblio.tex
+(report.bbl
 Underfull \hbox (badness 3312) in paragraph at lines 12--16
 []\T2A/cmr/m/n/14.4 ћножество и сло-варь [Ёлек-трон-ный ре-сурс].  –е-жим до-ст
 у-па:
@@ -1544,7 +1607,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 56--60
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
  []
 
-)) [24
+)) [31
 
 
 
@@ -1553,16 +1616,16 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: E14CF532566E9F0563B660F5091605F4;6545.
+(rerunfilecheck)             Checksum: 7D78BD0E7B5490BFDDC9A99303D7089C;6760.
  ) 
 Here is how much of TeX's memory you used:
- 37830 strings out of 478864
- 866640 string characters out of 2858518
+ 37917 strings out of 478864
+ 868465 string characters out of 2858518
  1577410 words of memory out of 10000000
- 54899 multiletter control sequences out of 15000+600000
+ 54966 multiletter control sequences out of 15000+600000
  420556 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,8n,102p,1077b,1518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,8n,102p,1636b,1518s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm10
 00.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
@@ -1582,9 +1645,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (24 pages, 491799 bytes).
+Output written on report.pdf (31 pages, 626036 bytes).
 PDF statistics:
- 935 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

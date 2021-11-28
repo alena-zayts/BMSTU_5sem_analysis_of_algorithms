@@ -4,10 +4,10 @@ path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc
 count_file = path + 'counts.txt'
 
 DICT_FILENAME = 'ENRUS.TXT'
-N = 63
+N = 31
 
 
-def load_data():
+def load_data(n=N):
     my_dict = dict()
 
     f = open(DICT_FILENAME, 'r')
@@ -30,7 +30,7 @@ def load_data():
 
         my_dict[en.lower()] = rus.lower()
         done += 1
-        if done == N:
+        if done == n:
             break
 
     print(f'Loaded {done} items')
@@ -149,13 +149,23 @@ def draw_plots_for_alg(name):
     for i in range(len(results_g)):
         results_g[i] += results_k[i]
 
+    plt.ylabel('Количество сравнений')
+    plt.subplots_adjust(bottom=0.3)
+    plt.grid()
     plt.bar(keys, results_k, width=0.5, color='#0504aa', alpha=0.7)
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
     plt.savefig(path + f'{name}_k.png')
     plt.gcf().clear()
 
-    plt.bar(keys, results_g, width=0.5, color='#0504aa', alpha=0.7)
+    x = zip(keys, results_k)
+    xs = sorted(x, key=lambda tup: tup[1], reverse=True)
+    keys = [x[0] for x in xs]
+    results_k = [x[1] for x in xs]
+
+    plt.ylabel('Количество сравнений')
+    plt.grid()
+    plt.bar(keys, results_k, width=0.5, color='#0504aa', alpha=0.7)
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
     plt.savefig(path + f'{name}_kg.png')

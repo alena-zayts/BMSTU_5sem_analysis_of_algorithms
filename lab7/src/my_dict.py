@@ -4,7 +4,7 @@ N = 2
 DEBUG = False
 
 
-def load_data():
+def load_data(n=N):
     my_dict = dict()
 
     f = open(DICT_FILENAME, 'r')
@@ -27,7 +27,7 @@ def load_data():
 
         my_dict[en.lower()] = rus.lower()
         done += 1
-        if done == N:
+        if done == n:
             break
 
     print(f'Loaded {done} items')

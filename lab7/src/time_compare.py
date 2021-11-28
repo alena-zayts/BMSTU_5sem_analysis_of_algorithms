@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
 time_file = path + 'times.txt'
 filename_all = path + 'time_all.png'
-n_repeats = [1, 5, 10, 15, 20, 25]
+n_repeats = [3,]
+ns = [100, 1000, 5000, 10000, 40000]
 
 
 def find_all_keys(my_dict, alg, exist, keys):
@@ -38,25 +39,41 @@ def count_time_for_alg(my_dict, alg, keys):
 
 
 def cmp_time():
-    enrus_dict = load_data()
-    keys = enrus_dict.keys()
+    efss = []
+    nfss = []
+    ebss = []
+    nbss = []
+    esss = []
+    nsss = []
+    for n in ns:
+        enrus_dict = load_data(n)
+        keys = enrus_dict.keys()
 
-    efs, nfs = count_time_for_alg(enrus_dict, full_search, keys)
+        efs, nfs = count_time_for_alg(enrus_dict, full_search, keys)
 
-    sorted_enrus_dict = sort_by_keys(enrus_dict)
-    ebs, nbs = count_time_for_alg(sorted_enrus_dict, binary_search, keys)
+        sorted_enrus_dict = sort_by_keys(enrus_dict)
+        ebs, nbs = count_time_for_alg(sorted_enrus_dict, binary_search, keys)
 
-    segmentated_enrus_dict = segmentate(enrus_dict)
-    ess, nss = count_time_for_alg(segmentated_enrus_dict, segment_search, keys)
+        segmentated_enrus_dict = segmentate(enrus_dict)
+        ess, nss = count_time_for_alg(segmentated_enrus_dict, segment_search, keys)
+
+        if len(efs + nfs + ebs + nbs + ess + nss) > 6:
+            print('dfhbnvo;spguehrpufghor')
+        efss.append(efs[0]/n_repeats[0])
+        nfss.append(nfs[0]/n_repeats[0])
+        ebss.append(ebs[0]/n_repeats[0])
+        nbss.append(nbs[0]/n_repeats[0])
+        esss.append(ess[0]/n_repeats[0])
+        nsss.append(efs[0]/n_repeats[0])
 
     with open(time_file, 'w') as f:
-        f.write(' '.join(list(map(str, n_repeats))) + '\n')
-        f.write(' '.join(list(map(str, efs))) + '\n')
-        f.write(' '.join(list(map(str, nfs))) + '\n')
-        f.write(' '.join(list(map(str, ebs))) + '\n')
-        f.write(' '.join(list(map(str, nbs))) + '\n')
-        f.write(' '.join(list(map(str, ess))) + '\n')
-        f.write(' '.join(list(map(str, nss))) + '\n')
+        f.write(' '.join(list(map(str, ns))) + '\n')
+        f.write(' '.join(list(map(str, efss))) + '\n')
+        f.write(' '.join(list(map(str, nfss))) + '\n')
+        f.write(' '.join(list(map(str, ebss))) + '\n')
+        f.write(' '.join(list(map(str, nbss))) + '\n')
+        f.write(' '.join(list(map(str, esss))) + '\n')
+        f.write(' '.join(list(map(str, nsss))) + '\n')
 
 
 def draw_plot_all():
@@ -69,7 +86,7 @@ def draw_plot_all():
         ess = list(map(float, f.readline().split()))
         nss = list(map(float, f.readline().split()))
 
-    plt.xlabel('Количество проходов')
+    plt.xlabel('Количество элементов в словаре')
     plt.xticks(ns)
     # plt.figure(figsize=(7, 10))
     plt.ylabel('Время работы реализации (с)')
@@ -89,7 +106,7 @@ def draw_plot_all():
 
 
 if __name__ == "__main__":
-    cmp_time()
+    # cmp_time()
     draw_plot_all()
 
 

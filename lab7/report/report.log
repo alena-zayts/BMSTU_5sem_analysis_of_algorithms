@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  28 NOV 2021 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  29 NOV 2021 23:54
 entering extended mode
 **./report.tex
 (report.tex
@@ -1427,88 +1427,88 @@ File: inc/img/work_example.png Graphic file (type png)
 <use inc/img/work_example.png>
 Package pdftex.def Info: inc/img/work_example.png  used on input line 22.
 (pdftex.def)             Requested size: 266.27988pt x 158.73549pt.
-
-Overfull \hbox (23.15007pt too wide) detected at line 45
-[][][]
- []
-
-[19
+ [19
 
  <./inc/img/work_example.png>]
-Overfull \hbox (8.18312pt too wide) in paragraph at lines 68--69
+<inc/img/full_k.png, id=340, 462.528pt x 346.896pt>
+File: inc/img/full_k.png Graphic file (type png)
+<use inc/img/full_k.png>
+Package pdftex.def Info: inc/img/full_k.png  used on input line 36.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+<inc/img/full_kg.png, id=341, 462.528pt x 346.896pt>
+File: inc/img/full_kg.png Graphic file (type png)
+<use inc/img/full_kg.png>
+Package pdftex.def Info: inc/img/full_kg.png  used on input line 37.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20
+
+ <./inc/img/full_k.png>] [21 <./inc/img/full_kg.png>]
+<inc/img/binary_k.png, id=353, 462.528pt x 346.896pt>
+File: inc/img/binary_k.png Graphic file (type png)
+<use inc/img/binary_k.png>
+Package pdftex.def Info: inc/img/binary_k.png  used on input line 40.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+<inc/img/binary_kg.png, id=354, 462.528pt x 346.896pt>
+File: inc/img/binary_kg.png Graphic file (type png)
+<use inc/img/binary_kg.png>
+Package pdftex.def Info: inc/img/binary_kg.png  used on input line 41.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22
+
+ <./inc/img/binary_k.png>] [23 <./inc/img/binary_kg.png>]
+<inc/img/segment_k.png, id=367, 462.528pt x 346.896pt>
+File: inc/img/segment_k.png Graphic file (type png)
+<use inc/img/segment_k.png>
+Package pdftex.def Info: inc/img/segment_k.png  used on input line 44.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+<inc/img/segment_kg.png, id=368, 462.528pt x 346.896pt>
+File: inc/img/segment_kg.png Graphic file (type png)
+<use inc/img/segment_kg.png>
+Package pdftex.def Info: inc/img/segment_kg.png  used on input line 45.
+(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24
+
+ <./inc/img/segment_k.png>] [25 <./inc/img/segment_kg.png>] [26] [27
+
+]
+[28]
+Overfull \hbox (8.18312pt too wide) in paragraph at lines 133--134
 \T2A/cmr/m/n/14.4 ре-а-ли-за-ций ал-го-рит-мов. Ќа гра-фи-ке вве-де-ны сле-ду-ю
 -щие обо-зна-че-ни€: full_x
  []
 
 
-Overfull \hbox (25.93983pt too wide) in paragraph at lines 68--69
+Overfull \hbox (25.93983pt too wide) in paragraph at lines 133--134
 \T2A/cmr/m/n/14.4 - ал-го-ритм пол-но-го пе-ре-бо-ра, binary_x - ал-го-ритм би-
 нар-но-го по-ис-ка, segment_x
  []
 
-[20] [21]
-<inc/img/time_all.png, id=352, 462.528pt x 346.896pt>
+[29]
+<inc/img/time_all.png, id=412, 462.528pt x 346.896pt>
 File: inc/img/time_all.png Graphic file (type png)
 <use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 71.
+Package pdftex.def Info: inc/img/time_all.png  used on input line 136.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
- [22
+ [30
 
- <./inc/img/time_all.png>]
-<inc/img/full_k.png, id=360, 462.528pt x 346.896pt>
-File: inc/img/full_k.png Graphic file (type png)
-<use inc/img/full_k.png>
-Package pdftex.def Info: inc/img/full_k.png  used on input line 85.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-<inc/img/full_kg.png, id=361, 462.528pt x 346.896pt>
-File: inc/img/full_kg.png Graphic file (type png)
-<use inc/img/full_kg.png>
-Package pdftex.def Info: inc/img/full_kg.png  used on input line 86.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/binary_k.png, id=362, 462.528pt x 346.896pt>
-File: inc/img/binary_k.png Graphic file (type png)
-<use inc/img/binary_k.png>
-Package pdftex.def Info: inc/img/binary_k.png  used on input line 88.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/binary_kg.png, id=363, 462.528pt x 346.896pt>
-File: inc/img/binary_kg.png Graphic file (type png)
-<use inc/img/binary_kg.png>
-Package pdftex.def Info: inc/img/binary_kg.png  used on input line 89.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/segment_k.png, id=364, 462.528pt x 346.896pt>
-File: inc/img/segment_k.png Graphic file (type png)
-<use inc/img/segment_k.png>
-Package pdftex.def Info: inc/img/segment_k.png  used on input line 91.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<inc/img/segment_kg.png, id=365, 462.528pt x 346.896pt>
-File: inc/img/segment_kg.png Graphic file (type png)
-<use inc/img/segment_kg.png>
-Package pdftex.def Info: inc/img/segment_kg.png  used on input line 92.
-(pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23 <./inc/img/full_k.png>] [24 <./inc/img/full_kg.png>] [25 <./inc/img/binary_
-k.png>] [26 <./inc/img/binary_kg.png>] [27 <./inc/img/segment_k.png>] [28 <./in
-c/img/segment_kg.png>]) [29
+ <./inc/img/time_all.png>]) [31
 
 ]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [30
+ (50-conclusion.tex) [32
 
 
 
@@ -1516,8 +1516,8 @@ c/img/segment_kg.png>]) [29
 ]
 \openout2 = `51-biblio.aux'.
 
- (51-biblio.tex
-(report.bbl
+
+(51-biblio.tex (report.bbl
 Underfull \hbox (badness 3312) in paragraph at lines 12--16
 []\T2A/cmr/m/n/14.4 ћножество и сло-варь [Ёлек-трон-ный ре-сурс].  –е-жим до-ст
 у-па:
@@ -1607,7 +1607,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 56--60
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
  []
 
-)) [31
+)) [33
 
 
 
@@ -1616,11 +1616,11 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ни€:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 7D78BD0E7B5490BFDDC9A99303D7089C;6760.
+(rerunfilecheck)             Checksum: 2DF6860D32F925DE1F4E95D495464999;6760.
  ) 
 Here is how much of TeX's memory you used:
- 37917 strings out of 478864
- 868465 string characters out of 2858518
+ 37919 strings out of 478864
+ 868479 string characters out of 2858518
  1577410 words of memory out of 10000000
  54966 multiletter control sequences out of 15000+600000
  420556 words of font info for 61 fonts, out of 8000000 for 9000
@@ -1645,9 +1645,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (31 pages, 626036 bytes).
+Output written on report.pdf (33 pages, 628813 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 1015 PDF objects out of 1200 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

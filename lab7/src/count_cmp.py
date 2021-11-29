@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
-
+from statistics import mean, median
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
 count_file = path + 'counts.txt'
 
 DICT_FILENAME = 'ENRUS.TXT'
-N = 31
+N = 1000
 
 
 def load_data(n=N):
@@ -151,10 +151,11 @@ def draw_plots_for_alg(name):
 
     plt.ylabel('Количество сравнений')
     plt.subplots_adjust(bottom=0.3)
-    plt.grid()
-    plt.bar(keys, results_k, width=0.5, color='#0504aa', alpha=0.7)
+    #plt.grid()
+    plt.bar(keys, results_k, width=0.01, color='#0504aa', alpha=0.7)
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
+    ax.set_xticklabels([])
     plt.savefig(path + f'{name}_k.png')
     plt.gcf().clear()
 
@@ -164,30 +165,37 @@ def draw_plots_for_alg(name):
     results_k = [x[1] for x in xs]
 
     plt.ylabel('Количество сравнений')
-    plt.grid()
-    plt.bar(keys, results_k, width=0.5, color='#0504aa', alpha=0.7)
+    #plt.grid()
+    plt.bar(keys, results_k, width=0.1, color='#0504aa', alpha=0.7)
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
+    ax.set_xticklabels([])
     plt.savefig(path + f'{name}_kg.png')
     plt.gcf().clear()
+
+    print(name)
+    print(f'min: {min(results_k)}')
+    print(f'max: {max(results_k)}')
+    print(f'mean: {mean(results_k)}')
+    print(f'median: {median(results_k)}')
 
 
 def main():
     enrus_dict = load_data()
     enrus_dict = sort_by_keys(enrus_dict)
 
-    find_all_keys(enrus_dict, full_search, enrus_dict.keys(), 'full')
-    draw_plots_for_alg('full')
+    find_all_keys(enrus_dict, full_search, enrus_dict.keys(), 'full2')
+    draw_plots_for_alg('full2')
 
 
-    find_all_keys(enrus_dict, binary_search, enrus_dict.keys(), 'binary')
-    draw_plots_for_alg('binary')
+    find_all_keys(enrus_dict, binary_search, enrus_dict.keys(), 'binary2')
+    draw_plots_for_alg('binary2')
 
 
 
     segmentated_enrus_dict = segmentate(enrus_dict)
-    find_all_keys(segmentated_enrus_dict, segment_search, enrus_dict.keys(), 'segment')
-    draw_plots_for_alg('segment')
+    find_all_keys(segmentated_enrus_dict, segment_search, enrus_dict.keys(), 'segment2')
+    draw_plots_for_alg('segment2')
 
 
 

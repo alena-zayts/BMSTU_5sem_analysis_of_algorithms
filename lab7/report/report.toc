@@ -19,9 +19,9 @@
 \contentsline {chapter}{\numberline {4}Исследовательская часть}{18}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Технические характеристики}{18}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Пример работы программы}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Сравнение трудоемкостей реализаций}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Сравнение времени выполнения реализаций алгоритмов}{20}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Количество сравнений}{23}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{29}{section.4.6}%
-\contentsline {chapter}{Заключение}{30}{chapter*.16}%
-\contentsline {chapter}{Список использованной литературы}{31}{Item.9}%
+\contentsline {section}{\numberline {4.3}Количество сравнений}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Сравнение трудоемкостей реализаций}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Сравнение времени выполнения реализаций алгоритмов}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{31}{section.4.6}%
+\contentsline {chapter}{Заключение}{32}{chapter*.16}%
+\contentsline {chapter}{Список использованной литературы}{33}{Item.9}%

@@ -3,8 +3,8 @@ from time import process_time
 import matplotlib.pyplot as plt
 
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
-time_file = path + 'times.txt'
-filename_all = path + 'time_all.png'
+time_file = path + 'times2.txt'
+filename_all = path + 'time_all2.png'
 n_repeats = [3,]
 ns = [100, 1000, 5000, 10000, 40000]
 
@@ -64,7 +64,7 @@ def cmp_time():
         ebss.append(ebs[0]/n_repeats[0])
         nbss.append(nbs[0]/n_repeats[0])
         esss.append(ess[0]/n_repeats[0])
-        nsss.append(efs[0]/n_repeats[0])
+        nsss.append(nss[0]/n_repeats[0])
 
     with open(time_file, 'w') as f:
         f.write(' '.join(list(map(str, ns))) + '\n')
@@ -106,7 +106,7 @@ def draw_plot_all():
 
 
 if __name__ == "__main__":
-    # cmp_time()
+    cmp_time()
     draw_plot_all()
 
 

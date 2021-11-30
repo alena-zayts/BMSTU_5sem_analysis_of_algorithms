@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  29 NOV 2021 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.4)  30 NOV 2021 23:13
 entering extended mode
 **./report.tex
 (report.tex
@@ -1328,7 +1328,7 @@ Overfull \hbox (21.66374pt too wide) in paragraph at lines 20--20
 <inc/img/full_search.png, id=199, 327.2225pt x 785.93625pt>
 File: inc/img/full_search.png Graphic file (type png)
 <use inc/img/full_search.png>
-Package pdftex.def Info: inc/img/full_search.png  used on input line 16.
+Package pdftex.def Info: inc/img/full_search.png  used on input line 17.
 (pdftex.def)             Requested size: 229.05418pt x 550.15163pt.
  [8
 
@@ -1336,10 +1336,10 @@ Package pdftex.def Info: inc/img/full_search.png  used on input line 16.
 <inc/img/binary_search.png, id=207, 737.75626pt x 785.93625pt>
 File: inc/img/binary_search.png Graphic file (type png)
 <use inc/img/binary_search.png>
-Package pdftex.def Info: inc/img/binary_search.png  used on input line 32.
-(pdftex.def)             Requested size: 479.53589pt x 510.85251pt.
+Package pdftex.def Info: inc/img/binary_search.png  used on input line 33.
+(pdftex.def)             Requested size: 486.92064pt x 518.71953pt.
 
-Overfull \hbox (10.0654pt too wide) in paragraph at lines 32--33
+Overfull \hbox (17.45015pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
@@ -1351,12 +1351,12 @@ Overfull \hbox (10.0654pt too wide) in paragraph at lines 32--33
 <inc/img/segmentate.png, id=220, 483.8075pt x 866.23625pt>
 File: inc/img/segmentate.png Graphic file (type png)
 <use inc/img/segmentate.png>
-Package pdftex.def Info: inc/img/segmentate.png  used on input line 48.
+Package pdftex.def Info: inc/img/segmentate.png  used on input line 49.
 (pdftex.def)             Requested size: 338.66293pt x 606.36125pt.
 <inc/img/segment_search.png, id=222, 524.96124pt x 910.40125pt>
 File: inc/img/segment_search.png Graphic file (type png)
 <use inc/img/segment_search.png>
-Package pdftex.def Info: inc/img/segment_search.png  used on input line 60.
+Package pdftex.def Info: inc/img/segment_search.png  used on input line 61.
 (pdftex.def)             Requested size: 367.47037pt x 637.27652pt.
 
 
@@ -1480,35 +1480,111 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [24
 
- <./inc/img/segment_k.png>] [25 <./inc/img/segment_kg.png>] [26] [27
+ <./inc/img/segment_k.png>] [25 <./inc/img/segment_kg.png>] [26
 
-]
-[28]
-Overfull \hbox (8.18312pt too wide) in paragraph at lines 133--134
-\T2A/cmr/m/n/14.4 ре-а-ли-за-ций ал-го-рит-мов. На гра-фи-ке вве-де-ны сле-ду-ю
--щие обо-зна-че-ния: full_x
+] [27]
+<inc/img/full2_k.png, id=399, 1084.05pt x 1084.05pt>
+File: inc/img/full2_k.png Graphic file (type png)
+<use inc/img/full2_k.png>
+Package pdftex.def Info: inc/img/full2_k.png  used on input line 59.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 59--59
+ [] 
+ []
+
+<inc/img/full2_kg.png, id=400, 1084.05pt x 1084.05pt>
+File: inc/img/full2_kg.png Graphic file (type png)
+<use inc/img/full2_kg.png>
+Package pdftex.def Info: inc/img/full2_kg.png  used on input line 60.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 60--60
+ [] 
  []
 
 
-Overfull \hbox (25.93983pt too wide) in paragraph at lines 133--134
-\T2A/cmr/m/n/14.4 - ал-го-ритм пол-но-го пе-ре-бо-ра, binary_x - ал-го-ритм би-
-нар-но-го по-ис-ка, segment_x
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28
+
+ <./inc/img/full2_k.png>] [29 <./inc/img/full2_kg.png>]
+<inc/img/binary2_k.png, id=412, 1084.05pt x 1084.05pt>
+File: inc/img/binary2_k.png Graphic file (type png)
+<use inc/img/binary2_k.png>
+Package pdftex.def Info: inc/img/binary2_k.png  used on input line 63.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 63--63
+ [] 
  []
 
-[29]
-<inc/img/time_all.png, id=412, 462.528pt x 346.896pt>
-File: inc/img/time_all.png Graphic file (type png)
-<use inc/img/time_all.png>
-Package pdftex.def Info: inc/img/time_all.png  used on input line 136.
+<inc/img/binary2_kg.png, id=413, 1084.05pt x 1084.05pt>
+File: inc/img/binary2_kg.png Graphic file (type png)
+<use inc/img/binary2_kg.png>
+Package pdftex.def Info: inc/img/binary2_kg.png  used on input line 64.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 64--64
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30
+
+ <./inc/img/binary2_k.png>] [31 <./inc/img/binary2_kg.png>]
+<inc/img/segment2_k.png, id=427, 1084.05pt x 1084.05pt>
+File: inc/img/segment2_k.png Graphic file (type png)
+<use inc/img/segment2_k.png>
+Package pdftex.def Info: inc/img/segment2_k.png  used on input line 67.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 67--67
+ [] 
+ []
+
+<inc/img/segment2_kg.png, id=428, 1084.05pt x 1084.05pt>
+File: inc/img/segment2_kg.png Graphic file (type png)
+<use inc/img/segment2_kg.png>
+Package pdftex.def Info: inc/img/segment2_kg.png  used on input line 68.
+(pdftex.def)             Requested size: 540.61766pt x 540.60236pt.
+
+Overfull \hbox (71.14717pt too wide) in paragraph at lines 68--68
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32
+
+ <./inc/img/segment2_k.png>] [33 <./inc/img/segment2_kg.png>]
+Overfull \hbox (6.65009pt too wide) in paragraph at lines 71--72
+[]\T2A/cmr/m/n/14.4 В таб-ли-це  []4.1[] при-ве-де-ны зна-че-ния ми-ни-маль-но-
+го (min), сред-не-го (mean),
+ []
+
+[34
+
+] [35
+
+] [36] [37]
+<inc/img/time_all2.png, id=468, 462.528pt x 346.896pt>
+File: inc/img/time_all2.png Graphic file (type png)
+<use inc/img/time_all2.png>
+Package pdftex.def Info: inc/img/time_all2.png  used on input line 174.
 (pdftex.def)             Requested size: 455.26457pt x 341.43306pt.
- [30
+ [38
 
- <./inc/img/time_all.png>]) [31
+ <./inc/img/time_all2.png>]) [39
 
 ]
 \openout2 = `50-conclusion.aux'.
 
- (50-conclusion.tex) [32
+ (50-conclusion.tex)
+[40
 
 
 
@@ -1516,8 +1592,7 @@ Package pdftex.def Info: inc/img/time_all.png  used on input line 136.
 ]
 \openout2 = `51-biblio.aux'.
 
-
-(51-biblio.tex (report.bbl
+ (51-biblio.tex (report.bbl
 Underfull \hbox (badness 3312) in paragraph at lines 12--16
 []\T2A/cmr/m/n/14.4 Множество и сло-варь [Элек-трон-ный ре-сурс].  Ре-жим до-ст
 у-па:
@@ -1607,7 +1682,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 56--60
 $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
  []
 
-)) [33
+)) [41
 
 
 
@@ -1616,16 +1691,16 @@ $[] \T2A/cmr/m/n/14.4 (да-та об-ра-ще-ния:
 (10-analysis.aux) (20-design.aux) (30-impl.aux) (40-research.aux)
 (50-conclusion.aux) (51-biblio.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 2DF6860D32F925DE1F4E95D495464999;6760.
+(rerunfilecheck)             Checksum: F6F4025353F4729E518E843ADAC10A13;6673.
  ) 
 Here is how much of TeX's memory you used:
- 37919 strings out of 478864
- 868479 string characters out of 2858518
+ 38008 strings out of 478864
+ 870404 string characters out of 2858518
  1577410 words of memory out of 10000000
- 54966 multiletter control sequences out of 15000+600000
+ 55033 multiletter control sequences out of 15000+600000
  420556 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,8n,102p,1636b,1518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,8n,102p,1143b,1518s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm10
 00.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1440.pk> <C:\Users\alena\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
@@ -1645,9 +1720,9 @@ pe1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (33 pages, 628813 bytes).
+Output written on report.pdf (41 pages, 828985 bytes).
 PDF statistics:
- 1015 PDF objects out of 1200 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1079 PDF objects out of 1200 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

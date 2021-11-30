@@ -4,7 +4,7 @@ path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc
 count_file = path + 'counts.txt'
 
 DICT_FILENAME = 'ENRUS.TXT'
-N = 1000
+N = 10000
 
 
 def load_data(n=N):
@@ -150,9 +150,10 @@ def draw_plots_for_alg(name):
         results_g[i] += results_k[i]
 
     plt.ylabel('Количество сравнений')
-    plt.subplots_adjust(bottom=0.3)
+    plt.figure(figsize=(15, 15))
+    #plt.subplots_adjust(bottom=0.3)
     #plt.grid()
-    plt.bar(keys, results_k, width=0.01, color='#0504aa', alpha=0.7)
+    plt.bar(keys, results_k, color='#0504aa') #width=0.01,
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
     ax.set_xticklabels([])
@@ -166,7 +167,7 @@ def draw_plots_for_alg(name):
 
     plt.ylabel('Количество сравнений')
     #plt.grid()
-    plt.bar(keys, results_k, width=0.1, color='#0504aa', alpha=0.7)
+    plt.bar(keys, results_k, color='#0504aa')
     ax = plt.gca()
     ax.tick_params(axis='x', labelrotation=90)
     ax.set_xticklabels([])

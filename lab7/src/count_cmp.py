@@ -4,7 +4,7 @@ path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc
 count_file = path + 'counts.txt'
 
 DICT_FILENAME = 'ENRUS.TXT'
-N = 10000
+N = 40000
 
 
 def load_data(n=N):

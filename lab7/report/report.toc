@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {4.2}Пример работы программы}{18}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Количество сравнений}{19}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Сравнение трудоемкостей}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Сравнение времени выполнения реализаций алгоритмов}{37}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{39}{section.4.6}%
-\contentsline {chapter}{Заключение}{40}{chapter*.23}%
-\contentsline {chapter}{Список использованной литературы}{41}{Item.10}%
+\contentsline {section}{\numberline {4.5}Сравнение времени выполнения реализаций алгоритмов}{38}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Вывод из исследовательской части}{41}{section.4.6}%
+\contentsline {chapter}{Заключение}{42}{chapter*.24}%
+\contentsline {chapter}{Список использованной литературы}{43}{Item.10}%

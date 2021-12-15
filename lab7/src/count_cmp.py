@@ -1,10 +1,11 @@
 import matplotlib.pyplot as plt
 from statistics import mean, median
+from math import log2, ceil
 path = 'C:/Users/alena/Desktop/BMSTU_5sem_analysis_of_algorithms/lab7/report/inc/img/'
 count_file = path + 'counts.txt'
 
-DICT_FILENAME = 'ENRUS.TXT'
-N = 40000
+DICT_FILENAME = 'ENRUS2.TXT'
+N = 4100
 
 
 def load_data(n=N):
@@ -34,6 +35,7 @@ def load_data(n=N):
             break
 
     print(f'Loaded {done} items')
+
     return my_dict
 
 
@@ -105,6 +107,18 @@ def segmentate(my_dict):
     for key in new_dict:
         new_dict[key] = sort_by_keys(new_dict[key])
 
+    print('\n\n\n')
+    summ = 0
+    for i, elem in enumerate(new_dict.keys()):
+        ni = len(new_dict[elem])
+        if ni != 0:
+            for_each = i + 1 + ceil(log2(ni)) * 2
+            for_all = for_each * ni
+            summ += for_all
+            print(f"key: {elem}, i: {i + 1}, ni: {ni}, log(ni): {ceil(log2(ni))}, for each: {for_each}, for all: {for_all}")
+    print()
+    print(f"Mean: {summ / N}")
+    print('\n\n\n')
     return new_dict
 
 

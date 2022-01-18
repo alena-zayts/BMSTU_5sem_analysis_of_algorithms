@@ -1,0 +1,8 @@
+.idea
+*.aux
+*.log
+*.out
+*.bbl
+*.toc
+*.gz
+__pycache__/

@@ -1,0 +1,7 @@
+.idea
+*.aux
+*.log
+*.out
+*.bbl
+*.toc
+*.gz
